@@ -1,5 +1,12 @@
-book_filename: "powerbi-intro"
-delete_merged_file: true
-language:
-  ui:
-    chapter_name: "Chapter "
+
+rmd_files: 
+  - introduction.Rmd
+  - starting.Rmd
+  - data_frames.Rmd
+  - plotting.Rmd
+  - summarizing.Rmd
+  - next_steps.Rmd
+
+new_session: yes
+output_dir: "../docs"
+book_filename: "r-intro-2"

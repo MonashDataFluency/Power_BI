@@ -1,14 +1,29 @@
-p.caption {
-  color: #777;
-  margin-top: 10px;
+
+.book .book-summary {
+    background: #dfe;
 }
-p code {
-  white-space: inherit;
+
+.challenge {
+    margin: 2em;
+    padding: 0em 2em 2em 2em;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #ddf;
 }
-pre {
-  word-break: normal;
-  word-wrap: normal;
+
+.tip {
+    margin: 2em;
+    padding: 0em 2em 2em 2em;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #ffd;
 }
-pre code {
-  white-space: inherit;
+
+
+.objectives {
+    margin: 2em;
+    padding: 0em 2em 2em 2em;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #fed;
 }
