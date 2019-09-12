@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Introduction to Power BI</title>
-  <meta name="description" content="Introduction to Power BI" />
+  <title>2 Import dataset and modelling (preprocessing) | Introduction to Power BI</title>
+  <meta name="description" content="2 Import dataset and modelling (preprocessing) | Introduction to Power BI" />
   <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Introduction to Power BI" />
+  <meta property="og:title" content="2 Import dataset and modelling (preprocessing) | Introduction to Power BI" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Introduction to Power BI" />
+  <meta name="twitter:title" content="2 Import dataset and modelling (preprocessing) | Introduction to Power BI" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="introduction-to-powerbi.html"/>
+<link rel="prev" href="introduction-to-powerbi.html"/>
+<link rel="next" href="plotting-with-ggplot2.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -181,59 +181,88 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Introduction to Power BI</h1>
+<div id="import-dataset-and-modelling-preprocessing" class="section level1">
+<h1><span class="header-section-number">2</span> Import dataset and modelling (preprocessing)</h1>
+<p>Power BI can connect to a whole range of data sources, right from Excel sheets, Local databases to several Cloud services. Currently, over 60 different cloud services have specific connectors to help you connect with generic sources through XML, CSV, text, and ODBC.
+Let us start connecting to one of the data sources. For today we will be working on <code>gap_minder_map.csv</code> file.</p>
+<div id="importing-data-into-power-bi-desktop" class="section level2">
+<h2><span class="header-section-number">2.1</span> Importing data into Power BI Desktop</h2>
+<p>Power BI Desktop has a “<strong>Get Data</strong>” button from the ribbon on the “<strong>Home</strong>” tab. In Power BI, there are all sorts of different data sources available. Select a source to establish a connection. Depending on your selection, you will be asked to find the source on your computer or network, or be prompted to sign in to a service to authenticate your request.</p>
+<p>As our first step to import the dataset/file into Power BI, we click on the Get Data icon on the ribbon of Home tab.</p>
+<p>–picture–</p>
+<p>Once we select this, we go ahead and select the “<strong>CSV option</strong>” under the “<strong>file</strong>” subheading.</p>
+<p>–picture–</p>
+<p>Then browse the file and select the necessary CSV file. Press on “<strong>Connect</strong>” to have a quick preview of the file. Once we click on “<strong>load</strong>”, Power BI will successfully import the file. Any errors will then pop up ready to be analysed and fixed.</p>
+<p>–picture–</p>
+<p>–picture–</p>
+<p>Clicking on “<strong>View errors</strong>” will enable us to check the detected errors right away. Alternatively, you close the pop up and click “<strong>Edit queries</strong>” to check for any errors. This will query and list the errors in the data.</p>
 </div>
-<div id="index" class="section level1 unnumbered">
-<h1>Introduction</h1>
-<p>These are course notes for the “Introduction to Power BI” course given by the <a href="https://www.monash.edu/researchinfrastructure/bioinformatics">Monash Bioinformatics Platform</a> for the <a href="https://monashdatafluency.github.io/">Monash Data Fluency</a> initiative. Our teaching style is based on the style of <a href="https://carpentries.org/">The Carpentries</a>.</p>
+<div id="dealing-with-errors" class="section level2">
+<h2><span class="header-section-number">2.2</span> Dealing with errors</h2>
+<div id="check-for-controlled-errors" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> Check for “controlled” errors</h3>
+<p>Once queried, we can see the controlled errors in the data. These errors can be analysed by clicking on them. Every error has a brief description to it saying what might’ve gone wrong.</p>
+</div>
+<div id="change-datatype-of-column" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> Change datatype of column</h3>
+<p>One of the most common errors is the detection of the datatype of a particular column. While loading the data, Power BI guesses the column type based on the data it sees. If needed the datatypes of the columns can be changed to something relevant.
+Double click on the “<strong>datatype</strong>” icon on top of the column, select the “<strong>datatype</strong>” and click on “<strong>Replace current step</strong>”.</p>
+<p>Any changes to the data needs to be done under the “<strong>Data file</strong>” listed under “<strong>Other Queries</strong>”. Once necessary changes are made, it is important to refresh and check if the change was applied. We can do this by clicking on the “<strong>Refresh Preview</strong>” button on the ribbon.</p>
+<p>Once all the required changes are done, we can close and apply going back to the main Power BI Desktop interface.</p>
+<p>Make sure you see all the column names in the data on the bottom right corner.</p>
+</div>
+<div id="replacing-null-values" class="section level3">
+<h3><span class="header-section-number">2.2.3</span> Replacing null values</h3>
+<p>Data can have missing values for a number of reasons. This missing data is represented as <code>null</code> in the data. A lot of times it is important to deal with such values and fix or remove them.</p>
+<p>In the “<strong>Data</strong>” section on the left sidebar, data can be viewed. By applying a filter to a particular column, the null values can be analysed. To replace any null values, we can go back to the “<strong>Query Editor</strong>” and use the “Replace values” option.</p>
+<p>Replacing missing values is not always a direct operation. Most of the times, the missing values must be carefully analyzed and values need to be computed based on several factors. This computational procedure can be programmed with DAX.
+Let us cancel this particular step in the “Applied steps” by clicking on the red crossmark right next to “<strong>Replaced Value</strong>”’.</p>
+</div>
+<div id="challenge-1-replace-missing-values" class="section level3">
+<h3><span class="header-section-number">2.2.4</span> Challenge 1: Replace missing values</h3>
+</div>
+</div>
+<div id="applied-steps-in-modelling-data" class="section level2">
+<h2><span class="header-section-number">2.3</span> ‘Applied steps’ in modelling data</h2>
+<div id="renaming-columns" class="section level3">
+<h3><span class="header-section-number">2.3.1</span> Renaming columns</h3>
+<p>Columns from raw data can be difficult to read or meaningless. Renaming the columns in your query to a meaningful name will make it easier for you and your audience to understand your data. This will often save you trouble in the future when it comes to working and presenting the data.</p>
+<p>There are two ways to rename the columns in Power BI. Right-clicking on the header of the column gives you a menu of functions that you can do to the column. Select “<strong>Rename</strong>” to rename the column. You can also click on the column and then click on the “<strong>Transform</strong>” tab, from here you are presented a variety of transformation functions for the column. From here you can click on “<strong>Rename</strong>”.</p>
+<p>Example:
+- Right-click on the “<strong>name</strong>” column header, click on “<strong>Rename</strong>” and rename the column to “<strong>Country</strong>”.</p>
 <ul>
-<li><a href="https://monashdatafluency.github.io/powerbi/powerbi-intro.pdf">PDF version for printing</a></li>
-<li><a href="https://monashdatafluency.github.io/powerbi-intro/powerbi-files.zip">ZIP of data files used in this workshop</a></li>
-</ul>
-<p>During this workshop we will be using Power BI Desktop installed on your computer. There are several ways to download Power BI Desktop, depending on which system you use.</p>
-<ol style="list-style-type: decimal">
-<li>Windows User</li>
-</ol>
-<ul>
-<li>Power BI website
-You can download Power BI Desktop from the website and install it as an application on your computer. Monash machine, My software, contact eSolutions to gain admin access(link to eSolution)</li>
-</ul>
-<p>After the setup process, you will be able to see the following Start Screen.</p>
-<ul>
-<li><p>Windows Store
-Or you can visit Windows Store to get the Power BI Desktop app and install it. Note that the system requirements is Windows 10 version 14393.0 or higher.</p></li>
-<li><p>Power BI service
-You can also download it from the Power BI service by clicking the download button in the upper right and selecting Power BI Desktop. To use Power BI service, you may need a Microsoft account.</p></li>
-</ul>
-<ol start="2" style="list-style-type: decimal">
-<li>Mac User</li>
-</ol>
-<p>Power BI Desktop is not available on Macs. There are two main options.
-Dual BootCamp
-The first is to run a Windows session on your Mac via BootCamp or something similar. This is probably a longer term solution until Microsoft release a Mac version.
-MoVE: TODO</p>
-<p>After installing Power BI Desktop, you can sign up for Power BI using your Monash account here By signing in the Power BI Desktop, you will be able to save your work and later publish it to the Power BI service.</p>
-<ol start="3" style="list-style-type: decimal">
-<li>Linux Users</li>
-</ol>
-<p>TODO</p>
-<p>Data</p>
-<p>Please download the data file here for the course.</p>
-<div id="source-code" class="section level3 unnumbered">
-<h3>Source code</h3>
-<p>This book was created in R using the <code>rmarkdown</code> and <code>bookdown</code> packages!</p>
-<ul>
-<li><a href="https://github.com/MonashDataFluency/r-intro-2">GitHub page</a></li>
+<li>Click on the header for “<strong>life_exp</strong>”’. Click on the “<strong>Transform</strong>” tab and click rename. Rename the column to “<strong>Life expectancy</strong>”.</li>
 </ul>
 </div>
-<div id="authors-and-copyright" class="section level3 unnumbered">
-<h3>Authors and copyright</h3>
-<p>This course is developed for the Monash Data Fluency Team.</p>
-<p><img src="figures/CC-BY.png" width="44" style="display: block; margin: auto;" /></p>
-<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">CC BY-4: Creative Commons Attribution 4.0 International License</a>. The attribution is “Monash Bioinformatics Platform” if copying or modifying these notes.</p>
-<p>Data files are derived from Gapminder, which has a CC BY-4 license. The attribution is “Free data from www.gapminder.org”. The data is given here in a form designed to teach various points about the R language. Refer to the <a href="https://www.gapminder.org">Gapminder site</a> for the original form of the data if using it for other uses.</p>
+<div id="add-and-remove-column" class="section level3">
+<h3><span class="header-section-number">2.3.2</span> Add and remove column</h3>
+<div id="removing-columns" class="section level4">
+<h4><span class="header-section-number">2.3.2.1</span> Removing columns</h4>
+<p>Often when dealing with raw data you will find columns that are meaningless or unsuitable for your analysis. You can remove these columns in Query to eliminate clutter and streamline the data set making it easier to work with.</p>
+<p>There are two ways to remove columns in Power BI. Like in renaming a column, you can right-click the header, which will present a menu with the option to “<strong>Remove</strong>”’. You can also click on the column, click on the “<strong>Home</strong>” tab and then click “<strong>Remove Columns</strong>”.</p>
+<p>Example:
+You may not need the <code>g77</code> and <code>oecd</code> information.
+- Right-click on the <code>g77</code> column header, click on “<strong>Remove</strong>”</p>
+<ul>
+<li>Left-click on <code>oecd</code> column header, click on “<strong>Home</strong>” tab, click “<strong>Remove Column</strong>”</li>
+</ul>
+</div>
+<div id="adding-columns" class="section level4">
+<h4><span class="header-section-number">2.3.2.2</span> Adding columns</h4>
+<p>Just as you would remove unsuitable data from your queries, you may need to add new columns to your data. There are a variety of options in Power BI to add different columns. Click on the “<strong>Add Column</strong>” tab to see the ways you can add a column.</p>
+<p>Example:
+- Add or subtract a year to the <code>year</code> column to fix any widespread issues.</p>
+<ul>
+<li>Click on <code>gdp_percap</code>, click on the “<strong>Add Column</strong>” tab, click duplicate to create a separate column to run calculations on.</li>
+</ul>
+</div>
+</div>
+<div id="challenge-2" class="section level3">
+<h3><span class="header-section-number">2.3.3</span> Challenge 2:</h3>
+<p>perform simple mathematical operation and add this as a new column
+Let’s say you want to calculate total Gross Domestic Products (GDP) per country. Total GDP = Population x GDP per capita. Working with the new <code>gdp_percap</code> column you created in the previous example, create a new column with Total GDP per country.</p>
 
+</div>
 </div>
 </div>
             </section>
@@ -241,8 +270,8 @@ MoVE: TODO</p>
           </div>
         </div>
       </div>
-
-<a href="introduction-to-powerbi.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="introduction-to-powerbi.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="plotting-with-ggplot2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
