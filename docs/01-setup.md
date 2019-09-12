@@ -1,5 +1,5 @@
 ---
-title: Introduction to R, version 2 
+title: Introduction to Power BI
 documentclass: report
 classoption: a4paper
 links-as-notes: yes
@@ -13,23 +13,45 @@ header-includes:
 
 
 
-<img src="figures/R.jpg" width="25%" style="display: block; margin: auto auto auto 0;" />
 
-These are course notes for the "Introduction to R" course given by the [Monash Bioinformatics Platform](https://www.monash.edu/researchinfrastructure/bioinformatics) for the [Monash Data Fluency](https://monashdatafluency.github.io/) initiative. Our teaching style is based on the style of [The Carpentries](https://carpentries.org/). This is a new version of the course focussing on the modern [Tidyverse](https://www.tidyverse.org/) set of packages. We believe this is currently the quickest route to being productive in R.
 
-* [PDF version for printing](https://monashdatafluency.github.io/r-intro-2/r-intro-2.pdf)
-* [ZIP of data files used in this workshop](https://monashdatafluency.github.io/r-intro-2/r-intro-2-files.zip)
+These are course notes for the "Introduction to Power BI" course given by the [Monash Bioinformatics Platform](https://www.monash.edu/researchinfrastructure/bioinformatics) for the [Monash Data Fluency](https://monashdatafluency.github.io/) initiative. Our teaching style is based on the style of [The Carpentries](https://carpentries.org/). 
 
-During the workshop we will be using the RStudio Cloud to use R over the web:
+* [PDF version for printing](https://monashdatafluency.github.io/powerbi/powerbi-intro.pdf)
+* [ZIP of data files used in this workshop](https://monashdatafluency.github.io/powerbi-intro/powerbi-files.zip)
 
-* [RStudio Cloud](https://rstudio.cloud/)
+During this workshop we will be using Power BI Desktop installed on your computer. There are several ways to download Power BI Desktop, depending on which system you use.
 
-You can also install R on your own computer. There are two things to download and install:
+1. Windows User
+* Power BI website
+You can download Power BI Desktop from the website and install it as an application on your computer. Monash machine, My software, contact eSolutions to gain admin access(link to eSolution)
 
-* [Download R](https://cran.rstudio.com/)
-* [Download RStudio](https://www.rstudio.com/products/rstudio/download/)
+After the setup process, you will be able to see the following Start Screen. 
 
-R is the language itself. RStudio provides a convenient environment in which to use R, either on your local computer or on a server.
+* Windows Store
+Or you can visit Windows Store to get the Power BI Desktop app and install it. Note that the system requirements is Windows 10 version 14393.0 or higher.
+
+
+* Power BI service
+You can also download it from the Power BI service by clicking the download button in the upper right and selecting Power BI Desktop. To use Power BI service, you may need a Microsoft account.
+
+
+2. Mac User
+
+Power BI Desktop is not available on Macs. There are two main options.
+Dual BootCamp
+The first is to run a Windows session on your Mac via BootCamp or something similar. This is probably a longer term solution until Microsoft release a Mac version.
+MoVE: TODO
+
+After installing Power BI Desktop, you can sign up for Power BI using your Monash account here By signing in the Power BI Desktop, you will be able to save your work and later publish it to the Power BI service.
+
+3. Linux Users
+
+TODO
+
+Data
+
+Please download the data file here for the course.
 
 
 ### Source code {-}
@@ -40,7 +62,7 @@ This book was created in R using the `rmarkdown` and `bookdown` packages!
 
 ### Authors and copyright {-}
 
-This course is developed for the Monash Bioinformatics Platform by Paul Harrison.
+This course is developed for the Monash Data Fluency Team.
 
 <img src="figures/CC-BY.png" width="44" style="display: block; margin: auto;" />
 
