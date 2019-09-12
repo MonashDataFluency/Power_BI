@@ -13,7 +13,7 @@ header-includes:
 
 
 
-
+<img src="figures/powerbi.png" width="25%" style="display: block; margin: auto auto auto 0;" />
 
 These are course notes for the "Introduction to Power BI" course given by the [Monash Bioinformatics Platform](https://www.monash.edu/researchinfrastructure/bioinformatics) for the [Monash Data Fluency](https://monashdatafluency.github.io/) initiative. Our teaching style is based on the style of [The Carpentries](https://carpentries.org/). 
 
@@ -58,7 +58,7 @@ Please download the data file here for the course.
 
 This book was created in R using the `rmarkdown` and `bookdown` packages!
 
-* [GitHub page](https://github.com/MonashDataFluency/r-intro-2)
+* [GitHub page](https://github.com/MonashDataFluency/Power_BI)
 
 ### Authors and copyright {-}
 

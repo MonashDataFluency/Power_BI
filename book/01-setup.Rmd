@@ -16,7 +16,7 @@ knitr::opts_chunk$set(fig.width=6, fig.height=3.5, fig.align="center")
 ```
 
 ```{r echo=F,out.width="25%",fig.align="left"}
-# knitr::include_graphics("figures/R.jpg")
+knitr::include_graphics("figures/powerbi.png")
 ```
 
 These are course notes for the "Introduction to Power BI" course given by the [Monash Bioinformatics Platform](https://www.monash.edu/researchinfrastructure/bioinformatics) for the [Monash Data Fluency](https://monashdatafluency.github.io/) initiative. Our teaching style is based on the style of [The Carpentries](https://carpentries.org/). 
@@ -62,7 +62,7 @@ Please download the data file here for the course.
 
 This book was created in R using the `rmarkdown` and `bookdown` packages!
 
-* [GitHub page](https://github.com/MonashDataFluency/r-intro-2)
+* [GitHub page](https://github.com/MonashDataFluency/Power_BI)
 
 ### Authors and copyright {-}
 

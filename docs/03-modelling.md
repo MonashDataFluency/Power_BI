@@ -95,12 +95,3 @@ Example:
 perform simple mathematical operation and add this as a new column
 Let’s say you want to calculate total Gross Domestic Products (GDP) per country. Total GDP = Population x GDP per capita. Working with the new `gdp_percap` column you created in the previous example, create a new column with Total GDP per country.
 
-
-
-
-
-
-
-
-
-

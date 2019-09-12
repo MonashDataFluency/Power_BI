@@ -1,7 +1,5 @@
 # Next steps
 
-
-
 ## Deepen your understanding
 
 **Our number one recommendation is to read the book ["R for Data Science"](http://r4ds.had.co.nz/) by Garrett Grolemund and Hadley Wickham.**

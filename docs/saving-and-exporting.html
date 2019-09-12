@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Introduction to Power BI</title>
-  <meta name="description" content="Introduction to Power BI" />
+  <title>4 Saving and Exporting | Introduction to Power BI</title>
+  <meta name="description" content="4 Saving and Exporting | Introduction to Power BI" />
   <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Introduction to Power BI" />
+  <meta property="og:title" content="4 Saving and Exporting | Introduction to Power BI" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Introduction to Power BI" />
+  <meta name="twitter:title" content="4 Saving and Exporting | Introduction to Power BI" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="introduction-to-powerbi.html"/>
+<link rel="prev" href="plotting-and-visualisations.html"/>
+<link rel="next" href="next-steps.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -100,59 +100,14 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Introduction to Power BI</h1>
-</div>
-<div id="index" class="section level1 unnumbered">
-<h1>Introduction</h1>
-<p><img src="figures/powerbi.png" width="25%" style="display: block; margin: auto auto auto 0;" /></p>
-<p>These are course notes for the “Introduction to Power BI” course given by the <a href="https://www.monash.edu/researchinfrastructure/bioinformatics">Monash Bioinformatics Platform</a> for the <a href="https://monashdatafluency.github.io/">Monash Data Fluency</a> initiative. Our teaching style is based on the style of <a href="https://carpentries.org/">The Carpentries</a>.</p>
-<ul>
-<li><a href="https://monashdatafluency.github.io/powerbi/powerbi-intro.pdf">PDF version for printing</a></li>
-<li><a href="https://monashdatafluency.github.io/powerbi-intro/powerbi-files.zip">ZIP of data files used in this workshop</a></li>
-</ul>
-<p>During this workshop we will be using Power BI Desktop installed on your computer. There are several ways to download Power BI Desktop, depending on which system you use.</p>
-<ol style="list-style-type: decimal">
-<li>Windows User</li>
-</ol>
-<ul>
-<li>Power BI website
-You can download Power BI Desktop from the website and install it as an application on your computer. Monash machine, My software, contact eSolutions to gain admin access(link to eSolution)</li>
-</ul>
-<p>After the setup process, you will be able to see the following Start Screen.</p>
-<ul>
-<li><p>Windows Store
-Or you can visit Windows Store to get the Power BI Desktop app and install it. Note that the system requirements is Windows 10 version 14393.0 or higher.</p></li>
-<li><p>Power BI service
-You can also download it from the Power BI service by clicking the download button in the upper right and selecting Power BI Desktop. To use Power BI service, you may need a Microsoft account.</p></li>
-</ul>
-<ol start="2" style="list-style-type: decimal">
-<li>Mac User</li>
-</ol>
-<p>Power BI Desktop is not available on Macs. There are two main options.
-Dual BootCamp
-The first is to run a Windows session on your Mac via BootCamp or something similar. This is probably a longer term solution until Microsoft release a Mac version.
-MoVE: TODO</p>
-<p>After installing Power BI Desktop, you can sign up for Power BI using your Monash account here By signing in the Power BI Desktop, you will be able to save your work and later publish it to the Power BI service.</p>
-<ol start="3" style="list-style-type: decimal">
-<li>Linux Users</li>
-</ol>
-<p>TODO</p>
-<p>Data</p>
-<p>Please download the data file here for the course.</p>
-<div id="source-code" class="section level3 unnumbered">
-<h3>Source code</h3>
-<p>This book was created in R using the <code>rmarkdown</code> and <code>bookdown</code> packages!</p>
-<ul>
-<li><a href="https://github.com/MonashDataFluency/Power_BI">GitHub page</a></li>
-</ul>
-</div>
-<div id="authors-and-copyright" class="section level3 unnumbered">
-<h3>Authors and copyright</h3>
-<p>This course is developed for the Monash Data Fluency Team.</p>
-<p><img src="figures/CC-BY.png" width="44" style="display: block; margin: auto;" /></p>
-<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">CC BY-4: Creative Commons Attribution 4.0 International License</a>. The attribution is “Monash Bioinformatics Platform” if copying or modifying these notes.</p>
-<p>Data files are derived from Gapminder, which has a CC BY-4 license. The attribution is “Free data from www.gapminder.org”. The data is given here in a form designed to teach various points about the R language. Refer to the <a href="https://www.gapminder.org">Gapminder site</a> for the original form of the data if using it for other uses.</p>
+<div id="saving-and-exporting" class="section level1">
+<h1><span class="header-section-number">4</span> Saving and Exporting</h1>
+<p>We already saw some of R’s built in plotting facilities with the function <code>plot</code>. A more recent and much more powerful plotting library is <code>ggplot2</code>. <code>ggplot2</code> is another mini-language within R, a language for creating plots. It implements ideas from a book called <a href="https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448">“The Grammar of Graphics”</a>. The syntax can be a little strange, but there are plenty of examples in the <a href="http://ggplot2.tidyverse.org/reference/">online documentation</a>.</p>
+<div id="challenge-facet-your-ggplot-1" class="section level3 challenge">
+<h3><span class="header-section-number">4.0.1</span> Challenge: facet your ggplot</h3>
+<p>Let’s return again to your scatter-plot of the 2010 data.</p>
+<p>Adjust your plot to now show data from all years, with each year shown in a separate facet, using <code>facet_wrap(~ year)</code>.</p>
+<p>Advanced: Highlight Australia in your plot.</p>
 
 </div>
 </div>
@@ -161,8 +116,8 @@ MoVE: TODO</p>
           </div>
         </div>
       </div>
-
-<a href="introduction-to-powerbi.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="plotting-and-visualisations.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="next-steps.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
