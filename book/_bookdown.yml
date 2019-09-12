@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 rmd_files: 
   - introduction.Rmd
@@ -10,3 +11,11 @@ rmd_files:
 new_session: yes
 output_dir: "../docs"
 book_filename: "r-intro-2"
+=======
+book_filename: "powerbi-intro"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter "
+output_dir: "docs"
+>>>>>>> 9e82966371f51681f5b8ab497df7f705b4de570f
