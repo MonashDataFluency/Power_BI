@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Introduction to R, version 2</title>
+  <meta name="description" content="Introduction to R, version 2" />
+  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Introduction to R, version 2" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Introduction to R, version 2" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path=""><a href="#index"><i class="fa fa-check"></i>Introduction</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introduction to R, version 2</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Introduction to R, version 2</h1>
+</div>
+<div id="index" class="section level1 unnumbered">
+<h1>Introduction</h1>
+<p><img src="figures/R.jpg" width="25%" style="display: block; margin: auto auto auto 0;" /></p>
+<p>These are course notes for the “Introduction to R” course given by the <a href="https://www.monash.edu/researchinfrastructure/bioinformatics">Monash Bioinformatics Platform</a> for the <a href="https://monashdatafluency.github.io/">Monash Data Fluency</a> initiative. Our teaching style is based on the style of <a href="https://carpentries.org/">The Carpentries</a>. This is a new version of the course focussing on the modern <a href="https://www.tidyverse.org/">Tidyverse</a> set of packages. We believe this is currently the quickest route to being productive in R.</p>
+<ul>
+<li><a href="https://monashdatafluency.github.io/r-intro-2/r-intro-2.pdf">PDF version for printing</a></li>
+<li><a href="https://monashdatafluency.github.io/r-intro-2/r-intro-2-files.zip">ZIP of data files used in this workshop</a></li>
+</ul>
+<p>During the workshop we will be using the RStudio Cloud to use R over the web:</p>
+<ul>
+<li><a href="https://rstudio.cloud/">RStudio Cloud</a></li>
+</ul>
+<p>You can also install R on your own computer. There are two things to download and install:</p>
+<ul>
+<li><a href="https://cran.rstudio.com/">Download R</a></li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/">Download RStudio</a></li>
+</ul>
+<p>R is the language itself. RStudio provides a convenient environment in which to use R, either on your local computer or on a server.</p>
+<div id="source-code" class="section level3 unnumbered">
+<h3>Source code</h3>
+<p>This book was created in R using the <code>rmarkdown</code> and <code>bookdown</code> packages!</p>
+<ul>
+<li><a href="https://github.com/MonashDataFluency/r-intro-2">GitHub page</a></li>
+</ul>
+</div>
+<div id="authors-and-copyright" class="section level3 unnumbered">
+<h3>Authors and copyright</h3>
+<p>This course is developed for the Monash Bioinformatics Platform by Paul Harrison.</p>
+<p><img src="figures/CC-BY.png" width="44" style="display: block; margin: auto;" /></p>
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">CC BY-4: Creative Commons Attribution 4.0 International License</a>. The attribution is “Monash Bioinformatics Platform” if copying or modifying these notes.</p>
+<p>Data files are derived from Gapminder, which has a CC BY-4 license. The attribution is “Free data from www.gapminder.org”. The data is given here in a form designed to teach various points about the R language. Refer to the <a href="https://www.gapminder.org">Gapminder site</a> for the original form of the data if using it for other uses.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+},
+"search": false
+});
+});
+</script>
+
+</body>
+
+</html>
