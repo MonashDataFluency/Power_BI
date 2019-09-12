@@ -1,10 +1,10 @@
 rmd_files: 
-  - introduction.Rmd
-  - starting.Rmd
-  - data_frames.Rmd
-  - plotting.Rmd
-  - summarizing.Rmd
-  - next_steps.Rmd
+  - 01-setup.Rmd
+  - 02-introduction.Rmd
+  - 03-model.Rmd
+  - 04-plotting.Rmd
+  - 05-exporting.Rmd
+  - 06-next-steps.Rmd
 
 new_session: yes
 output_dir: "../docs"
