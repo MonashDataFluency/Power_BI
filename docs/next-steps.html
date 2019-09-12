@@ -48,9 +48,9 @@
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -59,16 +59,14 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -77,9 +75,9 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  {  }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -126,14 +124,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
-<li class="chapter" data-level="1" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html"><i class="fa fa-check"></i><b>1</b> Starting out in R</a><ul>
-<li class="chapter" data-level="1.1" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#variables"><i class="fa fa-check"></i><b>1.1</b> Variables</a></li>
-<li class="chapter" data-level="1.2" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#saving-code-in-an-r-script"><i class="fa fa-check"></i><b>1.2</b> Saving code in an R script</a></li>
-<li class="chapter" data-level="1.3" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#vectors"><i class="fa fa-check"></i><b>1.3</b> Vectors</a></li>
-<li class="chapter" data-level="1.4" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#types-of-vector"><i class="fa fa-check"></i><b>1.4</b> Types of vector</a></li>
-<li class="chapter" data-level="1.5" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#indexing-vectors"><i class="fa fa-check"></i><b>1.5</b> Indexing vectors</a></li>
-<li class="chapter" data-level="1.6" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#sequences"><i class="fa fa-check"></i><b>1.6</b> Sequences</a></li>
-<li class="chapter" data-level="1.7" data-path="starting-out-in-r.html"><a href="starting-out-in-r.html#functions"><i class="fa fa-check"></i><b>1.7</b> Functions</a></li>
+<li class="chapter" data-level="1" data-path="introduction-to-powerbi.html"><a href="introduction-to-powerbi.html"><i class="fa fa-check"></i><b>1</b> Introduction to PowerBI</a><ul>
+<li class="chapter" data-level="1.1" data-path="introduction-to-powerbi.html"><a href="introduction-to-powerbi.html#overview-of-power-bi"><i class="fa fa-check"></i><b>1.1</b> Overview of Power BI</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction-to-powerbi.html"><a href="introduction-to-powerbi.html#the-parts-of-power-bi"><i class="fa fa-check"></i><b>1.2</b> The parts of Power BI</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction-to-powerbi.html"><a href="introduction-to-powerbi.html#use-of-power-bi-and-roles"><i class="fa fa-check"></i><b>1.3</b> Use of Power BI and roles</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction-to-powerbi.html"><a href="introduction-to-powerbi.html#power-bi-flow"><i class="fa fa-check"></i><b>1.4</b> Power BI Flow</a></li>
+<li class="chapter" data-level="1.5" data-path="introduction-to-powerbi.html"><a href="introduction-to-powerbi.html#use-power-bi"><i class="fa fa-check"></i><b>1.5</b> Use Power BI:</a></li>
+<li class="chapter" data-level="1.6" data-path="introduction-to-powerbi.html"><a href="introduction-to-powerbi.html#building-blocks-of-power-bi"><i class="fa fa-check"></i><b>1.6</b> Building blocks of Power BI:</a></li>
+<li class="chapter" data-level="1.7" data-path="introduction-to-powerbi.html"><a href="introduction-to-powerbi.html#power-bi-services"><i class="fa fa-check"></i><b>1.7</b> Power BI Services:</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="data-frames.html"><a href="data-frames.html"><i class="fa fa-check"></i><b>2</b> Data frames</a><ul>
 <li class="chapter" data-level="2.1" data-path="data-frames.html"><a href="data-frames.html#setting-up"><i class="fa fa-check"></i><b>2.1</b> Setting up</a></li>

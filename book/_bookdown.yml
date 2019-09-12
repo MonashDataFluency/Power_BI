@@ -1,7 +1,7 @@
 rmd_files: 
   - 01-setup.Rmd
   - 02-introduction.Rmd
-  - 03-model.Rmd
+  - 03-modelling.Rmd
   - 04-plotting.Rmd
   - 05-exporting.Rmd
   - 06-next-steps.Rmd

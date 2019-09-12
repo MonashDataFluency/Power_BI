@@ -370,7 +370,7 @@ For example, to plot the longitudes and latitudes we could use:
 plot(geo$long, geo$lat)
 ```
 
-<img src="data_frames_files/figure-html/unnamed-chunk-17-1.png" width="576" style="display: block; margin: auto;" />
+<img src="03-modelling_files/figure-html/unnamed-chunk-17-1.png" width="576" style="display: block; margin: auto;" />
 
 
 ## Logical indexing
@@ -596,7 +596,7 @@ When `plot` is given a factor, it shows a bar plot:
 plot(geo$income2017)
 ```
 
-<img src="data_frames_files/figure-html/unnamed-chunk-27-1.png" width="576" style="display: block; margin: auto;" />
+<img src="03-modelling_files/figure-html/unnamed-chunk-27-1.png" width="576" style="display: block; margin: auto;" />
 
 When given two factors, it shows a mosaic plot:
 
@@ -605,7 +605,7 @@ When given two factors, it shows a mosaic plot:
 plot(geo$income2017, factor(geo$oecd))
 ```
 
-<img src="data_frames_files/figure-html/unnamed-chunk-28-1.png" width="576" style="display: block; margin: auto;" />
+<img src="03-modelling_files/figure-html/unnamed-chunk-28-1.png" width="576" style="display: block; margin: auto;" />
 
 Similarly we can count two categorical columns at once.
 
