@@ -99,6 +99,9 @@ Let’s say you want to calculate total Gross Domestic Products (GDP) per countr
 
 It is important to know what sort of transformations the data has gone through to understand the current state of your data. These steps are listed on the "**Applied Steps**" section on the "**Query Editor**". Sometimes these steps might need to be moved up or down their order based on the required application. These steps can also be removed by clicking on the red crossmark next to the step. This will undo the action it performs and takes back the data to the previous stage.
 
+### Refresh data ready for analysis
+
+Always refresh your data when you are ready to do your analysis and visualisation. Clicking the Refresh option will refresh the data and rerun all your queries. This will show any issues or errors with your data or your queries and ensure that all the data is up to date and ready for analysis.
 
 
 
