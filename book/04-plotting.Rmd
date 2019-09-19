@@ -104,15 +104,19 @@ Computes the average of life_Exp in all countries in a given region, and plots i
 
 
 --picture--
+```{r echo=F,out.width="100%",fig.align="left"}
+knitr::include_graphics("figures/ch04/line_char_1.png")
+```
 
+### Line Chart
 Line chart
 Axis: Year
 Values: Life_exp
 Legend: By name
 
-
---picture--
-
+```{r echo=F,out.width="100%",fig.align="left"}
+knitr::include_graphics("figures/ch04/line_char_1.png")
+```
 Axis: Year
 Values: Average of Life_exp
 Legend: By region
@@ -122,17 +126,26 @@ Legend: By region
 --picture--
 
 --picture--
+```{r echo=F,out.width="100%",fig.align="left"}
+knitr::include_graphics("figures/ch04/line_char_1.png")
+```
 
-Bar plots
+### Bar Plots
+
 Axis: Year
 Values: Average of Life_exp
 Legend: By region
 
 --picture--
+```{r echo=F,out.width="100%",fig.align="left"}
+knitr::include_graphics("figures/ch04/bar_chart_pop_vs_year_by_region.png")
+```
 
-Trends in scatter plot
-
+### Trends in scatter plot
 --picture--
+```{r echo=F,out.width="100%",fig.align="left"}
+knitr::include_graphics("figures/ch04/trend_life_exp_vs_year_by_region.png")
+```
 
 ## Plot modifications
 
