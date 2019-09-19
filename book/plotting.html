@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 Plotting | 04-plotting.utf8.md</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1 Plotting | 04-plotting.utf8.md" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1 Plotting | 04-plotting.utf8.md" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path=""><a href="#plotting"><i class="fa fa-check"></i><b>1</b> Plotting</a><ul>
+<li class="chapter" data-level="1.1" data-path=""><a href="#import-data-set"><i class="fa fa-check"></i><b>1.1</b> Import data set</a></li>
+<li class="chapter" data-level="1.2" data-path=""><a href="#visualizations-panel"><i class="fa fa-check"></i><b>1.2</b> Visualizations Panel</a></li>
+<li class="chapter" data-level="1.3" data-path=""><a href="#plot-modifications"><i class="fa fa-check"></i><b>1.3</b> Plot modifications</a></li>
+<li class="chapter" data-level="1.4" data-path=""><a href="#explore-marketplace-for-other-plot-types"><i class="fa fa-check"></i><b>1.4</b> Explore Marketplace for other plot types</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<!--bookdown:title:end-->
+<!--bookdown:title:start-->
+<div id="plotting" class="section level1">
+<h1><span class="header-section-number">1</span> Plotting</h1>
+<div id="import-data-set" class="section level2">
+<h2><span class="header-section-number">1.1</span> Import data set</h2>
+<p>Load the <code>gap_minder_map.csv</code> file in PowerBI desktop</p>
+<p>Click on “<strong>Get Data</strong>” dropdown icon, and go to Text/CSV option; a dialog box will appear.</p>
+<p><img src="figures/powerbi.png" width="25%" style="display: block; margin: auto auto auto 0;" /></p>
+<p>–picture–</p>
+<p>–picture–</p>
+<p>Locate your file and click “<strong>Open</strong>”.</p>
+<p>–picture–</p>
+<p>Another dialog box will appear where you can see the contents of your file. Click on Load icon to “<strong>Load</strong>” the file in your Power BI Desktop.</p>
+<p>–picture–</p>
+<p>–picture–</p>
+<p>–picture–</p>
+<p>–picture–</p>
+<p>Once you have loaded the file, you will not see the contents automatically. You need to click on “<strong>Edit Query</strong>” icon under the Home tab in the taskbar to visualize the contents of your file. This will open a new window that looks like an Excel sheet.</p>
+<p>–TODO
+Replace image with gapminder data.
+Numerical data has ∑ symbol.</p>
+</div>
+<div id="visualizations-panel" class="section level2">
+<h2><span class="header-section-number">1.2</span> Visualizations Panel</h2>
+<p>We touched upon the basics of the Visualization panel in Chapter-1; now we will look at this in detail.
+Inside the Visualization panel are the various types of plots that you can use to visualize your data. The available options are- Stacked bar chart, Line chart, Area chart, Scatter chart, Pie chart, etc. You can also import a custom visual from a file or the market-place if you click on … icon. We will explore that in the later section.</p>
+<p>TODO: Insert an image for Visualization Panel.</p>
+<div id="scatter-chart" class="section level3">
+<h3><span class="header-section-number">1.2.1</span> Scatter chart</h3>
+<p>The first plot we are going to plot is a scatter plot. The first step to plot any kind of plot in Power BI is to select the plot template/type from the visualization panel. Click on the scatter chart icon in the visualization panel and drag the axis values to the respective value field as shown in the below figure.</p>
+<!--picture--->
+<p><img src="figures/ch04/scatter_plot_1.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
+<p>After doing the above steps, it will generate a nice scatter plot like this:</p>
+<!--picture--->
+<p><img src="figures/ch04/scatter_plot_2.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+The final interface will look like this:
+<!--picture--->
+<img src="figures/ch04/scatter_plot_3.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
+<p>Isn’t this simple to plot scatter plot in the Power BI? In general, this will be the procedure to plot any type of plot in the Power BI: Select the type of plot in the visualization section, drag data for the axis values. That’s it.</p>
+<p>–picture–
+–picture–</p>
+<p>A simple scatter plot of life_exp vs year does not yield any significant information per se. The only deduction that we can make is that life expectancy shows an increasing trend over time in years.</p>
+<p>x-Axis: year
+y-Axis: life_exp. Right-click on drop-down button and tick “<strong>Don’t summarize</strong>” option.
+Legend: By name</p>
+<p>‘PowerBI automatically summarizes the numerical data. Always be careful with that.’</p>
+<p>Let’s try other options.</p>
+<p>Drag and drop region in the legend box, we can see region-wise trends of life_exp over time in years.</p>
+<p>x-Axis: year
+y-Axis: life_exp. Right-click on drop-down button and tick “<strong>Don’t summarize</strong>” option.
+Legend: By region</p>
+<p>–picture–</p>
+<p>Optional activity: In the same chart, try the following:
+Size: By population</p>
+<p>Challenge 1: Keep the summarize option ON. Create a chart with the following options:
+x-Axis: year
+y-Axis: life_exp
+Legend: By region
+Explain the chart.</p>
+<p>Click on the dropdown menu and select “<strong>Average</strong>” and explain the difference.</p>
+<p>Solution1:
+Computes the sum of life_Exp in all countries in a given region, and plots it.
+Computes the average of life_Exp in all countries in a given region, and plots it.</p>
+<p>–picture–
+<img src="figures/ch04/line_char_1.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<div id="line-chart" class="section level3">
+<h3><span class="header-section-number">1.2.2</span> Line Chart</h3>
+<p>Line chart
+Axis: Year
+Values: Life_exp
+Legend: By name</p>
+<p><img src="figures/ch04/line_char_1.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+Axis: Year
+Values: Average of Life_exp
+Legend: By region</p>
+<p>–picture–</p>
+<p>–picture–</p>
+<p>–picture–
+<img src="figures/ch04/line_char_1.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<div id="bar-plots" class="section level3">
+<h3><span class="header-section-number">1.2.3</span> Bar Plots</h3>
+<p>Axis: Year
+Values: Average of Life_exp
+Legend: By region</p>
+<p>–picture–
+<img src="figures/ch04/bar_chart_pop_vs_year_by_region.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<div id="trends-in-scatter-plot" class="section level3">
+<h3><span class="header-section-number">1.2.4</span> Trends in scatter plot</h3>
+<p>–picture–
+<img src="figures/ch04/trend_life_exp_vs_year_by_region.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+</div>
+<div id="plot-modifications" class="section level2">
+<h2><span class="header-section-number">1.3</span> Plot modifications</h2>
+<p>Filter data
+Beautify plots:
+Font- Segoe(Bold)
+Font size: 12
+Font color: Black
+Slicer:
+By year
+By country (challenge)</p>
+</div>
+<div id="explore-marketplace-for-other-plot-types" class="section level2">
+<h2><span class="header-section-number">1.4</span> Explore Marketplace for other plot types</h2>
+<p>Till now, we have seen several different kinds of plots. Power BI comes with these default plots. There are other different kinds of plots are available in the marketplace. To import new plot template from the marketplace, click on the icon “<strong>(…)</strong>”, i.e. three horizontal dots in the visualization panel then click on the import from the marketplace.</p>
+<p>–picture–</p>
+<p>Once you click on Import from marketplace, It will pop a new window, where you can search for various types of templates. For example, we are looking for the Word Cloud template. Type Word Cloud in the search box, once you find the template click on the add icon then it will added to the visualization panel.</p>
+<p>–picture–</p>
+<p>Challenge 3:
+A: Create a scatter-plot of this with:
+gdp_percap as x.
+life_exp as y.
+population as the size.
+region as the label</p>
+<p>–picture–</p>
+<p>b: Filter the data for year-2010 only.</p>
+<p>C. Use the slicer to visualize data for different countries
+For all countries</p>
+<p>–picture–</p>
+<p>For Bangladesh</p>
+<p>–picture–</p>
+<p>For Bangladesh and Brazil</p>
+<p>–picture–</p>
+<p>–picture–</p>
+<p>Let’s try and import a chart type called Wordcloud. Type the keyword- Word Cloud in the Search box and click on “<strong>Add icon</strong>” corresponding to the Word Cloud chart.</p>
+<p>Challenge 4: Create a WordCloud for countries by GDP per capita.</p>
+<p>WordCloud
+Category: name
+Values: GDP per capita
+Filter: 2010 year
+OR
+Use a slicer with years</p>
+<p>–picture–</p>
+<p>Map chart- Lat and Long values
+Size: Population
+Colour: Income level</p>
+<p>–picture–</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+},
+"search": false
+});
+});
+</script>
+
+</body>
+
+</html>
