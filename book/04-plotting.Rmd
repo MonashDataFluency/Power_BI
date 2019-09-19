@@ -158,28 +158,19 @@ Slicer:
 	By year
 	By country (challenge)
 
-## Explore Marketplace for other plot types
 
-Till now, we have seen several different kinds of plots. Power BI comes with these default plots. There are other different kinds of plots are available in the marketplace. To import new plot template from the marketplace, click on the icon "**(...)**", i.e. three horizontal dots in the visualization panel then click on the import from the marketplace.
-
---picture--
-
-Once you click on Import from marketplace, It will pop a new window, where you can search for various types of templates. For example, we are looking for the Word Cloud template. Type Word Cloud in the search box, once you find the template click on the add icon then it will added to the visualization panel. 
-
---picture--
-
-Challenge 3:
-A: Create a scatter-plot of this with:
+**Challenge 3:**
+**A:** Create a scatter-plot of this with:
 gdp_percap as x.
 life_exp as y.
 population as the size.
-region as the label
+region as the label.
 
 --picture--
 
-b:  Filter the data for year-2010 only.
+**B:**  Filter the data for year-2010 only.
 
-C. Use the slicer to visualize data for different countries
+**C:** Use the slicer to visualize data for different countries
 	For all countries
 
 --picture--
@@ -194,9 +185,25 @@ For Bangladesh and Brazil
 
 --picture--
 
-Let’s try and import a chart type called Wordcloud. Type the keyword- Word Cloud in the Search box and click on "**Add icon**" corresponding to the Word Cloud chart.
+## Explore Marketplace for other plot types
 
-Challenge 4: Create a WordCloud for countries by GDP per capita.
+Till now, we have seen several different kinds of plots. Power BI comes with these default plots. There are other different kinds of plots are available in the marketplace. To import new plot template from the marketplace, click on the icon "**(...)**", i.e. three horizontal dots in the visualization panel then click on the import from the marketplace.
+
+
+```{r echo=F,out.width="100%",fig.align="left"}
+knitr::include_graphics("figures/ch04/marketplace.png")
+```
+
+
+Once you click on Import from marketplace, It will pop a new window, where you can search for various types of templates. For example, we are looking for the Word Cloud template. Type Word Cloud in the search box, once you find the template click on the "**Add icon**" then it will added to the visualization panel. 
+
+
+```{r echo=F,out.width="100%",fig.align="left"}
+knitr::include_graphics("figures/ch04/wordcloud.png")
+```
+
+
+**Challenge 4:** Create a WordCloud for countries by GDP per capita.
 
 WordCloud
 Category: name
@@ -205,10 +212,15 @@ Filter: 2010 year
 OR
 Use a slicer with years
 
---picture-- 
+```{r echo=F,out.width="100%",fig.align="left"}
+knitr::include_graphics("figures/ch04/word_cloud.png")
+```
 
-Map chart- Lat and Long values
+### Map chart- Lat and Long values
+
 Size: Population
 Colour: Income level
 
---picture--
+```{r echo=F,out.width="100%",fig.align="left"}
+knitr::include_graphics("figures/ch04/geo_map.png")
+```
