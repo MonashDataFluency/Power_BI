@@ -140,7 +140,7 @@ Once you have loaded the file, you will not see the contents automatically. You 
 Replace image with gapminder data.
 Numerical data has ∑ symbol.
 -->
-<p>In the previous chapter, we have seen how to import data into Power BI. We have also done basic pre-processing of data like cleaning the data, changing type of data, dealing with NaN value. In this section, we are going to work on the same processed data. So we are not going tto cover data laoding section again.</p>
+<p>In the previous chapter, we have seen how to import data into Power BI. We have also done basic pre-processing of data like cleaning the data, changing the type of data, dealing with NaN value. In this section, we are going to work on the same processed data. So we are not going to cover the data loading section again.</p>
 <div id="visualizations-panel" class="section level2">
 <h2><span class="header-section-number">3.1</span> Visualizations Panel</h2>
 <p>We touched upon the basics of the Visualization panel in Chapter-1; now we will look at this in detail. Inside the Visualization panel are the various types of plots that you can use to visualize your data. The available options are- Stacked bar chart, Line chart, Area chart, Scatter chart, Pie chart, etc. You can also import a custom visual from a file or the market-place if you click on <strong>…</strong> icon. We will explore that in the later section.</p>
@@ -164,7 +164,9 @@ Numerical data has ∑ symbol.
 <p>x-Axis: year y-Axis: life_exp. Right-click on drop-down button and tick “<strong>Don’t summarize</strong>” option. Legend: By region</p>
 <p><img src="figures/ch04/scatter_plot_3_by_region.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
 <p><strong>Optional activity:</strong> In the same chart, try the following: Size: By population</p>
-<p><strong>Challenge 1:</strong> Keep the summarize option ON. Create a chart with the following options:</p>
+</div>
+<div id="challenge-1-keep-the-summarize-option-on.-create-a-chart-with-the-following-options" class="section level3 challenge">
+<h3><span class="header-section-number">3.1.2</span> Challenge 1: Keep the summarize option ON. Create a chart with the following options:</h3>
 <p>x-Axis: year</p>
 <p>y-Axis: life_exp</p>
 <p>Legend: By region</p>
@@ -174,33 +176,37 @@ Numerical data has ∑ symbol.
 <p><img src="figures/ch04/challenge01.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
 </div>
 <div id="line-chart" class="section level3">
-<h3><span class="header-section-number">3.1.2</span> Line Chart</h3>
+<h3><span class="header-section-number">3.1.3</span> Line Chart</h3>
+<p>The plotting procedure for line chart is similar to the scatter plot. Again, we just need to do three things: (1) Select the line chart from the visualization panel, (2) drag the data to the respective axis values. Here, we are going to do plot life expectancy on y-axis and year on the x-axis. We also want to have a separate line for each country so we are going to add legend by name (country).</p>
 <p>Line chart Axis: Year Values: Life_exp Legend: By name</p>
 <p><img src="figures/ch04/linechart_life_exp_vs_year_by_name.png" width="100%" style="display: block; margin: auto auto auto 0;" /> Axis: Year Values: Average of Life_exp Legend: By region</p>
 <p><img src="figures/ch04/linechart_avg_life_exp_vs_year_by_region.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
 </div>
 <div id="bar-plots" class="section level3">
-<h3><span class="header-section-number">3.1.3</span> Bar Plots</h3>
-<p>Axis: Year Values: Population Legend: By region</p>
+<h3><span class="header-section-number">3.1.4</span> Bar Plots</h3>
+<p>Again, the procedure to plot bar plot is similar to the line and/or scatter plot. We will see almost every plot have a similar procedure. Axis: Year Values: Population Legend: By region</p>
 <p><img src="figures/ch04/bar_chart_pop_vs_year_by_region.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
 </div>
 <div id="trends-in-scatter-plot" class="section level3">
-<h3><span class="header-section-number">3.1.4</span> Trends in scatter plot</h3>
+<h3><span class="header-section-number">3.1.5</span> Trends in scatter plot</h3>
 <p><img src="figures/ch04/trend_life_exp_vs_year_by_region.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
 </div>
 </div>
 <div id="plot-modifications" class="section level2">
 <h2><span class="header-section-number">3.2</span> Plot modifications</h2>
 <p>Filter data Beautify plots: Font- Segoe(Bold) Font size: 12 Font color: Black Slicer: By year By country (challenge)</p>
-<p><strong>Challenge 3:</strong> <strong>A:</strong> Create a scatter-plot of this with: gdp_percap as x. life_exp as y. population as the size. region as the label.</p>
-<p><img src="figures/ch04/challenge3a.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
-<p><strong>B:</strong> Filter the data for year-2010 only.</p>
-<p><strong>C:</strong> Use the slicer to visualize data for different countries For all countries</p>
-<p><img src="figures/ch04/challenge3c.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
 <p>For Bangladesh</p>
 <p><img src="figures/ch04/bangladesh.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
 <p>For Bangladesh and Brazil</p>
 <p><img src="figures/ch04/bangladesh_and_brazil.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
+<div id="challenge-3-scatter-plot" class="section level3 challenge">
+<h3><span class="header-section-number">3.2.1</span> Challenge 3: Scatter Plot</h3>
+<p><strong>A:</strong> Create a scatter-plot of this with: gdp_percap as x. life_exp as y. population as the size. region as the label.</p>
+<p><img src="figures/ch04/challenge3a.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
+<p><strong>B:</strong> Filter the data for year-2010 only.</p>
+<p><strong>C:</strong> Use the slicer to visualize data for different countries For all countries</p>
+<p><img src="figures/ch04/challenge3c.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
 </div>
 <div id="explore-marketplace-for-other-plot-types" class="section level2">
 <h2><span class="header-section-number">3.3</span> Explore Marketplace for other plot types</h2>
@@ -208,11 +214,13 @@ Numerical data has ∑ symbol.
 <p><img src="figures/ch04/marketplace.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
 <p>Once you click on Import from marketplace, It will pop a new window, where you can search for various types of templates. For example, we are looking for the Word Cloud template. Type Word Cloud in the search box, once you find the template click on the “<strong>Add icon</strong>” then it will added to the visualization panel.</p>
 <p><img src="figures/ch04/wordcloud.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
-<p><strong>Challenge 4:</strong> Create a WordCloud for countries by GDP per capita.</p>
+<div id="challenge-4-create-a-wordcloud-for-countries-by-gdp-per-capita" class="section level3 challenge">
+<h3><span class="header-section-number">3.3.1</span> Challenge 4: Create a WordCloud for countries by GDP per capita</h3>
 <p>WordCloud Category: name Values: GDP per capita Filter: 2010 year OR Use a slicer with years</p>
 <p><img src="figures/ch04/word_cloud.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
 <div id="map-chart--lat-and-long-values" class="section level3">
-<h3><span class="header-section-number">3.3.1</span> Map chart- Lat and Long values</h3>
+<h3><span class="header-section-number">3.3.2</span> Map chart- Lat and Long values</h3>
 <p>Size: Population Colour: Income level</p>
 <p><img src="figures/ch04/geo_map.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
 

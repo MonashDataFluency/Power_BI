@@ -36,7 +36,7 @@ Once you have loaded the file, you will not see the contents automatically. You 
 Replace image with gapminder data.
 Numerical data has ∑ symbol.
 -->
-In the previous chapter, we have seen how to import data into Power BI. We have also done basic pre-processing of data like cleaning the data, changing type of data, dealing with NaN value. In this section, we are going to work on the same processed data. So we are not  going tto cover data laoding section again.
+In the previous chapter, we have seen how to import data into Power BI. We have also done basic pre-processing of data like cleaning the data, changing the type of data, dealing with NaN value. In this section, we are going to work on the same processed data. So we are not going to cover the data loading section again.
 
 
 ## Visualizations Panel
@@ -107,7 +107,7 @@ knitr::include_graphics("figures/ch04/scatter_plot_3_by_region.png")
 Size: By population
 
 
-**Challenge 1:** Keep the summarize option ON. Create a chart with the following options:
+### Challenge 1: Keep the summarize option ON. Create a chart with the following options:{.challenge}
 
 x-Axis: year
 
@@ -129,6 +129,9 @@ knitr::include_graphics("figures/ch04/challenge01.png")
 ```
 
 ### Line Chart
+
+The plotting procedure for line chart is similar to the scatter plot. Again, we just need to do three things: (1) Select the line chart from the visualization panel, (2) drag the data to the respective axis values. Here, we are going to do plot life expectancy on y-axis and year on the x-axis. We also want to have a separate line for each country so we are going to add legend by name (country).
+
 Line chart
 Axis: Year
 Values: Life_exp
@@ -149,6 +152,7 @@ knitr::include_graphics("figures/ch04/linechart_avg_life_exp_vs_year_by_region.p
 
 ### Bar Plots
 
+Again, the procedure to plot bar plot is similar to the line and/or scatter plot. We will see almost every plot have a similar procedure.
 Axis: Year
 Values: Population 
 Legend: By region
@@ -176,7 +180,21 @@ Slicer:
 	By country (challenge)
 
 
-**Challenge 3:**
+For Bangladesh
+
+```{r echo=F,out.width="100%",fig.align="left"}
+knitr::include_graphics("figures/ch04/bangladesh.png")
+```
+
+For Bangladesh and Brazil
+
+```{r echo=F,out.width="100%",fig.align="left"}
+knitr::include_graphics("figures/ch04/bangladesh_and_brazil.png")
+```
+
+
+
+### Challenge 3: Scatter Plot {.challenge}
 **A:** Create a scatter-plot of this with:
 gdp_percap as x.
 life_exp as y.
@@ -200,17 +218,6 @@ knitr::include_graphics("figures/ch04/challenge3c.png")
 
 
 
-For Bangladesh
-
-```{r echo=F,out.width="100%",fig.align="left"}
-knitr::include_graphics("figures/ch04/bangladesh.png")
-```
-
-For Bangladesh and Brazil
-
-```{r echo=F,out.width="100%",fig.align="left"}
-knitr::include_graphics("figures/ch04/bangladesh_and_brazil.png")
-```
 
 ## Explore Marketplace for other plot types
 
@@ -230,7 +237,7 @@ knitr::include_graphics("figures/ch04/wordcloud.png")
 ```
 
 
-**Challenge 4:** Create a WordCloud for countries by GDP per capita.
+### Challenge 4: Create a WordCloud for countries by GDP per capita {.challenge}
 
 WordCloud
 Category: name
