@@ -1,4 +1,4 @@
-# Import dataset and modelling (preprocessing)
+# Import dataset and modelling 
 
 Power BI can connect to a whole range of data sources, right from Excel sheets, Local databases to several Cloud services. Currently, over 60 different cloud services have specific connectors to help you connect with generic sources through XML, CSV, text, and ODBC. 
 Let us start connecting to one of the data sources. For today we will be working on `gap_minder_map.csv` file.

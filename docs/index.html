@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Introduction to Power BI</title>
   <meta name="description" content="Introduction to Power BI" />
-  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Introduction to Power BI" />
   <meta property="og:type" content="book" />
@@ -30,7 +30,7 @@
   
   
 
-<link rel="next" href="introduction-to-powerbi.html">
+<link rel="next" href="introduction-to-powerbi.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -61,7 +61,7 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Setup</a></li>
 <li class="chapter" data-level="1" data-path="introduction-to-powerbi.html"><a href="introduction-to-powerbi.html"><i class="fa fa-check"></i><b>1</b> Introduction to PowerBI</a><ul>
 <li class="chapter" data-level="1.1" data-path="introduction-to-powerbi.html"><a href="introduction-to-powerbi.html#overview-of-power-bi"><i class="fa fa-check"></i><b>1.1</b> Overview of Power BI</a></li>
 <li class="chapter" data-level="1.2" data-path="introduction-to-powerbi.html"><a href="introduction-to-powerbi.html#the-parts-of-power-bi"><i class="fa fa-check"></i><b>1.2</b> The parts of Power BI</a></li>
@@ -71,10 +71,10 @@
 <li class="chapter" data-level="1.6" data-path="introduction-to-powerbi.html"><a href="introduction-to-powerbi.html#building-blocks-of-power-bi"><i class="fa fa-check"></i><b>1.6</b> Building blocks of Power BI:</a></li>
 <li class="chapter" data-level="1.7" data-path="introduction-to-powerbi.html"><a href="introduction-to-powerbi.html#power-bi-services"><i class="fa fa-check"></i><b>1.7</b> Power BI Services:</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="import-dataset-and-modelling-preprocessing.html"><a href="import-dataset-and-modelling-preprocessing.html"><i class="fa fa-check"></i><b>2</b> Import dataset and modelling (preprocessing)</a><ul>
-<li class="chapter" data-level="2.1" data-path="import-dataset-and-modelling-preprocessing.html"><a href="import-dataset-and-modelling-preprocessing.html#importing-data-into-power-bi-desktop"><i class="fa fa-check"></i><b>2.1</b> Importing data into Power BI Desktop</a></li>
-<li class="chapter" data-level="2.2" data-path="import-dataset-and-modelling-preprocessing.html"><a href="import-dataset-and-modelling-preprocessing.html#dealing-with-errors"><i class="fa fa-check"></i><b>2.2</b> Dealing with errors</a></li>
-<li class="chapter" data-level="2.3" data-path="import-dataset-and-modelling-preprocessing.html"><a href="import-dataset-and-modelling-preprocessing.html#applied-steps-in-modelling-data"><i class="fa fa-check"></i><b>2.3</b> ‘Applied steps’ in modelling data</a></li>
+<li class="chapter" data-level="2" data-path="import-dataset-and-modelling.html"><a href="import-dataset-and-modelling.html"><i class="fa fa-check"></i><b>2</b> Import dataset and modelling</a><ul>
+<li class="chapter" data-level="2.1" data-path="import-dataset-and-modelling.html"><a href="import-dataset-and-modelling.html#importing-data-into-power-bi-desktop"><i class="fa fa-check"></i><b>2.1</b> Importing data into Power BI Desktop</a></li>
+<li class="chapter" data-level="2.2" data-path="import-dataset-and-modelling.html"><a href="import-dataset-and-modelling.html#dealing-with-errors"><i class="fa fa-check"></i><b>2.2</b> Dealing with errors</a></li>
+<li class="chapter" data-level="2.3" data-path="import-dataset-and-modelling.html"><a href="import-dataset-and-modelling.html#applied-steps-in-modelling-data"><i class="fa fa-check"></i><b>2.3</b> ‘Applied steps’ in modelling data</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="plotting.html"><a href="plotting.html"><i class="fa fa-check"></i><b>3</b> Plotting</a><ul>
 <li class="chapter" data-level="3.1" data-path="plotting.html"><a href="plotting.html#visualizations-panel"><i class="fa fa-check"></i><b>3.1</b> Visualizations Panel</a></li>
@@ -108,39 +108,46 @@
 <h1 class="title">Introduction to Power BI</h1>
 </div>
 <div id="index" class="section level1 unnumbered">
-<h1>Introduction</h1>
+<h1>Setup</h1>
 <p><img src="figures/powerbi.png" width="25%" style="display: block; margin: auto auto auto 0;" /></p>
 <p>These are course notes for the “Introduction to Power BI” course given by the <a href="https://www.monash.edu/researchinfrastructure/bioinformatics">Monash Bioinformatics Platform</a> for the <a href="https://monashdatafluency.github.io/">Monash Data Fluency</a> initiative. Our teaching style is based on the style of <a href="https://carpentries.org/">The Carpentries</a>.</p>
 <ul>
-<li><a href="https://monashdatafluency.github.io/powerbi/powerbi-intro.pdf">PDF version for printing</a></li>
+<li><a href="https://github.com/MonashDataFluency/Power_BI/raw/master/docs/powerbi-intro.pdf">PDF version for printing</a></li>
 <li><a href="https://monashdatafluency.github.io/powerbi-intro/powerbi-files.zip">ZIP of data files used in this workshop</a></li>
 </ul>
 <p>During this workshop we will be using Power BI Desktop installed on your computer. There are several ways to download Power BI Desktop, depending on which system you use.</p>
-<ol style="list-style-type: decimal">
-<li>Windows User</li>
-</ol>
+<p><strong>1. Windows</strong></p>
 <ul>
-<li>Power BI website You can download Power BI Desktop from the website and install it as an application on your computer. Monash machine, My software, contact eSolutions to gain admin access(link to eSolution)</li>
+<li>Windows Store</li>
 </ul>
+<p>The first option is to visit Windows Store to get the <a href="https://www.microsoft.com/en-au/p/power-bi-desktop/9ntxr16hnw1t?activetab=pivot:overviewtab">Power BI Desktop app</a> and install it. Note that the system requirements is Windows 10 version 14393.0 or higher.</p>
+<p><img src="figures/ch01/AppStore.png" width="80%" style="display: block; margin: auto;" /></p>
+<p>If you are using a Monash machine, try searching “Power BI” in “<a href="https://www.monash.edu/esolutions/software/install-software-on-monash-devices">Software Center</a>” and install it. For questions concerning installation on a Monash machine, you may <a href="https://www.monash.edu/esolutions/contact">contact eSolutions</a> for help.</p>
+<p><img src="figures/ch01/SoftwareCenter.png" width="80%" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Power BI website</li>
+</ul>
+<p>You can also download Power BI Desktop from the <a href="http://go.microsoft.com/fwlink/?LinkID=521662">Power BI website</a> and install it as an application on your computer.</p>
+<p><img src="figures/ch01/WebInstall.png" width="60%" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Power BI service</li>
+</ul>
+<p>Or if you prefer <a href="https://app.powerbi.com/home">Power BI Service</a>, you can get it by clicking the “download” button in the upper right and selecting “Power BI Desktop”. To use Power BI service, you may need to <a href="https://powerbi.microsoft.com/en-us/landing/signin/">sign in</a> your Microsoft account.</p>
+<p><img src="figures/ch01/Service.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>After the setup process, you will be able to see the following Start Screen.</p>
-<ul>
-<li><p>Windows Store Or you can visit Windows Store to get the Power BI Desktop app and install it. Note that the system requirements is Windows 10 version 14393.0 or higher.</p></li>
-<li><p>Power BI service You can also download it from the Power BI service by clicking the download button in the upper right and selecting Power BI Desktop. To use Power BI service, you may need a Microsoft account.</p></li>
-</ul>
-<ol start="2" style="list-style-type: decimal">
-<li>Mac User</li>
-</ol>
-<p>Power BI Desktop is not available on Macs. There are two main options. Dual BootCamp The first is to run a Windows session on your Mac via BootCamp or something similar. This is probably a longer term solution until Microsoft release a Mac version. MoVE: TODO</p>
-<p>After installing Power BI Desktop, you can sign up for Power BI using your Monash account here By signing in the Power BI Desktop, you will be able to save your work and later publish it to the Power BI service.</p>
-<ol start="3" style="list-style-type: decimal">
-<li>Linux Users</li>
-</ol>
-<p>TODO</p>
-<p>Data</p>
-<p>Please download the data file here for the course.</p>
+<p><img src="figures/ch01/WelcomePage.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><strong>2. MacOS</strong></p>
+<p>Power BI Desktop is not available on Macs. However, you can run a Windows session on your Mac via <a href="https://support.apple.com/en-au/HT201468">BootCamp</a> or something similar. This is probably a longer term solution until Microsoft release a Mac version.</p>
+<p><strong>3. Linux</strong></p>
+<p>Currently it is not possible to install Power BI desktop on Linux. You can choose to install it on a Windows Virtual Machine like <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> or something similar.</p>
+<p>After installing Power BI Desktop, you can sign up for Power BI using your Monash account <a href="https://signup.microsoft.com/signup?sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&amp;email=&amp;ru=https%3A%2F%2Fapp.powerbi.com%3Fpbi_source%3Dweb%26redirectedFromSignup%3D1%26noSignUpCheck%3D1">here</a>. By signing in the Power BI Desktop, you will be able to save your work and later publish it to the Power BI service.</p>
+<div id="data" class="section level3 unnumbered">
+<h3>Data</h3>
+<p>Please download the data file <code>gap-minder.csv</code> <a href="https://raw.githubusercontent.com/MonashDataFluency/Power_BI/master/powerbi-files/gap-minder.csv">here</a> for the course.</p>
+</div>
 <div id="source-code" class="section level3 unnumbered">
 <h3>Source code</h3>
-<p>This book was created in R using the <code>rmarkdown</code> and <code>bookdown</code> packages!</p>
+<p>This book was created in R using the <code>rmarkdown</code> and <code>bookdown</code> packages.</p>
 <ul>
 <li><a href="https://github.com/MonashDataFluency/Power_BI">GitHub page</a></li>
 </ul>
@@ -148,7 +155,7 @@
 <div id="authors-and-copyright" class="section level3 unnumbered">
 <h3>Authors and copyright</h3>
 <p>This course is developed for the Monash Data Fluency Team.</p>
-<p><img src="figures/CC-BY.png" style="display: block; margin: auto;" /></p>
+<p><img src="figures/CC-BY.png" width="44" style="display: block; margin: auto;" /></p>
 <p>This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">CC BY-4: Creative Commons Attribution 4.0 International License</a>. The attribution is “Monash Bioinformatics Platform” if copying or modifying these notes.</p>
 <p>Data files are derived from Gapminder, which has a CC BY-4 license. The attribution is “Free data from www.gapminder.org”. The data is given here in a form designed to teach various points about the R language. Refer to the <a href="https://www.gapminder.org">Gapminder site</a> for the original form of the data if using it for other uses.</p>
 
