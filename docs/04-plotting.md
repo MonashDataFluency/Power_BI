@@ -6,7 +6,7 @@ Load the `gap_minder_map.csv` file in PowerBI desktop
 
 Click on "**Get Data**" dropdown icon, and go to Text/CSV option; a dialog box will appear. 
 
-<img src="figures/powerbi.png" width="25%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/powerbi.png" width="25%" style="display: block; margin: auto;" />
 
 --picture-- 
 
@@ -44,7 +44,7 @@ Inside the Visualization panel are the various types of plots that you can use t
 
 
 <!--picture--->
-<img src="figures/ch04/visualization_panel.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/visualization_panel.png" width="100%" style="display: block; margin: auto;" />
 
 
 ### Scatter chart
@@ -52,15 +52,15 @@ Inside the Visualization panel are the various types of plots that you can use t
 The first plot we are going to plot is a scatter plot. The first step to plot any kind of plot in Power BI is to select the plot template/type from the visualization panel. Click on the scatter chart icon in the visualization panel and drag the axis values to the respective value field as shown in the below figure.
 
 <!--picture--->
-<img src="figures/ch04/scatter_plot_1.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/scatter_plot_1.png" width="60%" style="display: block; margin: auto;" />
 
 After doing the above steps, it will generate a nice scatter plot like this:
 
 <!--picture---> 
-<img src="figures/ch04/scatter_plot_2.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/scatter_plot_2.png" width="80%" style="display: block; margin: auto;" />
 The final interface will look like this:
 <!--picture--->
-<img src="figures/ch04/scatter_plot_3.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/scatter_plot_3.png" width="100%" style="display: block; margin: auto;" />
 
 Isn’t this simple to plot scatter plot in the Power BI? In general, this will be the procedure to plot any type of plot in the Power BI: Select the type of plot in the visualization section, drag data for the axis values. That’s it.
 
@@ -74,7 +74,7 @@ x-Axis: year
 y-Axis: life_exp. Right-click on drop-down button and tick "**Don’t summarize**" option.
 Legend: By name
 
-<img src="figures/ch04/scatter_plot_2_by_country.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/scatter_plot_2_by_country.png" width="80%" style="display: block; margin: auto;" />
 
 'PowerBI automatically summarizes the numerical data. Always be careful with that.'
 
@@ -87,13 +87,13 @@ x-Axis: year
 y-Axis: life_exp. Right-click on drop-down button and tick "**Don’t summarize**" option.
 Legend: By region
 
-<img src="figures/ch04/scatter_plot_3_by_region.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/scatter_plot_3_by_region.png" width="80%" style="display: block; margin: auto;" />
 
 **Optional activity:** In the same chart, try the following:
 Size: By population
 
 
-### Challenge 1: Keep the summarize option ON. Create a chart with the following options:{.challenge}
+### Challenge 1: Keep the summarize option ON. Create a chart with the following options: {.challenge}
 
 x-Axis: year
 
@@ -110,7 +110,7 @@ Computes the sum of life_Exp in all countries in a given region, and plots it.
 Computes the average of life_Exp in all countries in a given region, and plots it.
 
 
-<img src="figures/ch04/challenge01.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/challenge01.png" width="100%" style="display: block; margin: auto;" />
 
 ### Line Chart
 
@@ -121,12 +121,12 @@ Axis: Year
 Values: Life_exp
 Legend: By name
 
-<img src="figures/ch04/linechart_life_exp_vs_year_by_name.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/linechart_life_exp_vs_year_by_name.png" width="80%" style="display: block; margin: auto;" />
 Axis: Year
 Values: Average of Life_exp
 Legend: By region
 
-<img src="figures/ch04/linechart_avg_life_exp_vs_year_by_region.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/linechart_avg_life_exp_vs_year_by_region.png" width="80%" style="display: block; margin: auto;" />
 
 
 
@@ -138,11 +138,11 @@ Values: Population
 Legend: By region
 
 
-<img src="figures/ch04/bar_chart_pop_vs_year_by_region.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/bar_chart_pop_vs_year_by_region.png" width="80%" style="display: block; margin: auto;" />
 
 ### Trends in scatter plot
 
-<img src="figures/ch04/trend_life_exp_vs_year_by_region.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/trend_life_exp_vs_year_by_region.png" width="80%" style="display: block; margin: auto;" />
 
 ## Plot modifications
 
@@ -158,11 +158,11 @@ Slicer:
 
 For Bangladesh
 
-<img src="figures/ch04/bangladesh.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/bangladesh.png" width="80%" style="display: block; margin: auto;" />
 
 For Bangladesh and Brazil
 
-<img src="figures/ch04/bangladesh_and_brazil.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/bangladesh_and_brazil.png" width="80%" style="display: block; margin: auto;" />
 
 
 
@@ -173,7 +173,7 @@ life_exp as y.
 population as the size.
 region as the label.
 
-<img src="figures/ch04/challenge3a.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/challenge3a.png" width="80%" style="display: block; margin: auto;" />
 
 
 **B:**  Filter the data for year-2010 only.
@@ -181,7 +181,7 @@ region as the label.
 **C:** Use the slicer to visualize data for different countries
 	For all countries
 
-<img src="figures/ch04/challenge3c.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/challenge3c.png" width="80%" style="display: block; margin: auto;" />
 
 
 
@@ -192,13 +192,13 @@ region as the label.
 Till now, we have seen several different kinds of plots. Power BI comes with these default plots. There are other different kinds of plots are available in the marketplace. To import new plot template from the marketplace, click on the icon "**(...)**", i.e. three horizontal dots in the visualization panel then click on the import from the marketplace.
 
 
-<img src="figures/ch04/marketplace.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/marketplace.png" width="60%" style="display: block; margin: auto;" />
 
 
 Once you click on Import from marketplace, It will pop a new window, where you can search for various types of templates. For example, we are looking for the Word Cloud template. Type Word Cloud in the search box, once you find the template click on the "**Add icon**" then it will added to the visualization panel. 
 
 
-<img src="figures/ch04/wordcloud.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/wordcloud.png" width="100%" style="display: block; margin: auto;" />
 
 
 ### Challenge 4: Create a WordCloud for countries by GDP per capita {.challenge}
@@ -210,11 +210,11 @@ Filter: 2010 year
 OR
 Use a slicer with years
 
-<img src="figures/ch04/word_cloud.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/word_cloud.png" width="100%" style="display: block; margin: auto;" />
 
 ### Map chart- Lat and Long values
 
 Size: Population
 Colour: Income level
 
-<img src="figures/ch04/geo_map.png" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/ch04/geo_map.png" width="80%" style="display: block; margin: auto;" />

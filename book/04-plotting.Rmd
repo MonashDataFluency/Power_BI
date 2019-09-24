@@ -6,7 +6,7 @@ Load the `gap_minder_map.csv` file in PowerBI desktop
 
 Click on "**Get Data**" dropdown icon, and go to Text/CSV option; a dialog box will appear. 
 
-```{r echo=F,out.width="25%",fig.align="left"}
+```{r echo=F,out.width="25%",fig.align="center"}
 knitr::include_graphics("figures/powerbi.png")
 ```
 
@@ -46,7 +46,7 @@ Inside the Visualization panel are the various types of plots that you can use t
 
 
 <!--picture--->
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="100%",fig.align="center"}
 knitr::include_graphics("figures/ch04/visualization_panel.png")
 ```
 
@@ -56,19 +56,19 @@ knitr::include_graphics("figures/ch04/visualization_panel.png")
 The first plot we are going to plot is a scatter plot. The first step to plot any kind of plot in Power BI is to select the plot template/type from the visualization panel. Click on the scatter chart icon in the visualization panel and drag the axis values to the respective value field as shown in the below figure.
 
 <!--picture--->
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="60%",fig.align="center"}
 knitr::include_graphics("figures/ch04/scatter_plot_1.png")
 ```
 
 After doing the above steps, it will generate a nice scatter plot like this:
 
 <!--picture---> 
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/scatter_plot_2.png")
 ```
 The final interface will look like this:
 <!--picture--->
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="100%",fig.align="center"}
 knitr::include_graphics("figures/ch04/scatter_plot_3.png")
 ```
 
@@ -84,7 +84,7 @@ x-Axis: year
 y-Axis: life_exp. Right-click on drop-down button and tick "**Don’t summarize**" option.
 Legend: By name
 
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/scatter_plot_2_by_country.png")
 ```
 
@@ -99,7 +99,7 @@ x-Axis: year
 y-Axis: life_exp. Right-click on drop-down button and tick "**Don’t summarize**" option.
 Legend: By region
 
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/scatter_plot_3_by_region.png")
 ```
 
@@ -107,7 +107,7 @@ knitr::include_graphics("figures/ch04/scatter_plot_3_by_region.png")
 Size: By population
 
 
-### Challenge 1: Keep the summarize option ON. Create a chart with the following options:{.challenge}
+### Challenge 1: Keep the summarize option ON. Create a chart with the following options: {.challenge}
 
 x-Axis: year
 
@@ -124,7 +124,7 @@ Computes the sum of life_Exp in all countries in a given region, and plots it.
 Computes the average of life_Exp in all countries in a given region, and plots it.
 
 
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="100%",fig.align="center"}
 knitr::include_graphics("figures/ch04/challenge01.png")
 ```
 
@@ -137,14 +137,14 @@ Axis: Year
 Values: Life_exp
 Legend: By name
 
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/linechart_life_exp_vs_year_by_name.png")
 ```
 Axis: Year
 Values: Average of Life_exp
 Legend: By region
 
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/linechart_avg_life_exp_vs_year_by_region.png")
 ```
 
@@ -158,13 +158,13 @@ Values: Population
 Legend: By region
 
 
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/bar_chart_pop_vs_year_by_region.png")
 ```
 
 ### Trends in scatter plot
 
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/trend_life_exp_vs_year_by_region.png")
 ```
 
@@ -182,13 +182,13 @@ Slicer:
 
 For Bangladesh
 
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/bangladesh.png")
 ```
 
 For Bangladesh and Brazil
 
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/bangladesh_and_brazil.png")
 ```
 
@@ -201,7 +201,7 @@ life_exp as y.
 population as the size.
 region as the label.
 
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/challenge3a.png")
 ```
 
@@ -211,7 +211,7 @@ knitr::include_graphics("figures/ch04/challenge3a.png")
 **C:** Use the slicer to visualize data for different countries
 	For all countries
 
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/challenge3c.png")
 ```
 
@@ -224,7 +224,7 @@ knitr::include_graphics("figures/ch04/challenge3c.png")
 Till now, we have seen several different kinds of plots. Power BI comes with these default plots. There are other different kinds of plots are available in the marketplace. To import new plot template from the marketplace, click on the icon "**(...)**", i.e. three horizontal dots in the visualization panel then click on the import from the marketplace.
 
 
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="60%",fig.align="center"}
 knitr::include_graphics("figures/ch04/marketplace.png")
 ```
 
@@ -232,7 +232,7 @@ knitr::include_graphics("figures/ch04/marketplace.png")
 Once you click on Import from marketplace, It will pop a new window, where you can search for various types of templates. For example, we are looking for the Word Cloud template. Type Word Cloud in the search box, once you find the template click on the "**Add icon**" then it will added to the visualization panel. 
 
 
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="100%",fig.align="center"}
 knitr::include_graphics("figures/ch04/wordcloud.png")
 ```
 
@@ -246,7 +246,7 @@ Filter: 2010 year
 OR
 Use a slicer with years
 
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="100%",fig.align="center"}
 knitr::include_graphics("figures/ch04/word_cloud.png")
 ```
 
@@ -255,6 +255,6 @@ knitr::include_graphics("figures/ch04/word_cloud.png")
 Size: Population
 Colour: Income level
 
-```{r echo=F,out.width="100%",fig.align="left"}
+```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/geo_map.png")
 ```

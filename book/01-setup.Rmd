@@ -28,7 +28,7 @@ During this workshop we will be using Power BI Desktop installed on your compute
 
 **1. Windows** 
 
-* Windows Store
+* **Windows Store**
 
 The first option is to visit Windows Store to get the [Power BI Desktop app](https://www.microsoft.com/en-au/p/power-bi-desktop/9ntxr16hnw1t?activetab=pivot:overviewtab) and install it. Note that the system requirements is Windows 10 version 14393.0 or higher. 
 
@@ -36,13 +36,13 @@ The first option is to visit Windows Store to get the [Power BI Desktop app](htt
 knitr::include_graphics("figures/Ch01/AppStore.png")
 ```
 
-If you are using a Monash machine, try searching "Power BI" in "[Software Center](https://www.monash.edu/esolutions/software/install-software-on-monash-devices)" and install it. For questions concerning installation on a Monash machine, you may [contact eSolutions](https://www.monash.edu/esolutions/contact) for help. 
+If you are using a Monash machine, try searching "**Power BI**" in "[Software Center](https://www.monash.edu/esolutions/software/install-software-on-monash-devices)" and install it. For questions concerning installation on a Monash machine, you may [contact eSolutions](https://www.monash.edu/esolutions/contact) for help. 
 
 ```{r, fig.align = 'center', out.width = "80%", echo = FALSE}
 knitr::include_graphics("figures/Ch01/SoftwareCenter.png")
 ```
 
-* Power BI website
+* **Power BI website**
 
 You can also download Power BI Desktop from the [Power BI website](http://go.microsoft.com/fwlink/?LinkID=521662) and install it as an application on your computer. 
 
@@ -50,9 +50,9 @@ You can also download Power BI Desktop from the [Power BI website](http://go.mic
 knitr::include_graphics("figures/Ch01/WebInstall.png")
 ```
 
-* Power BI service
+* **Power BI service**
 
-Or if you prefer [Power BI Service](https://app.powerbi.com/home), you can get it by clicking the "download" button in the upper right and selecting "Power BI Desktop". To use Power BI service, you may need to [sign in](https://powerbi.microsoft.com/en-us/landing/signin/) your Microsoft account. 
+Or if you prefer [Power BI Service](https://app.powerbi.com/home), you can get it by clicking the "**download**" button in the upper right and selecting "**Power BI Desktop**". To use Power BI service, you may need to [sign in](https://powerbi.microsoft.com/en-us/landing/signin/) your Microsoft account. 
 
 ```{r, fig.align = 'center', out.width = "100%", echo = FALSE}
 knitr::include_graphics("figures/Ch01/Service.png")
