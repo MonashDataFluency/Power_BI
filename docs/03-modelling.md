@@ -9,17 +9,17 @@ Power BI Desktop has a "**Get Data**" button from the ribbon on the "**Home**" t
 
 As our first step to import the dataset/file into Power BI, we click on the Get Data icon on the ribbon of Home tab.
 
---picture--
+<img src="figures/ch03/2.1_Importing_data.png" width="80%" style="display: block; margin: auto;" />
 
 Once we select this, we go ahead and select the "**CSV option**" under the "**file**" subheading. 
 
---picture--
+<img src="figures/ch03/2.1.2_Importing_data.png" width="80%" style="display: block; margin: auto;" />
 
 Then browse the file and select the necessary CSV file. Press on "**Connect**" to have a quick preview of the file. Once we click on "**load**", Power BI will successfully import the file. Any errors will then pop up ready to be analysed and fixed.
 
---picture--
+<img src="figures/ch03/2.1.3_Importing_data.png" width="80%" style="display: block; margin: auto;" />
 
---picture--
+<img src="figures/ch03/2.1.4_Importing_data.png" width="80%" style="display: block; margin: auto;" />
 
 Clicking on "**View errors**" will enable us to check the detected errors right away. Alternatively, you close the pop up and click "**Edit queries**" to check for any errors. This will query and list the errors in the data. 
 
@@ -52,8 +52,11 @@ Replacing missing values is not always a direct operation. Most of the times, th
 Let us cancel this particular step in the “Applied steps” by clicking on the red crossmark right next to "**Replaced Value**"’.
 
 
+### Challenge 1: Replace missing values 
+options:{.challenge}
 
-### Challenge 1: Replace missing values
+**Solution:**
+
 
 ## 'Applied steps' in modelling data
 
@@ -92,6 +95,8 @@ Example:
 - Click on `gdp_percap`, click on the "**Add Column**" tab, click duplicate to create a separate column to run calculations on.
 
 ### Challenge 2: 
+options:{.challenge}
+
 perform simple mathematical operation and add this as a new column
 Let’s say you want to calculate total Gross Domestic Products (GDP) per country. Total GDP = Population x GDP per capita. Working with the new `gdp_percap` column you created in the previous example, create a new column with Total GDP per country.
 
