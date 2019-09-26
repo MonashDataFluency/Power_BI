@@ -81,7 +81,9 @@ The above scatter plot doesn't provides much imformations. The only imformation 
 We are going too add legends to each data point, this will help us to analyize life expectancy with resppect to country-wise. In order to add legend, do the following steps:
 
 x-Axis: year
+
 y-Axis: life_exp. Right-click on drop-down button and tick "**Don’t summarize**" option.
+
 Legend: By name
 
 ```{r echo=F,out.width="80%",fig.align="center"}
