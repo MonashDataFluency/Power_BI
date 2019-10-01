@@ -8,13 +8,6 @@ To re-build the html and pdf documents and zip file, use:
 make
 ```
 
-To recreate the .csv files from files downloaded from Gapminder, use:
-
-```
-make ingest
-```
-
-
 ## Schedule
 
 ```

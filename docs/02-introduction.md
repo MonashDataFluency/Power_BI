@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Introduction to PowerBI
 
 ## Overview of Power BI
@@ -46,7 +51,7 @@ The basic building blocks in Power BI are:
 ### Visualizations
 A visualization is a representation of data in a visual format. It could be a line chart, a bar graph, a color coded map or anything interesting to present the data. 
 
---Picture of a final visualisation--
+<img src="figures/ch04/bar_chart_pop_vs_year_by_region.png" width="80%" style="display: block; margin: auto;" />
 
 Visualizations can be simple as a number representing something significant or it could be quite complex like multiple stacked chart showing the proportion users participating in a survey. The prime idea of visualisation is to show the data in a way that it tells the story that’s lying underneath it. Like its said, a picture says a thousand words. 
 
@@ -54,7 +59,7 @@ Visualizations can be simple as a number representing something significant or i
 A **dataset** is a collection of data that Power BI uses to create its visualizations.
 You can have a simple dataset that's based on a single table from a Microsoft Excel workbook, similar to what's shown in the following image.
 
---Picture of Dataset--
+<img src="figures/ch03/2.1.3_Importing_data.png" width="100%" style="display: block; margin: auto;" />
 
 Dataset can also be a combination of many different sources, which can be filtered using Power BI and combine into one to use. 
 
@@ -67,7 +72,7 @@ After you have a dataset, you can begin creating visualizations that show differ
 ### Reports:
 In Power BI, a **report** is a collection of visualizations that appear together on one or more pages. A report in Power BI is a collection of items that are related to each other. The following image shows a report that you would be creating by the end of the session. You can also create reports in the Power BI service.
 
--- Picture of report--
+<img src="figures/ch05/edit_report.png" width="100%" style="display: block; margin: auto;" />
 
 Reports let us create many visualizations and possibly on multiple pages based on the way the developer wants to tell the story. 
 
@@ -76,16 +81,13 @@ A Power BI dashboard is a collection of visuals from a single page that you can 
 
 A dashboard must fit on a single page, often called a canvas (the canvas is the blank backdrop in Power BI Desktop or the service, where you put visualizations). Think of it like the canvas that an artist or painter uses—a workspace where you create, combine, and rework interesting and compelling visuals. You can share dashboards with other users or groups, who can then interact with your dashboards when they're in the Power BI service or on their mobile device.
 
-### Tiles:
-TODO
-
 ## Power BI Services:
 
 ### Overview of Power BI Desktop
 Power BI Desktop is a free application for PCs that lets you gather, transform, and visualize your data. In this module, you'll learn how to find and collect data from different sources and how to clean or transform it. You'll also learn tricks to make data-gathering easier.
 Power BI Desktop and the Power BI Service work together. You can create your reports and dashboards in Power BI Desktop, and then publish them to the Power BI Service for others to consume.
 
---Picture of desktop view--
+<img src="figures/ch05/powerbi_desktop_options.png" width="100%" style="display: block; margin: auto;" />
 
 1. **Ribbon** - Displays common tasks that are associated with reports and visualizations.
 
