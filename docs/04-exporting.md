@@ -8,7 +8,7 @@ To save your work, go to **"File > Save"**, then choose an appropriate file name
 
 <img src="figures/ch05/save.png" width="100%" style="display: block; margin: auto;" />
 
-The file extension for Power BI files is “\*.pbix”. The .pbix files are highly compressed file types that contains all the graphics along with the actual data.
+The file extension for Power BI files is “.pbix”. The .pbix files are highly compressed file types that contains all the graphics along with the actual data.
 
 *Note: If you share your .pbix file with others, your actual data gets shared as well.*
 
@@ -28,7 +28,7 @@ It takes about 2-3 mins to finalise your report, then you will see the following
 
 <img src="figures/ch05/publish3.png" width="100%" style="display: block; margin: auto;" />
 
-Congratulations! Your report has been published to your workspace on PoweBI. To access it, click on **“Open “<YOUR_FILENAME.pbix>”** in Power BI”.
+Congratulations! Your report has been published to your workspace on PoweBI. To access it, click on **“Open <YOUR_FILENAME.pbix>”** in Power BI.
 
 
 <img src="figures/ch05/open_in_server.png" width="100%" style="display: block; margin: auto;" />
