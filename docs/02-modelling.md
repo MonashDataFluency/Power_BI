@@ -1,7 +1,7 @@
 # Import dataset and modelling 
 
-Power BI can connect to a whole range of data sources, right from Excel sheets, Local databases to several Cloud services. Currently, over 60 different cloud services have specific connectors to help you connect with generic sources through XML, CSV, text, and ODBC. 
-Let us start connecting to one of the data sources. For today we will be working on `gap_minder_map.csv` file.
+Power BI can connect to a whole range of data sources from Excel sheets and local databases to several Cloud services. Currently, over 60 different cloud services have specific connectors to help you connect with generic sources through XML, CSV, text, and ODBC. 
+Let us start connecting to one of the data sources. For today we will be working on the `gap_minder_map.csv` file.
 
 ## Importing data into Power BI Desktop
 
@@ -46,15 +46,15 @@ Make sure you see all the column names in the data on the bottom right corner.
 
 Data can have missing values for a number of reasons. This missing data is represented as `null` in the data. A lot of times it is important to deal with such values and fix or remove them. 
 
-In the "**Data**" section on the left sidebar, data can be viewed. By applying a filter to a particular column, the null values can be analysed. To replace any null values, we can go back to the "**Query Editor**" and use the “Replace values” option.
-
-Replacing missing values is not always a direct operation. Most of the times, the missing values must be carefully analyzed and values need to be computed based on several factors. This computational procedure can be programmed with DAX. 
-Let us cancel this particular step in the “Applied steps” by clicking on the red crossmark right next to "**Replaced Value**"’.
-
+In the "**Data**" section on the left sidebar, data can be viewed. By applying a filter to a particular column, the null values can be analysed. To replace any null values, we can go back to the "**Query Editor**" and use the “Replace values” option in the **Transform** tab. You can also remove error values by right-clicking a column and selecting the "Remove errors" option.
 
 ### Challenge 1: Replace missing values {.challenge}
 
-**Solution:**
+Use the "Replace values" option on the `gdp_percap` column to replace the blank values.
+Use the "Remove errors" option on the `life_exp` column to remove the error values caused by the blanks.
+
+Replacing missing values is not always a direct operation. Most of the times, the missing values must be carefully analyzed and values need to be computed based on several factors. While this can be done with DAX in Power BI, this is not a key capability of Power BI. Try to clean up and eliminate errors from your data before you import into Power BI. Power BI does ignore blank and error values when it comes to analysis and visualisation but this may not always be the best approach.
+Let us cancel these steps in the “Applied steps” by clicking on the red crossmark right next to "**Replaced Value**" and "**Removed Errors**".
 
 
 ## 'Applied steps' in modelling data
@@ -66,9 +66,9 @@ Columns from raw data can be difficult to read or meaningless. Renaming the colu
 There are two ways to rename the columns in Power BI. Right-clicking on the header of the column gives you a menu of functions that you can do to the column. Select "**Rename**" to rename the column. You can also click on the column and then click on the "**Transform**" tab, from here you are presented a variety of transformation functions for the column. From here you can click on "**Rename**".
 
 Example: 
-- Right-click on the "**name**" column header, click on "**Rename**" and rename the column to "**Country**".
+- Right-click on the `name` column header, click on "**Rename**" and rename the column to `Country`.
 
-- Click on the header for "**life_exp**"’. Click on the "**Transform**" tab and click rename. Rename the column to "**Life expectancy**".
+- Click on the header for `life_exp`. Click on the "**Transform**" tab and click rename. Rename the column to `Life expectancy`.
 
 ### Add and remove column
 
@@ -76,7 +76,7 @@ Example:
 
 Often when dealing with raw data you will find columns that are meaningless or unsuitable for your analysis. You can remove these columns in Query to eliminate clutter and streamline the data set making it easier to work with.
 
-There are two ways to remove columns in Power BI. Like in renaming a column, you can right-click the header, which will present a menu with the option to "**Remove**"’. You can also click on the column, click on the "**Home**" tab and then click "**Remove Columns**".
+There are two ways to remove columns in Power BI. Like in renaming a column, you can right-click the header, which will present a menu with the option to "**Remove**". You can also click on the column, click on the "**Home**" tab and then click "**Remove Columns**".
 
 Example: 
 You may not need the `g77` and `oecd` information.
@@ -95,8 +95,8 @@ Example:
 
 ### Challenge 2: {.challenge}
 
-perform simple mathematical operation and add this as a new column
-Let’s say you want to calculate total Gross Domestic Products (GDP) per country. Total GDP = Population x GDP per capita. Working with the new `gdp_percap` column you created in the previous example, create a new column with Total GDP per country.
+Perform a simple mathematical operation and add this as a new column.
+Let’s say you want to calculate Total Gross Domestic Products (GDP) per country. As Total GDP = Population x GDP per capita, using the new `gdp_percap` column you created in the previous example, create a new column with Total GDP per country.
 
 ### Navigating 'applied steps' and undoing
 
