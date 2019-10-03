@@ -5,7 +5,7 @@ Go to File > Save
 Select an appropriate file name and the folder where you want to save it. Click on Save.
 
 ```{r echo=F,out.width="100%",fig.align="center"}
-knitr::include_graphics("figures/ch05/save.png")
+knitr::include_graphics("figures/ch05/save1.png")
 ```
 
 The file extension for Power BI files is “.pbix”. The .pbix files are highly compressed file types that contains all the graphics along with the actual data.
