@@ -1,8 +1,8 @@
 # Plotting
 
 <!--
-## Import data set
-Load the `gap_minder_map.csv` file in PowerBI desktop
+  ## Import data set
+  Load the `gap_minder_map.csv` file in PowerBI desktop
 
 Click on "**Get Data**" dropdown icon, and go to Text/CSV option; a dialog box will appear. 
 
@@ -11,24 +11,24 @@ knitr::include_graphics("figures/powerbi.png")
 ```
 
 --picture-- 
+  
+  --picture--
+  
+  Locate your file and click "**Open**".
 
 --picture--
-
-Locate your file and click "**Open**".
-
---picture--
-
-Another dialog box will appear where you can see the contents of your file. Click on Load icon to "**Load**" the file in your Power BI Desktop.
+  
+  Another dialog box will appear where you can see the contents of your file. Click on Load icon to "**Load**" the file in your Power BI Desktop.
 
 --picture--
-
---picture--
-
---picture--
-
---picture--
-
-Once you have loaded the file, you will not see the contents automatically. You need to click on "**Edit Query**" icon under the Home tab in the taskbar to visualize the contents of your file. This will open a new window that looks like an Excel sheet.
+  
+  --picture--
+  
+  --picture--
+  
+  --picture--
+  
+  Once you have loaded the file, you will not see the contents automatically. You need to click on "**Edit Query**" icon under the Home tab in the taskbar to visualize the contents of your file. This will open a new window that looks like an Excel sheet.
 
 
 
@@ -36,7 +36,7 @@ Once you have loaded the file, you will not see the contents automatically. You 
 Replace image with gapminder data.
 Numerical data has ∑ symbol.
 -->
-In the previous chapter, we saw how to import data into Power BI. We also did some basic pre-processing of data like cleaning the data, changing the type of data, dealing with NaN values. In this section, we are going to work with our already processed data.
+  In the previous chapter, we saw how to import data into Power BI. We also did some basic pre-processing of data like cleaning the data, changing the type of data, dealing with NaN values. In this section, we are going to work with our already processed data.
 
 
 ## Visualizations Panel
@@ -46,7 +46,7 @@ One of the panels is the Visualization panel highlighted in the Red box. It cont
 
 
 <!--picture--->
-```{r echo=F,out.width="100%",fig.align="center"}
+  ```{r echo=F,out.width="100%",fig.align="center"}
 knitr::include_graphics("figures/ch04/visualization_panel.png")
 ```
 
@@ -80,9 +80,9 @@ Well, that was simple! In general, this will be the procedure to create any type
 
 The above scatter plot isn't interesting. Let's explore what other things can we do with this plot.
 
-    x-Axis: year
-    y-Axis: life_exp. Right-click on drop-down button and select "**Don’t summarize**" option.
-    Legend: By name. Drag name column and place it in legend field.
+x-Axis: year
+y-Axis: life_exp. Right-click on drop-down button and select "**Don’t summarize**" option.
+Legend: By name. Drag name column and place it in legend field.
 
 ```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/scatter_plot_2_by_country.png")
@@ -96,10 +96,10 @@ Can we do better?
 Let's see.
 
 Use following parameters to create your chart:
-
-    x-Axis: year. Right-click on drop-down button and Select "**Don’t summarize**" option.
-    y-Axis: life_exp. Right-click on drop-down button and Select "**Don’t summarize**" option.
-    Legend: By region. 
+  
+  x-Axis: year. Right-click on drop-down button and Select "**Don’t summarize**" option.
+y-Axis: life_exp. Right-click on drop-down button and Select "**Don’t summarize**" option.
+Legend: By region. 
 
 ```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/scatter_plot_3_by_region.png")
@@ -118,12 +118,12 @@ Report what follows.
 ### Challenge 1: Summarize data{.challenge}
 Create a chart with the following options: 
 
-    x-Axis: year
-    y-Axis: life_exp. Keep the summarize option ON for life_exp. 
-    Legend: By region
+x-Axis: year
+y-Axis: life_exp. Keep the summarize option ON for life_exp. 
+Legend: By region
 
 Explain the chart.
- 
+
 Click on the dropdown menu and select "**Average**" and explain the difference.
 
 **Solution1:**
@@ -138,10 +138,10 @@ knitr::include_graphics("figures/ch04/challenge01.png")
 ### Line Chart
 
 Let's select a line chart from the visualization panel. Drog and drop following columns:
-
-    Axis: Year
-    Values: Life_exp
-    Legend: By name
+  
+  Axis: Year
+Values: Life_exp
+Legend: By name
 
 ```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/linechart_life_exp_vs_year_by_name.png")
@@ -149,9 +149,9 @@ knitr::include_graphics("figures/ch04/linechart_life_exp_vs_year_by_name.png")
 
 We get differently colored lines for each country. Let's try `by region`. What do we get?
 
-    Axis: Year
-    Values: Average of Life_exp. Select "**Average**"
-    Legend: By region
+Axis: Year
+Values: Average of Life_exp. Select "**Average**"
+Legend: By region
 
 ```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/linechart_avg_life_exp_vs_year_by_region.png")
@@ -164,9 +164,9 @@ Power BI computes average of Life expectancy for countries in each regions and s
 
 Select the bar chart from the Visualization panel and drag the following columns:
 
-    Axis: Year
-    Values: Population 
-    Legend: By region
+Axis: Year
+Values: Population 
+Legend: By region
 
 
 ```{r echo=F,out.width="80%",fig.align="center"}
@@ -184,10 +184,10 @@ knitr::include_graphics("figures/ch04/trend_life_exp_vs_year_by_region.png")
 ### Challenge 2: Scatter Plot {.challenge}
 Create a scatter-plot with following information:
 
-    gdp_percap as x.
-    life_exp as y.
-    population as the size.
-    region as the label.
+gdp_percap as x.
+life_exp as y.
+population as the size.
+region as the label.
 
 ```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/solution2.png")
@@ -222,19 +222,19 @@ knitr::include_graphics("figures/ch04/solution3.png")
 ### Beautify plots:
 
 In the Visualization panel, under the chart icons, three separate tabs can be seen. The first one is the "**Fields**" where we drop the data columns. The second icon looks like a paint roller which is to "**Format**" the plots. The third icon that looks like a magnifying glass is for performing "**Analytics**" for example, add a trend line. To beautify the plots, we will be exploring the "**Format**" icon. Let's format the plots with following parameters:
+  
+  Font- Segoe(Bold)
+Font size: 12
+Font color: Black
 
-    Font- Segoe(Bold)
-    Font size: 12
-    Font color: Black
-    
 You can edit the font size, face, color of axis lables, legends and titles in the "**Format**" section. 
 
 ### Slicer:
 In the chart types, locate "**Slicer**". Create a new blank Slicer chart. Drag and drop the `region` column in the data field. We have created a slicer and can visualize data for each region separately. Since Power BI is highly interactive, this slicer is applied to all the charts that we have created and will show the results for selected part in the slicer. You can chose to apply slicer to specific charts by turning it off for other charts.
 
 **How to Turn off slicer??**
-
-```{r echo=F,out.width="80%",fig.align="center"}
+  
+  ```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/slicer.png")
 ```
 
@@ -286,9 +286,9 @@ knitr::include_graphics("figures/ch04/wordcloud.png")
 
 a) Create a plot that compares GDP per capita for each country
 
-    Category: name
-    Values: GDP per capita
-    
+Category: name
+Values: GDP per capita
+
 b) Filter this for the year 2010.
 
 c) Use a slicer with years
@@ -299,9 +299,9 @@ knitr::include_graphics("figures/ch04/word_cloud.png")
 
 ### Map chart
 We need Latitude (lat) and Longitude (long) values to create a Map chart. For this, we use following parameters:
-
-    Size: Population
-    Color: Income level
+  
+  Size: Population
+Color: Income level
 
 ```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/geo_map.png")
