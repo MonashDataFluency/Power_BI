@@ -15,7 +15,7 @@ header-includes:
 
 <img src="figures/powerbi.png" width="25%" style="display: block; margin: auto auto auto 0;" />
 
-These are course notes for the "Introduction to Power BI" course given by the [Monash Bioinformatics Platform](https://www.monash.edu/researchinfrastructure/bioinformatics) for the [Monash Data Fluency](https://monashdatafluency.github.io/) initiative. Our teaching style is based on the style of [The Carpentries](https://carpentries.org/). 
+These the course notes for the "Introduction to Power BI" course given by the [Monash Bioinformatics Platform](https://www.monash.edu/researchinfrastructure/bioinformatics) for the [Monash Data Fluency](https://monashdatafluency.github.io/) initiative. Our teaching style is based on the style of [The Carpentries](https://carpentries.org/). 
 
 * [PDF version for printing](https://github.com/MonashDataFluency/Power_BI/raw/master/docs/powerbi-intro.pdf)
 * [ZIP of data files used in this workshop](https://monashdatafluency.github.io/powerbi-intro/powerbi-files.zip)
@@ -42,7 +42,7 @@ You can also download Power BI Desktop from the [Power BI website](http://go.mic
 
 * **Power BI service**
 
-Or if you prefer [Power BI Service](https://app.powerbi.com/home), you can get it by clicking the "**download**" button in the upper right and selecting "**Power BI Desktop**". To use Power BI service, you may need to [sign in](https://powerbi.microsoft.com/en-us/landing/signin/) your Microsoft account. 
+Or if you prefer [Power BI Service](https://app.powerbi.com/home), you can get it by clicking the "**Download**" button in the upper right and selecting "**Power BI Desktop**". To use Power BI service, you may need to [sign in](https://powerbi.microsoft.com/en-us/landing/signin/) your Microsoft account. 
 
 <img src="figures/Ch01/Service.png" width="100%" style="display: block; margin: auto;" />
 
@@ -52,17 +52,17 @@ After the setup process, you will be able to see the following Start Screen.
 
 **2. MacOS**
 
-Power BI Desktop is not available on Macs. However, you can run a Windows session on your Mac via [BootCamp](https://support.apple.com/en-au/HT201468) or something similar. This is probably a longer term solution until Microsoft release a Mac version.
+Power BI Desktop is not available on Macs. However, you can run a Windows session on your Mac via [BootCamp](https://support.apple.com/en-au/HT201468) or using a similar application.
 
 **3. Linux**
 
-Currently it is not possible to install Power BI desktop on Linux. You can choose to install it on a Windows Virtual Machine like [VirtualBox](https://www.virtualbox.org/wiki/Downloads) or something similar.
+Currently it is not possible to install Power BI desktop on Linux. You can choose to install it on a Windows Virtual Machine like [VirtualBox](https://www.virtualbox.org/wiki/Downloads) or using a similar application.
 
 After installing Power BI Desktop, you can sign up for Power BI using your Monash account [here](https://signup.microsoft.com/signup?sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&email=&ru=https%3A%2F%2Fapp.powerbi.com%3Fpbi_source%3Dweb%26redirectedFromSignup%3D1%26noSignUpCheck%3D1). By signing in the Power BI Desktop, you will be able to save your work and later publish it to the Power BI service.
 
 ### Data {-}
 
-Please download the data file `gap-minder.csv` [here](https://raw.githubusercontent.com/MonashDataFluency/Power_BI/master/powerbi-files/gap-minder.csv) for the course. 
+Download the data file `gap-minder.csv` [here](https://raw.githubusercontent.com/MonashDataFluency/Power_BI/master/powerbi-files/gap-minder.csv) for the course. 
 
 ### Source code {-}
 
