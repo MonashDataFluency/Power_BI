@@ -36,13 +36,13 @@ Once you have loaded the file, you will not see the contents automatically. You 
 Replace image with gapminder data.
 Numerical data has ∑ symbol.
 -->
-In the previous chapter, we saw how to import data into Power BI. We also did some basic pre-processing of data like cleaning the data, changing the type of data, dealing with NaN values. In this section, we are going to work with our already processed data.
+In the previous chapter, we saw how to import data into Power BI. We also did some basic pre-processing of data like cleaning the data, changing the type of data, dealing with null and error values. In this section, we are going to work with our already processed data.
 
 
 ## Visualizations Panel
 
 We touched upon the different panels present in the Power BI interface. Now, we will explore the different panels dedicated to creating and formatting charts in detail.
-One of the panels is the Visualization panel highlighted in the Red box. It contains various types of charts that you can create to visualize your data. Some of the available chart types are- Stacked bar chart, Line chart, Area chart, Scatter chart, Pie chart, etc. You can also import a custom visual from a file or the market-place if you click on **…** icon. We will explore that in the later section. 
+One of the panels is the Visualization panel highlighted in the Red box. It contains various types of charts that you can create to visualize your data. Some of the available chart types are - Stacked bar chart, Line chart, Area chart, Scatter plot, Pie chart, etc. You can also import a custom visual from a file or the marketplace if you click on the **…** icon. We will explore that in the later section. 
 
 
 <!--picture--->
@@ -51,16 +51,16 @@ knitr::include_graphics("figures/ch04/visualization_panel.png")
 ```
 
 
-### Scatter chart
+### Scatter plot
 
-Let's create are first chart- Scatter plot. The first step to plot any kind of plot in Power BI is to select the plot template/type from the visualization panel. So, we click on the scatter chart icon in the visualization panel and drag the columns to the respective -Axis field as shown in the below figure.
+Let's create our first chart - Scatter plot. The first step to plot any kind of plot in Power BI is to select the plot template/type from the visualization panel. So, we click on the scatter chart icon in the visualization panel and drag the columns to the respective -Axis field as shown in the below figure.
 
 <!--picture--->
 ```{r echo=F,out.width="60%",fig.align="center"}
 knitr::include_graphics("figures/ch04/scatter_plot_1.png")
 ```
 
-We want the see how life expectancy (life_exp) varies with time (year) in years.
+We want to see how life expectancy (life_exp) varies with time (year) in years.
 After dragging the columns to their respective fields, we get out first scatter plot.
 An overall increasing trend can be seen after year 1900.
 
@@ -76,14 +76,14 @@ The final interface will look like the image below. The plot will be at the left
 knitr::include_graphics("figures/ch04/scatter_plot_3.png")
 ```
 
-Wasn't that quick and easy?!! In general, this will be the procedure to create any type of plot the Power BI i.e., Select the chart type from the visualization section, drag data to the -Axis fields.
+In general, this will be the procedure to create any type of plot the Power BI i.e., Select the chart type from the visualization section, drag data to the -Axis fields.
 
-The above scatter plot isn't informative. The only information we get is the general trend of life expentancy, which increases after year 1900.
+The above scatter plot is not informative. The only information we get is the general trend of life expectancy, which increases after year 1900.
 Let's play with our scatter plot to make it more informative:
 
-    x-Axis: year
+    X-Axis: year
 
-    y-Axis: life_exp. Right-click on drop-down button and select "**Don’t summarize**" option.
+    Y-Axis: life_exp. Right-click on drop-down button and select "**Don’t summarize**" option.
 
     Legend: By name. Drag name column and place it in legend field.
 
@@ -93,14 +93,12 @@ knitr::include_graphics("figures/ch04/scatter_plot_2_by_country.png")
 Here, we have colored each dot by the country. This plot shows the trend of life expectancy for **each country** with years.
 Since there are so many countries in our data, this plot looks messy, unclear and our plot legend "explodes".
 
-Can we do better?
+Let's see if we can make this better.
 
-Let's see.
+Use the following parameters to create your chart:
 
-Use following parameters to create your chart:
-
-    x-Axis: year
-    y-Axis: life_exp. Right-click on drop-down button and de-select "**Don’t summarize**" option.
+    X-Axis: year
+    Y-Axis: life_exp. Right-click on drop-down button and de-select "**Don’t summarize**" option.
     Legend: By region
 
 ```{r echo=F,out.width="80%",fig.align="center"}
@@ -119,9 +117,9 @@ Report what follows.
 ####Scatter plot:
 Keep the summarize option ON. Create a chart with the following options: 
 
-    x-Axis: year
+    X-Axis: year
 
-    y-Axis: life_exp
+    Y-Axis: life_exp
 
     Legend: By region
 
@@ -149,7 +147,8 @@ Let's select a line chart from the visualization panel. Drog and drop following 
 ```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/linechart_life_exp_vs_year_by_name.png")
 ```
-We get differently colored lines for each country. Let's try `by region`. What do we get?
+
+We get differently colored lines for each country. Now try changing the Legend to `by region`.
 
     Axis: Year
     Values: Average of Life_exp. Select "**Average"**
@@ -158,7 +157,8 @@ We get differently colored lines for each country. Let's try `by region`. What d
 ```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/linechart_avg_life_exp_vs_year_by_region.png")
 ```
-Power BI computes average of Life expectancy for countries in each regions and show 4 average lines corresponding to 4 regions.
+
+Power BI computes average of Life expectancy for countries in each region and shows four average lines corresponding to four regions.
 
 
 ### Bar Plots
@@ -175,7 +175,19 @@ knitr::include_graphics("figures/ch04/bar_chart_pop_vs_year_by_region.png")
 ```
 This bar plot shows population variation over time (in years) for all 4 regions.
 
-### Trends in scatter plot
+### Trends and analytics in plots
+
+Up till now we have been working in the **Details** tab of the **Visualizations pane**. There are two other useful tabs, **Format** and **Analytics**. Let's have a look at **Analytics**
+
+This tab allows you to add different reference lines to your visualization which can help the user determine trends and insights in the data. Click on the line chart that you have created. Select the **Analytics** tab.
+
+```{r echo=F,out.width="80%",fig.align="center"}
+knitr::include_graphics("figures/ch04/analytics_tab.png")
+```
+
+Here you can add reference lines for various measures. Click add a trend line to your chart.
+
+These options will vary depending on the chart that you use.
 
 ```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/trend_life_exp_vs_year_by_region.png")
@@ -183,15 +195,35 @@ knitr::include_graphics("figures/ch04/trend_life_exp_vs_year_by_region.png")
 
 ## Plot modifications
 
-Filter data
+Another important part about visualizing and telling the story of your data is the design and format of your visualizations. This is where we will use the **Format** tab.
+
+Click on your scatter chart and click the **Format** tab to see the variety of options available to make your visualization more readable and understandable. 
+
+A common issue is the default titles of charts. This will usually use the names of the data columns which is often meaningless to the average user. Click on **Title** and change it to a clearer name like 'Regional average life expectancy since 1800'. You can also edit the legend or axis labels. Let's make the axis labels more clear. Change the font for the x and y axis to Segoe(Bold), increase the font size to 12 and color to black.
+
+```{r echo=F,out.width="80%",fig.align="center"}
+knitr::include_graphics("figures/ch04/format.png")
+```
+
+The options available will be different for each visualization. Using these options will greatly increase the engagement and understanding of your visuals.
+<!-- Filter data
 Beautify plots:
 Font- Segoe(Bold)
 Font size: 12
 Font color: Black
 Slicer:
 	By year
-	By country (challenge)
+	By country (challenge) -->
 
+## Filters
+
+Filters are a powerful way to break down and show specific parts of the data. You can access the **Filters pane** through clicking **Filters**.
+
+```{r echo=F,out.width="80%",fig.align="center"}
+knitr::include_graphics("figures/ch04/filters.png")
+```
+
+You can filter data for individual visualizations, pages and for the entire report.
 
 For Bangladesh
 
@@ -229,9 +261,9 @@ knitr::include_graphics("figures/ch04/challenge3a.png")
 knitr::include_graphics("figures/ch04/challenge3c.png")
 ```
 
-## Explore Marketplace for other plot types
+## Explore Marketplace for other visualizations
 
-Till now, we have seen several different kinds of plots. Power BI comes with these default plots. There are other different kinds of plots are available in the marketplace. To import new plot template from the marketplace, click on the icon "**(...)**", i.e. three horizontal dots in the visualization panel then click on the import from the marketplace.
+The visualizations we have been using are part of the default offerings in Power BI. There are many more visualisations available in the marketplace. To import a new visualisation template from the marketplace, click on the icon "**(...)**", i.e. three horizontal dots in the visualization panel then click on import from the marketplace.
 
 
 ```{r echo=F,out.width="60%",fig.align="center"}
@@ -239,7 +271,7 @@ knitr::include_graphics("figures/ch04/marketplace.png")
 ```
 
 
-Once you click on Import from marketplace, It will pop a new window, where you can search for various types of templates. For example, we are looking for the Word Cloud template. Type Word Cloud in the search box, once you find the template click on the "**Add icon**" then it will added to the visualization panel. 
+This will pop a new window, where you can search for various types of templates. For example, we are looking for the Word Cloud template. Type Word Cloud in the search box, once you find the template click on the "**Add icon**" then it will added to the visualization panel. 
 
 
 ```{r echo=F,out.width="100%",fig.align="center"}
@@ -247,9 +279,9 @@ knitr::include_graphics("figures/ch04/wordcloud.png")
 ```
 
 
-### Challenge 4: Create a WordCloud for countries by GDP per capita {.challenge}
+### Challenge 4: Create a Word Cloud for countries by GDP per capita {.challenge}
 
-####WordCloud
+####Word Cloud
 
 a) Create a plot that compares GDP per capita for each country
 
