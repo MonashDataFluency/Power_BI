@@ -78,12 +78,11 @@ knitr::include_graphics("figures/ch04/scatter_plot_3.png")
 
 In general, this will be the procedure to create any type of plot the Power BI i.e., Select the chart type from the visualization section, drag data to the -Axis fields.
 
-The above scatter plot is not informative. The only information we get is the general trend of life expectancy, which increases after year 1900.
-Let's play with our scatter plot to make it more informative:
+The above scatter plot is not informative. Let’s explore what other things can we do with this plot.
 
     X-Axis: year
 
-    Y-Axis: life_exp. Right-click on drop-down button and select "**Don’t summarize**" option.
+    Y-Axis: life_exp. Right-click on drop-down button and select "Don’t summarize" option.
 
     Legend: By name. Drag name column and place it in legend field.
 
@@ -108,9 +107,9 @@ Here, we color each data point by the region in which the countries lie. The `su
 
 *PowerBI automatically summarizes the numerical data. Always be careful with that.*
 
-**Activity:** In the same chart, try the following:
-Size: By population
-Report what follows.
+**Activity:** In the same chart, try the following:\
+* Size: By population
+* Report what follows.
 
 
 ### Challenge 1:{.challenge}
@@ -122,12 +121,10 @@ Keep the summarize option ON. Create a chart with the following options:
     Y-Axis: life_exp
 
     Legend: By region
-
-Explain the chart.
  
-Click on the dropdown menu and select "**Average**" and explain the difference.
+Click on the dropdown menu and select "**Average**".
 
-**Solution1:**
+**Solution 1:**\
 Computes the sum of life_Exp in all countries in a given region, and plots it.
 Computes the average of life_Exp in all countries in a given region, and plots it.
 
@@ -136,9 +133,23 @@ Computes the average of life_Exp in all countries in a given region, and plots i
 knitr::include_graphics("figures/ch04/challenge01.png")
 ```
 
+### Bar Plots
+
+Select the bar chart from the Visualization panel and drag the following columns:
+
+    Axis: Year
+    Values: Population 
+    Legend: By region
+
+
+```{r echo=F,out.width="80%",fig.align="center"}
+knitr::include_graphics("figures/ch04/bar_chart_pop_vs_year_by_region.png")
+```
+This bar plot shows population variation over time (in years) for all 4 regions.
+
 ### Line Chart
 
-Let's select a line chart from the visualization panel. Drog and drop following columns:
+Let's select a line chart from the visualization panel. Drag and drop following columns:
 
     Axis: Year
     Values: Life_exp
@@ -160,28 +171,28 @@ knitr::include_graphics("figures/ch04/linechart_avg_life_exp_vs_year_by_region.p
 
 Power BI computes average of Life expectancy for countries in each region and shows four average lines corresponding to four regions.
 
+### Changing visualizations
 
-### Bar Plots
+As you can see from your line chart, this uses the same data as your scatter plot but presented in a different visual format. Instead of making a new seperate visualization to do a different visual style you can edit and change existing visualizations easily with Power BI. 
 
-Select the bar chart from the Visualization panel and drag the following columns:
+For the current line chart, select the visual and try selecting different visualizations on the visualization pane. Visualizations with similar structures to your existing visual, like bar charts, will change over seamlessly. A slightly different visualization like a scatter plot might require some testing with the **Fields** in the **Details** tab. Change your line chart to a scatter plot. Drag **life_exp** to the y-axis and **Year** to the x-axis. This should now be identical to your first scatter plot.
 
-    Axis: Year
-    Values: Population 
-    Legend: By region
+As you may have noticed, dragging and dropping **Fields** into the **Details** tab will automatically change the data visualization. You can easily add new and swap fields using the drag and drop to change and discover new ways to visualize your data. You can remove fields by clicking the x next to the name.
 
+### Challenge 3: Line chart {.challenge}
+Since your line chart is showing the same information as an existing visualization, change the chart to show average GDP per capita instead of average life expectancy.
 
 ```{r echo=F,out.width="80%",fig.align="center"}
-knitr::include_graphics("figures/ch04/bar_chart_pop_vs_year_by_region.png")
+knitr::include_graphics("figures/ch04/gdp_linechart.png")
 ```
-This bar plot shows population variation over time (in years) for all 4 regions.
 
 ### Trends and analytics in plots
 
-Up till now we have been working in the **Details** tab of the **Visualizations pane**. There are two other useful tabs, **Format** and **Analytics**. Let's have a look at **Analytics**
+Up till now we have been working in the **Details** tab of the **Visualizations pane**. There are two other useful tabs, **Format** and **Analytics**. Let's have a look at **Analytics**.
 
-This tab allows you to add different reference lines to your visualization which can help the user determine trends and insights in the data. Click on the line chart that you have created. Select the **Analytics** tab.
+This tab allows you to add different reference lines to your visualization which can help the user determine trends and insights in the data. Click on the scatter plot that you have created. Select the **Analytics** tab.
 
-```{r echo=F,out.width="80%",fig.align="center"}
+```{r echo=F,out.width="60%",fig.align="center"}
 knitr::include_graphics("figures/ch04/analytics_tab.png")
 ```
 
@@ -195,13 +206,13 @@ knitr::include_graphics("figures/ch04/trend_life_exp_vs_year_by_region.png")
 
 ## Plot modifications
 
-Another important part about visualizing and telling the story of your data is the design and format of your visualizations. This is where we will use the **Format** tab.
+An important aspect of visualizing and telling the story of your data is the design and format of your visualizations. This is where we will use the **Format** tab.
 
-Click on your scatter chart and click the **Format** tab to see the variety of options available to make your visualization more readable and understandable. 
+Click on your scatter chart you created for Challenge 2 and click the **Format** tab to see the variety of options available to make your visualization more readable and understandable. 
 
 A common issue is the default titles of charts. This will usually use the names of the data columns which is often meaningless to the average user. Click on **Title** and change it to a clearer name like 'Regional average life expectancy since 1800'. You can also edit the legend or axis labels. Let's make the axis labels more clear. Change the font for the x and y axis to Segoe(Bold), increase the font size to 12 and color to black.
 
-```{r echo=F,out.width="80%",fig.align="center"}
+```{r echo=F,out.width="60%",fig.align="center"}
 knitr::include_graphics("figures/ch04/format.png")
 ```
 
@@ -215,6 +226,20 @@ Slicer:
 	By year
 	By country (challenge) -->
 
+### Challenge 2: Scatter Plot {.challenge}
+Let's say you think there is a correlation between GDP per capita and life expectancy. Try creating a scatter plot showing the comparison between these two value split by region.
+
+##Solution##
+gdp_percap as x.
+life_exp as y.
+region as the legend.
+
+```{r echo=F,out.width="80%",fig.align="center"}
+knitr::include_graphics("figures/ch04/solution2.png")
+```
+
+As you can see, this visualization is very messy and confusing. In the next section we will show ways to make this visualization clearer.
+
 ## Filters
 
 Filters are a powerful way to break down and show specific parts of the data. You can access the **Filters pane** through clicking **Filters**.
@@ -225,9 +250,49 @@ knitr::include_graphics("figures/ch04/filters.png")
 
 You can filter data for individual visualizations, pages and for the entire report.
 
+Select the last plot you created- life_exp vs gdp_percap. Click on the Filter panel which is adjacent to the Visualization panel. Drag the year column and place it in "**Filter on this page**" bar. 
+
+```{r echo=F,out.width="80%",fig.align="center"}
+knitr::include_graphics("figures/ch04/filter1.png")
+```
+
+Change the filter type to "**Basic Filtering**" Now you have all the years as a scrolling list. Select any one year and you can see the data for that particular year. For example, if we want to look at this data fro year 2010, select 2010 in the filter panel.
+
+```{r echo=F,out.width="80%",fig.align="center"}
+knitr::include_graphics("figures/ch04/filter2.png")
+```
+
+### Challenge 3: Filtering {.challenge}
+
+**A.** On the previous plot, create a filter for country names.
+
+**B.** Visualize gdp_percapita vs life_exp for these countries: Kenya, Australia, Chile and Belgium
+
+```{r echo=F,out.width="80%",fig.align="center"}
+knitr::include_graphics("figures/ch04/solution3.png")
+```
+
+### Slicer:
+In the chart types, locate "**Slicer**". Create a new blank Slicer chart. Drag and drop the `region` column in the data field. We have created a slicer and can visualize data for each region separately. Since Power BI is highly interactive, this slicer is applied to all the charts that we have created and will show the results for selected part in the slicer. You can chose to apply slicer to specific charts by turning it off for other charts.
+  
+  ```{r echo=F,out.width="80%",fig.align="center"}
+knitr::include_graphics("figures/ch04/slicer.png")
+```
+
+### Challenge 4: Slicer {.challenge}
+
+**A.** Create a slicer for country names.
+
+**B.** First visualize for Bangladesh. Then visualize for Bangladesh and Brazil.
+
+
+```{r echo=F,out.width="80%",fig.align="center"}
+knitr::include_graphics("figures/ch04/challenge3c.png")
+```
+
 For Bangladesh
 
-```{r echo=F,out.width="60%",fig.align="center"}
+```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/bangladesh.png")
 ```
 
@@ -235,30 +300,6 @@ For Bangladesh and Brazil
 
 ```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/bangladesh_and_brazil.png")
-```
-
-
-
-### Challenge 3: Scatter Plot {.challenge}
-**A:** Create a scatter-plot of this with:
-
-    gdp_percap as x.
-    life_exp as y.
-    population as the size.
-    region as the label.
-
-```{r echo=F,out.width="80%",fig.align="center"}
-knitr::include_graphics("figures/ch04/challenge3a.png")
-```
-
-
-**B:**  Filter the data for year-2010 only.
-
-**C:** Use the slicer to visualize data for different countries
-	For all countries
-
-```{r echo=F,out.width="80%",fig.align="center"}
-knitr::include_graphics("figures/ch04/challenge3c.png")
 ```
 
 ## Explore Marketplace for other visualizations
