@@ -219,7 +219,7 @@ Slicer:
 
 Filters are a powerful way to break down and show specific parts of the data. You can access the **Filters pane** through clicking **Filters**.
 
-```{r echo=F,out.width="80%",fig.align="center"}
+```{r echo=F,out.width="60%",fig.align="center"}
 knitr::include_graphics("figures/ch04/filters.png")
 ```
 
@@ -227,7 +227,7 @@ You can filter data for individual visualizations, pages and for the entire repo
 
 For Bangladesh
 
-```{r echo=F,out.width="80%",fig.align="center"}
+```{r echo=F,out.width="60%",fig.align="center"}
 knitr::include_graphics("figures/ch04/bangladesh.png")
 ```
 
