@@ -46,4 +46,4 @@ rsconnect/
 .Rproj.user
 
 # rmd output inside /book
-book/*.html
+/book/*.html
