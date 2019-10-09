@@ -22,5 +22,5 @@ make
 Fill in instructor names and the location in your workshop etherpad. The workshop etherpad serves as the central jumping off point for the workshop, and should list at the top:
 
 * schedule
-* [link to this workshop material](https://htmlpreview.github.io/?https://raw.githubusercontent.com/MonashDataFluency/Power_BI/master/docs/saving-and-exporting.html)
+* [link to this workshop material](https://htmlpreview.github.io/?https://raw.githubusercontent.com/MonashDataFluency/Power_BI/master/docs/introduction-to-powerbi.html)
 * [link to setup of the workshop](https://htmlpreview.github.io/?https://raw.githubusercontent.com/MonashDataFluency/Power_BI/master/docs/index.html)
