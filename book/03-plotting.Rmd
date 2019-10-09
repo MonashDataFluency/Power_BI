@@ -316,14 +316,14 @@ Every visual interacts with all other visuals individually. Check the **Edit int
 
 ## Explore Marketplace for other visualizations
 
-The visualizations we have been using are part of the default offerings in Power BI. There are many more visualisations available in the marketplace. To import a new visualisation template from the marketplace, click on the icon "**(...)**", i.e. three horizontal dots in the visualization panel then click on import from the marketplace.
+The visualizations we have been using are part of the default offerings in Power BI. There are more visualisations available in the marketplace. To import a new visualisation template from the marketplace, click on the icon "**(...)**", i.e. three horizontal dots in the visualization panel then click on import from the marketplace.
 
 ```{r echo=F,out.width="60%",fig.align="center"}
 knitr::include_graphics("figures/ch04/marketplace.png")
 ```
 
 
-This will pop a new window, where you can search for various types of templates. For example, we are looking for the Word Cloud template. Type Word Cloud in the search box, once you find the template click on the "**Add icon**" then it will added to the visualization panel. 
+This will pop a new window, where you can search for various types of templates. We are looking for the Word Cloud template. Type Word Cloud in the search box, once you find the template click on the "**Add icon**". This will add it to the visualization panel. 
 
 
 ```{r echo=F,out.width="100%",fig.align="center"}
@@ -358,4 +358,4 @@ We need Latitude (lat) and Longitude (long) values to create a Map chart. For th
 knitr::include_graphics("figures/ch04/geo_map.png")
 ```
 
-This plot tells us if a country is one of the four- high income, upper-middle income, lower-middle income or low income country by the color of the bubbles. The color correspondence to these categories can be seen in the legend at the top of the chart. It also indicates the population size of each country by the size of bubble. Bigger the bubble, higher the population of the country.
+This plot tells us a country's income level in 2017 - high income, upper-middle income, lower-middle income or low income by the color of the bubbles. These categories can be seen in the legend at the top of the chart. It also indicates the population size of each country by the size of bubble.
