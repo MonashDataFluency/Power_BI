@@ -26,11 +26,16 @@ In the most general way, the flow starts at the Power BI Desktop, where a report
 Its not always the case that this flow happens, but more often or not it is. We will stick to this flow for this entire tutorial to help learn the different aspects of Power BI.
 
 ## Use Power BI
-The **common** flow of activity in Power BI looks like this:
+The **common** flow of activity in Power BI looks like this:  
+
 1. Bring data into Power BI Desktop, and create a report.
 2. Publish to the Power BI service, where you can create new visualizations or build dashboards.
 3. Share dashboards with others, especially people who are on the go.
 4. View and interact with shared dashboards and reports in Power BI Mobile apps.
+
+```{r echo=F,out.width="100%",fig.align="center"}
+knitr::include_graphics("figures/ch01/powerbi-flow.png")
+```
 
 As mentioned earlier, depending on the user role, the user might spend its most of the time in one of the three components than the other. 
 
@@ -94,17 +99,13 @@ Power BI Desktop is a free application for PCs that lets you gather, transform, 
 Power BI Desktop and the Power BI Service work together. You can create your reports and dashboards in Power BI Desktop, and then publish them to the Power BI Service for others to consume.
 
 ```{r echo=F,out.width="100%",fig.align="center"}
-knitr::include_graphics("figures/ch05/powerbi_desktop_options.png")
+knitr::include_graphics("figures/ch01/desktop-interface.png")
 ```
 
 1. **Ribbon** - Displays common tasks that are associated with reports and visualizations.
-
 2. **Report view, or canvas** - Where visualizations are created and arranged. You can switch between **Report**, **Data**, and **Model** views by selecting the icons in the left column.
-
 3. **Pages tab** - Located along the bottom of the page, this area is where you would select or add a report page.
-
 4. **Visualizations pane** - Where you can change visualizations, customize colors or axes, apply filters, drag fields, and more.
-
 5. **Fields pane** - Where query elements and filters can be dragged onto the **Report** view or dragged to the **Filters** area of the Visualizations pane.
 
 
