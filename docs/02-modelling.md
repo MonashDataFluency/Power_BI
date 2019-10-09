@@ -51,11 +51,11 @@ In the "**Data**" section on the left sidebar, data can be viewed. By applying a
 ### Challenge 1: Replace missing values {.challenge}
 
 Use the "Replace values" option on the `gdp_percap` column to replace the blank values.
-Use the "Remove errors" option on the `life_exp` column to remove the error values caused by the blanks.
+Use the "Remove errors" option on the `life_exp` column to remove the error values caused by the blanks.\
+
 
 Replacing missing values is not always a direct operation. Most of the times, the missing values must be carefully analyzed and values need to be computed based on several factors. While this can be done with DAX in Power BI, this is not a key capability of Power BI. Try to clean up and eliminate errors from your data before you import into Power BI. Power BI does ignore blank and error values when it comes to analysis and visualisation but this may not always be the best approach.
 Let us cancel these steps in the “Applied steps” by clicking on the red crossmark right next to "**Replaced Value**" and "**Removed Errors**".
-
 
 ## 'Applied steps' in modelling data
 
@@ -65,10 +65,10 @@ Columns from raw data can be difficult to read or meaningless. Renaming the colu
 
 There are two ways to rename the columns in Power BI. Right-clicking on the header of the column gives you a menu of functions that you can do to the column. Select "**Rename**" to rename the column. You can also click on the column and then click on the "**Transform**" tab, from here you are presented a variety of transformation functions for the column. From here you can click on "**Rename**".
 
-Example: 
-- Right-click on the `name` column header, click on "**Rename**" and rename the column to `Country`.
+Example:
 
-- Click on the header for `life_exp`. Click on the "**Transform**" tab and click rename. Rename the column to `Life expectancy`.
+* Right-click on the `name` column header, click on "**Rename**" and rename the column to `Country`.
+* Click on the header for `life_exp`. Click on the "**Transform**" tab and click rename. Rename the column to `Life expectancy`.
 
 ### Add and remove column
 
@@ -78,20 +78,20 @@ Often when dealing with raw data you will find columns that are meaningless or u
 
 There are two ways to remove columns in Power BI. Like in renaming a column, you can right-click the header, which will present a menu with the option to "**Remove**". You can also click on the column, click on the "**Home**" tab and then click "**Remove Columns**".
 
-Example: 
+Example:
 You may not need the `g77` and `oecd` information.
-- Right-click on the `g77` column header, click on "**Remove**"
 
-- Left-click on `oecd` column header, click on "**Home**" tab, click "**Remove Column**"
+* Right-click on the `g77` column header, click on "**Remove**"
+* Left-click on `oecd` column header, click on "**Home**" tab, click "**Remove Column**"
 
 #### Adding columns
 
 Just as you would remove unsuitable data from your queries, you may need to add new columns to your data. There are a variety of options in Power BI to add different columns. Click on the "**Add Column**" tab to see the ways you can add a column.
 
-Example: 
-- Add or subtract a year to the `year` column to fix any widespread issues.
+Example:
 
-- Click on `gdp_percap`, click on the "**Add Column**" tab, click duplicate to create a separate column to run calculations on.
+* Add or subtract a year to the `year` column to fix any widespread issues.
+* Click on `gdp_percap`, click on the "**Add Column**" tab, click duplicate to create a separate column to run calculations on.
 
 ### Challenge 2: {.challenge}
 

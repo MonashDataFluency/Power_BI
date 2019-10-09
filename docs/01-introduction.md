@@ -20,12 +20,12 @@ The use of Power BI could depend on the role that you are in. For example: if yo
 
 In the upcoming modules we would be discussing about these three components - **Desktop**, **Service** and **Mobile** apps - in more detail. 
 
-## Power BI Flow
+## Power BI flow
 In the most general way, the flow starts at the Power BI Desktop, where a report is created. This created report can be published to the Power BI Service and finally shared so that the users can use it from the Mobile apps.
 
 Its not always the case that this flow happens, but more often or not it is. We will stick to this flow for this entire tutorial to help learn the different aspects of Power BI.
 
-## Use Power BI:
+## Use Power BI
 The **common** flow of activity in Power BI looks like this:
 1. Bring data into Power BI Desktop, and create a report.
 2. Publish to the Power BI service, where you can create new visualizations or build dashboards.
@@ -34,7 +34,7 @@ The **common** flow of activity in Power BI looks like this:
 
 As mentioned earlier, depending on the user role, the user might spend its most of the time in one of the three components than the other. 
 
-## Building blocks of Power BI:
+## Building blocks of Power BI
 
 The basic building blocks in Power BI are:
 * Visualizations
@@ -55,7 +55,7 @@ A visualization is a representation of data in a visual format. It could be a li
 
 Visualizations can be simple as a number representing something significant or it could be quite complex like multiple stacked chart showing the proportion users participating in a survey. The main idea of visualisation is to show the data in a way that it tells the story that is lying underneath it. Like it is said, a picture says a thousand words. 
 
-### Datasets:
+### Datasets
 A **dataset** is a collection of data that Power BI uses to create its visualizations.
 You can have a simple dataset that's based on a single table from a Microsoft Excel workbook, similar to what's shown in the following image.
 
@@ -69,19 +69,19 @@ An important feature of Power BI is the ability to connect to various data sourc
 
 After you have a dataset, you can begin creating visualizations that show different portions of it in different ways, and gain insights based on what you see. That is where reports come in.
 
-### Reports:
+### Reports
 In Power BI, a **Report** is a collection of visualizations that appear together on one or more pages. A report in Power BI is a collection of items that are related to each other. The following image shows a report that you will be creating by the end of the session. You can also create reports in the Power BI service.
 
 <img src="figures/ch05/edit_report.png" width="100%" style="display: block; margin: auto;" />
 
 Reports let us create and structure visualizations on pages based on the way the we want to tell the story. 
 
-### Dashboards:
+### Dashboards
 A Power BI dashboard is a collection of visuals from a single page that you can share with others. Often it is a selected group of visuals that provide quick insight into the data or story you are trying to present.
 
 A dashboard must fit on a single page, often called a canvas (the canvas is the blank backdrop in Power BI Desktop or the service, where you put visualizations). Think of it like the canvas that an artist or painter uses — a workspace where you create, combine, and rework interesting and compelling visuals. You can share dashboards with other users or groups, who can then interact with your dashboards when they're in the Power BI service or on their mobile device.
 
-## Power BI Services:
+## Power BI Services
 
 ### Overview of Power BI Desktop
 Power BI Desktop is a free application for PCs that lets you gather, transform, and visualize your data. In this module, you'll learn how to find and collect data from different sources and how to clean or transform it. You'll also learn tricks to make data-gathering easier.
