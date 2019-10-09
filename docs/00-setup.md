@@ -15,7 +15,7 @@ header-includes:
 
 <img src="figures/powerbi.png" width="25%" style="display: block; margin: auto auto auto 0;" />
 
-These the course notes for the "Introduction to Power BI" course given by the [Monash Bioinformatics Platform](https://www.monash.edu/researchinfrastructure/bioinformatics) for the [Monash Data Fluency](https://monashdatafluency.github.io/) initiative. Our teaching style is based on the style of [The Carpentries](https://carpentries.org/). 
+These are the course notes for the "Introduction to Power BI" course given by the [Monash Bioinformatics Platform](https://www.monash.edu/researchinfrastructure/bioinformatics) for the [Monash Data Fluency](https://monashdatafluency.github.io/) initiative. Our teaching style is based on the style of [The Carpentries](https://carpentries.org/). 
 
 * [PDF version for printing](https://github.com/MonashDataFluency/Power_BI/raw/master/docs/powerbi-intro.pdf)
 * [ZIP of data files used in this workshop](https://monashdatafluency.github.io/powerbi-intro/powerbi-files.zip)
