@@ -16,7 +16,7 @@ The file extension for Power BI files is “.pbix”. The .pbix files are highly
 
 ## Exporting and publishing report
 
-No we want to create a report of our analysis and share it with others. We use Power BI to publish the report on the Power BI server.
+Now we want to create a report of our analysis and share it with others. We use Power BI to publish the report on the Power BI server.
 
 To do this, go to **File > Publish > Publish to Power BI**.
 

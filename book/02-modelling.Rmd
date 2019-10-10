@@ -19,7 +19,7 @@ Once we select this, we go ahead and select the "**CSV option**" under the "**fi
 knitr::include_graphics("figures/ch03/2.1.2_Importing_data.png")
 ```
 
-Then browse the file and select the necessary CSV file. Press on "**Connect**" to have a quick preview of the file. Once we click on "**load**", Power BI will successfully import the file. Any errors will then pop up ready to be analysed and fixed.
+Then browse the file and select the necessary CSV file. Press on "**Connect**" to have a quick preview of the file. Once we click on "**Load**", Power BI will successfully import the file. Any errors will then pop up ready to be analysed and fixed.
 
 ```{r, fig.align = 'center', out.width = "100%", echo = FALSE}
 knitr::include_graphics("figures/ch03/2.1.3_Importing_data.png")
@@ -29,13 +29,13 @@ knitr::include_graphics("figures/ch03/2.1.3_Importing_data.png")
 knitr::include_graphics("figures/ch03/2.1.4_Importing_data.png")
 ```
 
-Clicking on "**View errors**" will enable us to check the detected errors right away. Alternatively, you close the pop up and click "**Edit queries**" to check for any errors. This will query and list the errors in the data. 
+Clicking on "**View errors**" will enable us to check the detected errors right away. Alternatively, close the pop up and click "**Edit queries**" to check for any errors. This will query and list the errors in the data. 
 
 ## Dealing with errors
 
 ### Check for “controlled” errors
 
-Once queried, we can see the controlled errors in the data. These errors can be analysed by clicking on them. Every error has a brief description to it saying what might’ve gone wrong.
+Once queried, we can see the controlled errors in the data. These errors can be analysed by clicking on them. Every error has a brief description to it saying what might have gone wrong.
 
 ### Change datatype of column
 

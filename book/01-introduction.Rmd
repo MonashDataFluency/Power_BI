@@ -21,9 +21,9 @@ The use of Power BI could depend on the role that you are in. For example: if yo
 In the upcoming modules we would be discussing about these three components - **Desktop**, **Service** and **Mobile** apps - in more detail. 
 
 ## Power BI flow
-In the most general way, the flow starts at the Power BI Desktop, where a report is created. This created report can be published to the Power BI Service and finally shared so that the users can use it from the Mobile apps.
+Generally, the flow starts at the Power BI Desktop, where a report is created. This created report can be published to the Power BI Service and finally shared so that the users can use it from the Mobile apps.
 
-Its not always the case that this flow happens, but more often or not it is. We will stick to this flow for this entire tutorial to help learn the different aspects of Power BI.
+This is the most common approach for sharing reports. There are other approaches but we will stick to this flow for this entire tutorial to help learn the different aspects of Power BI.
 
 ## Use Power BI
 The **common** flow of activity in Power BI looks like this:  
@@ -37,7 +37,7 @@ The **common** flow of activity in Power BI looks like this:
 knitr::include_graphics("figures/ch01/powerbi-flow.png")
 ```
 
-As mentioned earlier, depending on the user role, the user might spend its most of the time in one of the three components than the other. 
+Depending on the user role, the user might spend most of the time in one of the three components than the other. 
 
 ## Building blocks of Power BI
 
@@ -54,13 +54,13 @@ The basic building blocks in Power BI are:
 
 
 ### Visualizations
-A visualization is a representation of data in a visual format. It could be a line chart, a bar graph, a color coded map or anything interesting to present the data. 
+A visualization is a representation of data in a visual format. It could be a line chart, a bar graph, a color coded map or any visual way to present the data. 
 
 ```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/bar_chart_pop_vs_year_by_region.png")
 ```
 
-Visualizations can be simple as a number representing something significant or it could be quite complex like multiple stacked chart showing the proportion users participating in a survey. The main idea of visualisation is to show the data in a way that it tells the story that is lying underneath it. Like it is said, a picture says a thousand words. 
+Visualizations can be a simple number representing a significant calculation or it could complex like multiple stacked charts showing the proportion of users participating in a survey. The main idea of visualisation is to show the data in a way that tells the story that is lying underneath it. Like the saying goes: a picture says a thousand words. 
 
 ### Datasets
 A **dataset** is a collection of data that Power BI uses to create its visualizations.
@@ -72,7 +72,7 @@ knitr::include_graphics("figures/ch03/2.1.3_Importing_data.png")
 
 Dataset can also be a combination of many different sources, which can be filtered using Power BI and combined into one to use. 
 
-For example: One data source could be the countries and location in the form of Latitude and Longitude. Another data source could be the demographics of these countries like: population, GDP etc. Power BI can combine these two data sources into one dataset which can be used for visualizations. 
+For example: One data source contains countries and locations in the form of Latitude and Longitude. Another data source contains demographics of these countries like population and GDP. Power BI can combine these two data sources into one dataset which can be used for visualizations. 
 
 An important feature of Power BI is the ability to connect to various data sources using its connectors. Whether the data you want is in Excel or a Microsoft SQL Server database, in Azure or Oracle, or in a service like Facebook, Salesforce, or MailChimp, Power BI has built-in data connectors that let you easily connect to that data, filter it if necessary, and bring it into your dataset.
 
