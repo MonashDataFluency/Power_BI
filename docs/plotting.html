@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Introduction to Power BI</title>
-  <meta name="description" content="Introduction to Power BI">
-  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Plotting | Introduction to Power BI</title>
+  <meta name="description" content="3 Plotting | Introduction to Power BI" />
+  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Introduction to Power BI" />
+  <meta property="og:title" content="3 Plotting | Introduction to Power BI" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Introduction to Power BI" />
+  <meta name="twitter:title" content="3 Plotting | Introduction to Power BI" />
   
   
   
@@ -25,15 +24,16 @@
 
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="import-dataset-and-modelling.html">
-<link rel="next" href="saving-and-exporting.html">
+<link rel="prev" href="import-dataset-and-modelling.html"/>
+<link rel="next" href="saving-and-exporting.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
@@ -77,12 +77,11 @@
 <li class="chapter" data-level="2.3" data-path="import-dataset-and-modelling.html"><a href="import-dataset-and-modelling.html#applied-steps-in-modelling-data"><i class="fa fa-check"></i><b>2.3</b> ‘Applied steps’ in modelling data</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="plotting.html"><a href="plotting.html"><i class="fa fa-check"></i><b>3</b> Plotting</a><ul>
-<li class="chapter" data-level="3.1" data-path="plotting.html"><a href="plotting.html#visualizations-panel"><i class="fa fa-check"></i><b>3.1</b> Visualizations Panel</a></li>
+<li class="chapter" data-level="3.1" data-path="plotting.html"><a href="plotting.html#visualization-panel"><i class="fa fa-check"></i><b>3.1</b> Visualization Panel</a></li>
 <li class="chapter" data-level="3.2" data-path="plotting.html"><a href="plotting.html#plot-modifications"><i class="fa fa-check"></i><b>3.2</b> Plot modifications</a></li>
-<li class="chapter" data-level="3.3" data-path="plotting.html"><a href="plotting.html#solution"><i class="fa fa-check"></i><b>3.3</b> Solution</a></li>
-<li class="chapter" data-level="3.4" data-path="plotting.html"><a href="plotting.html#filters"><i class="fa fa-check"></i><b>3.4</b> Filters</a></li>
-<li class="chapter" data-level="3.5" data-path="plotting.html"><a href="plotting.html#edit-interactions"><i class="fa fa-check"></i><b>3.5</b> Edit interactions</a></li>
-<li class="chapter" data-level="3.6" data-path="plotting.html"><a href="plotting.html#explore-marketplace-for-other-visualizations"><i class="fa fa-check"></i><b>3.6</b> Explore Marketplace for other visualizations</a></li>
+<li class="chapter" data-level="3.3" data-path="plotting.html"><a href="plotting.html#filters"><i class="fa fa-check"></i><b>3.3</b> Filters</a></li>
+<li class="chapter" data-level="3.4" data-path="plotting.html"><a href="plotting.html#edit-interactions"><i class="fa fa-check"></i><b>3.4</b> Edit interactions</a></li>
+<li class="chapter" data-level="3.5" data-path="plotting.html"><a href="plotting.html#explore-marketplace-for-other-visualizations"><i class="fa fa-check"></i><b>3.5</b> Explore Marketplace for other visualizations</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="saving-and-exporting.html"><a href="saving-and-exporting.html"><i class="fa fa-check"></i><b>4</b> Saving and Exporting</a><ul>
 <li class="chapter" data-level="4.1" data-path="saving-and-exporting.html"><a href="saving-and-exporting.html#saving-as-pbix-files"><i class="fa fa-check"></i><b>4.1</b> Saving as pbix files</a></li>
@@ -145,46 +144,52 @@ Once you have loaded the file, you will not see the contents automatically. You 
 Replace image with gapminder data.
 Numerical data has ∑ symbol.
 -->
-<p>In the previous chapter, we saw how to import data into Power BI. We also did some basic pre-processing of data like cleaning the data, changing the type of data, dealing with null and error values. In this section, we are going to work with our already processed data.</p>
-<div id="visualizations-panel" class="section level2">
-<h2><span class="header-section-number">3.1</span> Visualizations Panel</h2>
-<p>We touched upon the different panels present in the Power BI interface. Now, we will explore the different panels dedicated to creating and formatting charts in detail. One of the panels is the Visualization panel highlighted in the Red box. It contains various types of charts that you can create to visualize your data. Some of the available chart types are - Stacked bar chart, Line chart, Area chart, Scatter plot, Pie chart, etc. You can also import a custom visual from a file or the marketplace if you click on the <strong>…</strong> icon. We will explore that in the later section.</p>
+<p>In the previous chapter, we saw how to import data into Power BI. We also did some basic pre-processing of data like cleaning the data, changing the type of data, and dealing with null and error values. In this section, we are going to work with our already processed data.</p>
+<div id="visualization-panel" class="section level2">
+<h2><span class="header-section-number">3.1</span> Visualization Panel</h2>
+<p>We touched upon the different panels present in the Power BI interface. We will now explore the different panels dedicated to creating and formatting charts in detail.
+One of the panels is the <strong>Visualization panel</strong> highlighted in the Red box. It contains various types of charts that you can create to visualize your data. Some of the available chart types are - Stacked bar chart, Line chart, Area chart, Scatter plot, Pie chart, etc. You can also import a custom visual from a file or the marketplace if you click on the <strong>…</strong> icon. We will explore that in the later section.</p>
 <!--picture--->
 <p><img src="figures/ch04/visualization_panel.png" width="100%" style="display: block; margin: auto;" /></p>
 <div id="scatter-plot" class="section level3">
 <h3><span class="header-section-number">3.1.1</span> Scatter plot</h3>
-<p>Let’s create our first chart - Scatter plot. The first step to plot any kind of plot in Power BI is to select the plot template/type from the visualization panel. So, we click on the scatter chart icon in the visualization panel and drag the columns to the respective -Axis field as shown in the below figure.</p>
+<p>Let’s create our first chart, a Scatter plot. The first step to plot any kind of plot in Power BI is to select the plot template/type from the <strong>Visualization panel</strong>. Click on the scatter chart icon in the visualization panel and drag the columns to the respective -Axis field as shown in the below figure.</p>
 <!--picture--->
 <p><img src="figures/ch04/scatter_plot_1.png" width="60%" style="display: block; margin: auto;" /></p>
-<p>We want to see how life expectancy (life_exp) varies with time (year) in years. After dragging the columns to their respective fields, we get out first scatter plot. An overall increasing trend can be seen after year 1900.</p>
+<p>We want to see how life expectancy (life_exp) varies with time (year) in years.
+After dragging the columns to their respective fields, we get our first scatter plot.
+An overall increasing trend can be seen after year 1900.</p>
 <!--picture--->
 <p><img src="figures/ch04/scatter_plot_2.png" width="80%" style="display: block; margin: auto;" /></p>
-<p>The final interface will look like the image below. The plot will be at the left of the visualization panel.</p>
+<p>The final interface will look like the image below. The plot will be at the left of the <strong>Visualization panel</strong>.</p>
 <!--picture--->
 <p><img src="figures/ch04/scatter_plot_3.png" width="100%" style="display: block; margin: auto;" /></p>
-<p>In general, this will be the procedure to create any type of plot the Power BI i.e., Select the chart type from the visualization section, drag data to the -Axis fields.</p>
-<p>The above scatter plot is not informative. Let’s explore what other things can we do with this plot.</p>
+<p>In general, this will be the procedure to create any type of plot in Power BI i.e. select the chart type from the <strong>visualization panel</strong> and then drag data to the relevant fields.</p>
+<p>The above scatter plot is not informative. Let’s explore what else we can do with this plot.</p>
 <pre><code>X-Axis: year
 
 Y-Axis: life_exp. Right-click on drop-down button and select &quot;Don’t summarize&quot; option.
 
 Legend: By name. Drag name column and place it in legend field.</code></pre>
-<p><img src="figures/ch04/scatter_plot_2_by_country.png" width="80%" style="display: block; margin: auto;" /> Here, we have colored each dot by the country. This plot shows the trend of life expectancy for <strong>each country</strong> with years. Since there are so many countries in our data, this plot looks messy, unclear and our plot legend “explodes”.</p>
-<p>Let’s see if we can make this better.</p>
+<p><img src="figures/ch04/scatter_plot_2_by_country.png" width="80%" style="display: block; margin: auto;" />
+We have colored each dot by the country. This plot shows the trend of life expectancy for <strong>each country</strong> with years.
+Since there are so many countries in our data, this plot looks messy, unclear and our plot legend “explodes”.</p>
+<p>Let’s make this better.</p>
 <p>Use the following parameters to create your chart:</p>
 <pre><code>X-Axis: year
 Y-Axis: life_exp. Right-click on drop-down button and de-select &quot;**Don’t summarize**&quot; option.
 Legend: By region</code></pre>
-<p><img src="figures/ch04/scatter_plot_3_by_region.png" width="80%" style="display: block; margin: auto;" /> Here, we color each data point by the region in which the countries lie. The <code>summarize</code> option summarizes the life expectancy (life_exp) for each region.</p>
-<p><em>PowerBI automatically summarizes the numerical data. Always be careful with that.</em></p>
+<p><img src="figures/ch04/scatter_plot_3_by_region.png" width="80%" style="display: block; margin: auto;" />
+This plot colors each data point by the region where the country is located. The <code>summarize</code> option summarizes the life expectancy (life_exp) for each region.</p>
+<p><em>PowerBI automatically summarizes the numerical data. Be aware and check this when you add new numerical data to visualization fields.</em></p>
 <p><strong>Activity:</strong> In the same chart, try the following:<br />
-* Size: By population * Report what follows.</p>
+* Size: By population
+* Report what follows.</p>
 </div>
 <div id="challenge-1" class="section level3 challenge">
 <h3><span class="header-section-number">3.1.2</span> Challenge 1:</h3>
-<div id="scatter-plot-1" class="section level4">
-<h4><span class="header-section-number">3.1.2.1</span> Scatter plot:</h4>
-<p>Keep the summarize option ON. Create a chart with the following options:</p>
+<p>####Scatter plot:
+Keep the summarize option ON. Create a chart with the following options:</p>
 <pre><code>X-Axis: year
 
 Y-Axis: life_exp
@@ -192,21 +197,22 @@ Y-Axis: life_exp
 Legend: By region</code></pre>
 <p>Click on the dropdown menu and select “<strong>Average</strong>”.</p>
 <p><strong>Solution</strong><br />
-Computes the sum of life_Exp in all countries in a given region, and plots it. Computes the average of life_Exp in all countries in a given region, and plots it.</p>
+Computes the sum of life_Exp in all countries in a given region, and plots it.
+Computes the average of life_Exp in all countries in a given region, and plots it.</p>
 <p><img src="figures/ch04/challenge01.png" width="100%" style="display: block; margin: auto;" /></p>
-</div>
 </div>
 <div id="bar-plots" class="section level3">
 <h3><span class="header-section-number">3.1.3</span> Bar Plots</h3>
-<p>Select the bar chart from the Visualization panel and drag the following columns:</p>
+<p>Select the bar chart from the <strong>Visualization panel</strong> and drag the following columns:</p>
 <pre><code>Axis: Year
 Values: Population 
 Legend: By region</code></pre>
-<p><img src="figures/ch04/bar_chart_pop_vs_year_by_region.png" width="80%" style="display: block; margin: auto;" /> This bar plot shows population variation over time (in years) for all 4 regions.</p>
+<p><img src="figures/ch04/bar_chart_pop_vs_year_by_region.png" width="80%" style="display: block; margin: auto;" />
+This bar plot shows population variation over time (in years) for all 4 regions.</p>
 </div>
 <div id="line-chart" class="section level3">
 <h3><span class="header-section-number">3.1.4</span> Line Chart</h3>
-<p>Let’s select a line chart from the visualization panel. Drag and drop following columns:</p>
+<p>Select a line chart from the <strong>Visualization panel</strong>. Drag and drop the following columns:</p>
 <pre><code>Axis: Year
 Values: Life_exp
 Legend: By name</code></pre>
@@ -220,8 +226,8 @@ Legend: By region</code></pre>
 </div>
 <div id="changing-visualizations" class="section level3">
 <h3><span class="header-section-number">3.1.5</span> Changing visualizations</h3>
-<p>As you can see from your line chart, this uses the same data as your scatter plot but presented in a different visual format. Instead of making a new seperate visualization to do a different visual style you can edit and change existing visualizations easily with Power BI.</p>
-<p>For the current line chart, select the visual and try selecting different visualizations on the visualization pane. Visualizations with similar structures to your existing visual, like bar charts, will change over seamlessly. A slightly different visualization like a scatter plot might require some testing with the <strong>Fields</strong> in the <strong>Details</strong> tab. Change your line chart to a scatter plot. Drag <strong>life_exp</strong> to the y-axis and <strong>Year</strong> to the x-axis. This should now be identical to your first scatter plot.</p>
+<p>As you can see from your line chart, this uses the same data as your scatter plot but presented in a different visual format. Instead of making a new seperate visualization to do a different visual style, you can edit and change existing visualizations easily with Power BI.</p>
+<p>For the current line chart, select the visual and try selecting different visualizations on the <strong>Visualization panel</strong>. Visualizations with similar structures to your existing visual, like bar charts, will change over seamlessly. A slightly different visualization like a scatter plot might require some testing with the <strong>Fields</strong> in the <strong>Details</strong> tab. Change your line chart to a scatter plot. Drag <strong>life_exp</strong> to the y-axis and <strong>Year</strong> to the x-axis. This should now be identical to your first scatter plot.</p>
 <p>As you may have noticed, dragging and dropping <strong>Fields</strong> into the <strong>Details</strong> tab will automatically change the data visualization. You can easily add new and swap fields using the drag and drop to change and discover new ways to visualize your data. You can remove fields by clicking the x next to the name.</p>
 </div>
 <div id="challenge-2-line-chart" class="section level3 challenge">
@@ -231,10 +237,10 @@ Legend: By region</code></pre>
 </div>
 <div id="trends-and-analytics-in-plots" class="section level3">
 <h3><span class="header-section-number">3.1.7</span> Trends and analytics in plots</h3>
-<p>Up till now we have been working in the <strong>Details</strong> tab of the <strong>Visualizations pane</strong>. There are two other useful tabs, <strong>Format</strong> and <strong>Analytics</strong>. Let’s have a look at <strong>Analytics</strong>.</p>
+<p>Up till now we have been working in the <strong>Details</strong> tab of the <strong>Visualizations panel</strong>. There are two other useful tabs, <strong>Format</strong> and <strong>Analytics</strong>. Let’s have a look at <strong>Analytics</strong>.</p>
 <p>This tab allows you to add different reference lines to your visualization which can help the user determine trends and insights in the data. Click on the scatter plot that you have created. Select the <strong>Analytics</strong> tab.</p>
 <p><img src="figures/ch04/analytics_tab.png" width="60%" style="display: block; margin: auto;" /></p>
-<p>Here you can add reference lines for various measures. Click add a trend line to your chart.</p>
+<p>Here you can add reference lines for various measures. Add a trend line to your chart.</p>
 <p>These options will vary depending on the chart that you use.</p>
 <p><img src="figures/ch04/trend_life_exp_vs_year_by_region.png" width="80%" style="display: block; margin: auto;" /></p>
 </div>
@@ -250,38 +256,43 @@ Legend: By region</code></pre>
 <h3><span class="header-section-number">3.2.1</span> Challenge 3: Scatter Plot</h3>
 <p>Let’s say you think there is a correlation between GDP per capita and life expectancy. Try creating a scatter plot showing the comparison between these two value split by region.</p>
 </div>
-</div>
-<div id="solution" class="section level2">
-<h2><span class="header-section-number">3.3</span> Solution</h2>
-<p>gdp_percap as x. life_exp as y. region as the legend.</p>
+<div id="challenge-3-solution" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Challenge 3: Solution</h3>
+<p>gdp_percap as x.
+life_exp as y.
+region as the legend.</p>
 <p><img src="figures/ch04/solution2.png" width="80%" style="display: block; margin: auto;" /></p>
-<p>As you can see, this visualization is very messy and confusing. In the next section we will show ways to make this visualization clearer.</p>
+<p>As you can see, this visualization is messy and confusing. In the next section we will show ways to make this visualization clearer.</p>
+</div>
 </div>
 <div id="filters" class="section level2">
-<h2><span class="header-section-number">3.4</span> Filters</h2>
-<p>Filters are a powerful way to break down and show specific parts of the data. You can access the <strong>Filters pane</strong> through clicking <strong>Filters</strong>.</p>
+<h2><span class="header-section-number">3.3</span> Filters</h2>
+<p>Filters are a powerful way to break down and show specific parts of the data. You can access the <strong>Filters panel</strong> through clicking <strong>Filters</strong>.</p>
 <p><img src="figures/ch04/filters.png" width="60%" style="display: block; margin: auto;" /></p>
 <p>You can filter data for individual visualizations, pages and for the entire report.</p>
-<p>Select the last plot you created- life_exp vs gdp_percap. Click on the Filter panel which is adjacent to the Visualization panel. Drag the year column and place it in “<strong>Filter on this page</strong>” bar.</p>
+<p>Select the scatter plot you created for challenge 3. Click on the <strong>Filter panel</strong> which is adjacent to the <strong>Visualization panel</strong>. Drag the year column and place it in “<strong>Filter on this page</strong>” bar.</p>
 <p><img src="figures/ch04/filter1.png" width="80%" style="display: block; margin: auto;" /></p>
 <p>Change the filter type to “<strong>Basic Filtering</strong>” Now you have all the years as a scrolling list. Select any one year and you can see the data for that particular year. For example, if we want to look at this data from year 2010, select 2010 in the filter panel.</p>
 <p><img src="figures/ch04/filter2.png" width="80%" style="display: block; margin: auto;" /></p>
 <div id="challenge-4-filtering" class="section level3 challenge">
-<h3><span class="header-section-number">3.4.1</span> Challenge 4: Filtering</h3>
+<h3><span class="header-section-number">3.3.1</span> Challenge 4: Filtering</h3>
 <p><strong>A.</strong> On the previous plot, create a filter for country names.</p>
 <p><strong>B.</strong> Visualize gdp_percapita vs life_exp for these countries: Kenya, Australia, Chile and Belgium</p>
 <p><img src="figures/ch04/solution3.png" width="80%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="slicer" class="section level3">
-<h3><span class="header-section-number">3.4.2</span> Slicer:</h3>
-<p>In the chart types, locate “<strong>Slicer</strong>”. Create a new blank Slicer chart. Drag and drop the <code>region</code> column in the data field. We have created a slicer and can visualize data for each region separately. Since Power BI is highly interactive, this slicer is applied to all the charts that we have created and will show the results for selection in the slicer. You can chose to apply slicer to specific charts by turning it off for other charts. We will cover this in the next section.</p>
+<h3><span class="header-section-number">3.3.2</span> Slicer:</h3>
+<p>In the chart types, locate <strong>Slicer</strong>. Create a new blank Slicer chart. Drag and drop the <code>region</code> column in the data field. We have created a slicer and can visualize data for each region separately. Since Power BI is highly interactive, this slicer is applied to all the charts that we have created and will show the results for selection in the slicer. You can chose to apply slicer to specific charts by turning it off for other charts. We will cover this in the next section.</p>
 <p>Note: Hold the CTRL button to select more than one option.</p>
 <p><img src="figures/ch04/slicer.png" width="80%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="challenge-5-slicer" class="section level3 challenge">
-<h3><span class="header-section-number">3.4.3</span> Challenge 5: Slicer</h3>
+<h3><span class="header-section-number">3.3.3</span> Challenge 5: Slicer</h3>
 <p><strong>A.</strong> Create a slicer for country names.</p>
 <p><strong>B.</strong> First visualize for Bangladesh. Then visualize for Bangladesh and Brazil.</p>
+</div>
+<div id="challenge-5-solution" class="section level3">
+<h3><span class="header-section-number">3.3.4</span> Challenge 5: Solution</h3>
 <p><img src="figures/ch04/challenge3c.png" width="80%" style="display: block; margin: auto;" /></p>
 <p>For Bangladesh</p>
 <p><img src="figures/ch04/bangladesh.png" width="80%" style="display: block; margin: auto;" /></p>
@@ -290,35 +301,36 @@ Legend: By region</code></pre>
 </div>
 </div>
 <div id="edit-interactions" class="section level2">
-<h2><span class="header-section-number">3.5</span> Edit interactions</h2>
-<p>You may have noticed that clicking on a data point in a visualization will affect other visualizations in the same way as a slicer. Click on a segement in your bar chart to see the effect on other visuals. While this interaction is useful in exploring the connections between the relationships shown in one visual to another, there will be cases where you do not want a visualization to change depending on the slicer or what data you have selected on the visual. You can edit how these interactions affect your visualisations through <strong>Edit interactions</strong> on the <strong>Format</strong> tab.</p>
+<h2><span class="header-section-number">3.4</span> Edit interactions</h2>
+<p>You may have noticed that clicking on a data point in a visualization will affect other visualizations in the same way as a slicer. Click on a segement in your bar chart to see the effect on other visuals.</p>
+<p>While this interaction is useful in exploring the connections between the relationships shown in one visual to another, there will be cases where you do not want a visualization to change depending on the slicer or what you have selected on a visual. You can edit how these interactions affect your visualisations through <strong>Edit interactions</strong> on the <strong>Format</strong> tab.</p>
 <p>Select the <strong>Avg GDP per capita vs Year by Income</strong> line chart. Select <strong>Asia</strong> on the chart legend. Select the <strong>Format</strong> tab and select <strong>Edit interactions</strong>. Several icons will pop up near the other visualizations. These control how the visual will look depending on your interaction with the selected visual.</p>
-<p>Selecting <strong>None</strong> will mean that the related visual will not change depending on interactions with the selected visual. Change one of the scatter plots to <strong>None</strong> and select a different data point on the line chart to see the effect. Select <strong>Asia</strong> on the line chart again. Currently the bar chart highlights the relevant section. Select the filter icon to change and select another data point on the line chart to see the effect.</p>
+<p>Selecting <strong>None</strong> will mean that the related visual will not change depending on interactions with the selected visual. Change one of the scatter plots to <strong>None</strong> and select a different data point on the line chart to see the effect.
+Select <strong>Asia</strong> on the line chart again. Currently the bar chart highlights the relevant section. Select the filter icon to change and select another data point on the line chart to see the effect.</p>
 <p>Note: existing elements on the page may interfere with the <strong>Edit interactions</strong> icons. Resize and move your visuals to avoid this.</p>
 <p><img src="figures/ch04/edit-interactions.png" width="60%" style="display: block; margin: auto;" /></p>
 <p>Every visual interacts with all other visuals individually. Check the <strong>Edit interactions</strong> to make sure all your interactions work as expected.</p>
 </div>
 <div id="explore-marketplace-for-other-visualizations" class="section level2">
-<h2><span class="header-section-number">3.6</span> Explore Marketplace for other visualizations</h2>
+<h2><span class="header-section-number">3.5</span> Explore Marketplace for other visualizations</h2>
 <p>The visualizations we have been using are part of the default offerings in Power BI. There are more visualisations available in the marketplace. To import a new visualisation template from the marketplace, click on the icon “<strong>(…)</strong>”, i.e. three horizontal dots in the visualization panel then click on import from the marketplace.</p>
 <p><img src="figures/ch04/marketplace.png" width="60%" style="display: block; margin: auto;" /></p>
-<p>This will pop a new window, where you can search for various types of templates. We are looking for the Word Cloud template. Type Word Cloud in the search box, once you find the template click on the “<strong>Add icon</strong>”. This will add it to the visualization panel.</p>
+<p>This will pop a new window, where you can search for various types of templates. We are looking for the Word Cloud template. Type Word Cloud in the search box, once you find the template click on the <strong>Add icon</strong>. This will add it to the <strong>Visualization panel</strong>.</p>
 <p><img src="figures/ch04/wordcloud.png" width="100%" style="display: block; margin: auto;" /></p>
 <div id="challenge-6-create-a-word-cloud-for-countries-by-gdp-per-capita" class="section level3 challenge">
-<h3><span class="header-section-number">3.6.1</span> Challenge 6: Create a Word Cloud for countries by GDP per capita</h3>
-<div id="word-cloud" class="section level4">
-<h4><span class="header-section-number">3.6.1.1</span> Word Cloud</h4>
+<h3><span class="header-section-number">3.5.1</span> Challenge 6: Create a Word Cloud for countries by GDP per capita</h3>
+<p>####Word Cloud</p>
 <ol style="list-style-type: lower-alpha">
 <li><p>Create a plot that compares GDP per capita for each country</p>
-<p>Category: name Values: GDP per capita</p></li>
+<p>Category: name
+Values: GDP per capita</p></li>
 <li><p>Filter this for the year 2010.</p></li>
 <li><p>Use a slicer with years</p></li>
 </ol>
 <p><img src="figures/ch04/word_cloud.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
-</div>
 <div id="map-chart" class="section level3">
-<h3><span class="header-section-number">3.6.2</span> Map chart</h3>
+<h3><span class="header-section-number">3.5.2</span> Map chart</h3>
 <p>We need Latitude (lat) and Longitude (long) values to create a Map chart. For this, we use following parameters:</p>
 <pre><code>Size: Population
 Colour: Income level</code></pre>
@@ -354,7 +366,7 @@ gitbook.start({
 "google": false,
 "linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": false,
 "vk": false,
 "all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
@@ -364,6 +376,10 @@ gitbook.start({
 "size": 2
 },
 "edit": {
+"link": null,
+"text": null
+},
+"history": {
 "link": null,
 "text": null
 },

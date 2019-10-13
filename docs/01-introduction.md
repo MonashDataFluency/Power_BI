@@ -21,18 +21,21 @@ The use of Power BI could depend on the role that you are in. For example: if yo
 In the upcoming modules we would be discussing about these three components - **Desktop**, **Service** and **Mobile** apps - in more detail. 
 
 ## Power BI flow
-In the most general way, the flow starts at the Power BI Desktop, where a report is created. This created report can be published to the Power BI Service and finally shared so that the users can use it from the Mobile apps.
+Generally, the flow starts at the Power BI Desktop, where a report is created. This created report can be published to the Power BI Service and finally shared so that the users can use it from the Mobile apps.
 
-Its not always the case that this flow happens, but more often or not it is. We will stick to this flow for this entire tutorial to help learn the different aspects of Power BI.
+This is the most common approach for sharing reports. There are other approaches but we will stick to this flow for this entire tutorial to help learn the different aspects of Power BI.
 
 ## Use Power BI
-The **common** flow of activity in Power BI looks like this:
+The **common** flow of activity in Power BI looks like this:  
+
 1. Bring data into Power BI Desktop, and create a report.
 2. Publish to the Power BI service, where you can create new visualizations or build dashboards.
 3. Share dashboards with others, especially people who are on the go.
 4. View and interact with shared dashboards and reports in Power BI Mobile apps.
 
-As mentioned earlier, depending on the user role, the user might spend its most of the time in one of the three components than the other. 
+<img src="figures/ch01/powerbi-flow.png" width="100%" style="display: block; margin: auto;" />
+
+Depending on the user role, the user might spend most of the time in one of the three components than the other. 
 
 ## Building blocks of Power BI
 
@@ -49,11 +52,11 @@ The basic building blocks in Power BI are:
 
 
 ### Visualizations
-A visualization is a representation of data in a visual format. It could be a line chart, a bar graph, a color coded map or anything interesting to present the data. 
+A visualization is a representation of data in a visual format. It could be a line chart, a bar graph, a color coded map or any visual way to present the data. 
 
 <img src="figures/ch04/bar_chart_pop_vs_year_by_region.png" width="80%" style="display: block; margin: auto;" />
 
-Visualizations can be simple as a number representing something significant or it could be quite complex like multiple stacked chart showing the proportion users participating in a survey. The main idea of visualisation is to show the data in a way that it tells the story that is lying underneath it. Like it is said, a picture says a thousand words. 
+Visualizations can be a simple number representing a significant calculation or it could complex like multiple stacked charts showing the proportion of users participating in a survey. The main idea of visualisation is to show the data in a way that tells the story that is lying underneath it. Like the saying goes: a picture says a thousand words. 
 
 ### Datasets
 A **dataset** is a collection of data that Power BI uses to create its visualizations.
@@ -63,7 +66,7 @@ You can have a simple dataset that's based on a single table from a Microsoft Ex
 
 Dataset can also be a combination of many different sources, which can be filtered using Power BI and combined into one to use. 
 
-For example: One data source could be the countries and location in the form of Latitude and Longitude. Another data source could be the demographics of these countries like: population, GDP etc. Power BI can combine these two data sources into one dataset which can be used for visualizations. 
+For example: One data source contains countries and locations in the form of Latitude and Longitude. Another data source contains demographics of these countries like population and GDP. Power BI can combine these two data sources into one dataset which can be used for visualizations. 
 
 An important feature of Power BI is the ability to connect to various data sources using its connectors. Whether the data you want is in Excel or a Microsoft SQL Server database, in Azure or Oracle, or in a service like Facebook, Salesforce, or MailChimp, Power BI has built-in data connectors that let you easily connect to that data, filter it if necessary, and bring it into your dataset.
 
@@ -87,16 +90,12 @@ A dashboard must fit on a single page, often called a canvas (the canvas is the 
 Power BI Desktop is a free application for PCs that lets you gather, transform, and visualize your data. In this module, you'll learn how to find and collect data from different sources and how to clean or transform it. You'll also learn tricks to make data-gathering easier.
 Power BI Desktop and the Power BI Service work together. You can create your reports and dashboards in Power BI Desktop, and then publish them to the Power BI Service for others to consume.
 
-<img src="figures/ch05/powerbi_desktop_options.png" width="100%" style="display: block; margin: auto;" />
+<img src="figures/ch01/desktop-interface.png" width="100%" style="display: block; margin: auto;" />
 
 1. **Ribbon** - Displays common tasks that are associated with reports and visualizations.
-
 2. **Report view, or canvas** - Where visualizations are created and arranged. You can switch between **Report**, **Data**, and **Model** views by selecting the icons in the left column.
-
 3. **Pages tab** - Located along the bottom of the page, this area is where you would select or add a report page.
-
 4. **Visualizations pane** - Where you can change visualizations, customize colors or axes, apply filters, drag fields, and more.
-
 5. **Fields pane** - Where query elements and filters can be dragged onto the **Report** view or dragged to the **Filters** area of the Visualizations pane.
 
 

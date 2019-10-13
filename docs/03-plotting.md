@@ -34,13 +34,13 @@ Once you have loaded the file, you will not see the contents automatically. You 
 Replace image with gapminder data.
 Numerical data has ∑ symbol.
 -->
-In the previous chapter, we saw how to import data into Power BI. We also did some basic pre-processing of data like cleaning the data, changing the type of data, dealing with null and error values. In this section, we are going to work with our already processed data.
+In the previous chapter, we saw how to import data into Power BI. We also did some basic pre-processing of data like cleaning the data, changing the type of data, and dealing with null and error values. In this section, we are going to work with our already processed data.
 
 
-## Visualizations Panel
+## Visualization Panel
 
-We touched upon the different panels present in the Power BI interface. Now, we will explore the different panels dedicated to creating and formatting charts in detail.
-One of the panels is the Visualization panel highlighted in the Red box. It contains various types of charts that you can create to visualize your data. Some of the available chart types are - Stacked bar chart, Line chart, Area chart, Scatter plot, Pie chart, etc. You can also import a custom visual from a file or the marketplace if you click on the **…** icon. We will explore that in the later section. 
+We touched upon the different panels present in the Power BI interface. We will now explore the different panels dedicated to creating and formatting charts in detail.
+One of the panels is the **Visualization panel** highlighted in the Red box. It contains various types of charts that you can create to visualize your data. Some of the available chart types are - Stacked bar chart, Line chart, Area chart, Scatter plot, Pie chart, etc. You can also import a custom visual from a file or the marketplace if you click on the **…** icon. We will explore that in the later section. 
 
 
 <!--picture--->
@@ -49,26 +49,26 @@ One of the panels is the Visualization panel highlighted in the Red box. It cont
 
 ### Scatter plot
 
-Let's create our first chart - Scatter plot. The first step to plot any kind of plot in Power BI is to select the plot template/type from the visualization panel. So, we click on the scatter chart icon in the visualization panel and drag the columns to the respective -Axis field as shown in the below figure.
+Let's create our first chart, a Scatter plot. The first step to plot any kind of plot in Power BI is to select the plot template/type from the **Visualization panel**. Click on the scatter chart icon in the visualization panel and drag the columns to the respective -Axis field as shown in the below figure.
 
 <!--picture--->
 <img src="figures/ch04/scatter_plot_1.png" width="60%" style="display: block; margin: auto;" />
 
 We want to see how life expectancy (life_exp) varies with time (year) in years.
-After dragging the columns to their respective fields, we get out first scatter plot.
+After dragging the columns to their respective fields, we get our first scatter plot.
 An overall increasing trend can be seen after year 1900.
 
 <!--picture---> 
 <img src="figures/ch04/scatter_plot_2.png" width="80%" style="display: block; margin: auto;" />
 
-The final interface will look like the image below. The plot will be at the left of the visualization panel.
+The final interface will look like the image below. The plot will be at the left of the **Visualization panel**.
 
 <!--picture--->
 <img src="figures/ch04/scatter_plot_3.png" width="100%" style="display: block; margin: auto;" />
 
-In general, this will be the procedure to create any type of plot the Power BI i.e., Select the chart type from the visualization section, drag data to the -Axis fields.
+In general, this will be the procedure to create any type of plot in Power BI i.e. select the chart type from the **visualization panel** and then drag data to the relevant fields.
 
-The above scatter plot is not informative. Let’s explore what other things can we do with this plot.
+The above scatter plot is not informative. Let’s explore what else we can do with this plot.
 
     X-Axis: year
 
@@ -77,10 +77,10 @@ The above scatter plot is not informative. Let’s explore what other things can
     Legend: By name. Drag name column and place it in legend field.
 
 <img src="figures/ch04/scatter_plot_2_by_country.png" width="80%" style="display: block; margin: auto;" />
-Here, we have colored each dot by the country. This plot shows the trend of life expectancy for **each country** with years.
+We have colored each dot by the country. This plot shows the trend of life expectancy for **each country** with years.
 Since there are so many countries in our data, this plot looks messy, unclear and our plot legend "explodes".
 
-Let's see if we can make this better.
+Let's make this better.
 
 Use the following parameters to create your chart:
 
@@ -89,9 +89,9 @@ Use the following parameters to create your chart:
     Legend: By region
 
 <img src="figures/ch04/scatter_plot_3_by_region.png" width="80%" style="display: block; margin: auto;" />
-Here, we color each data point by the region in which the countries lie. The `summarize` option summarizes the life expectancy (life_exp) for each region.
+This plot colors each data point by the region where the country is located. The `summarize` option summarizes the life expectancy (life_exp) for each region.
 
-*PowerBI automatically summarizes the numerical data. Always be careful with that.*
+*PowerBI automatically summarizes the numerical data. Be aware and check this when you add new numerical data to visualization fields.*
 
 **Activity:** In the same chart, try the following:\
 * Size: By population
@@ -119,7 +119,7 @@ Computes the average of life_Exp in all countries in a given region, and plots i
 
 ### Bar Plots
 
-Select the bar chart from the Visualization panel and drag the following columns:
+Select the bar chart from the **Visualization panel** and drag the following columns:
 
     Axis: Year
     Values: Population 
@@ -131,7 +131,7 @@ This bar plot shows population variation over time (in years) for all 4 regions.
 
 ### Line Chart
 
-Let's select a line chart from the visualization panel. Drag and drop following columns:
+Select a line chart from the **Visualization panel**. Drag and drop the following columns:
 
     Axis: Year
     Values: Life_exp
@@ -151,9 +151,9 @@ Power BI computes average of Life expectancy for countries in each region and sh
 
 ### Changing visualizations
 
-As you can see from your line chart, this uses the same data as your scatter plot but presented in a different visual format. Instead of making a new seperate visualization to do a different visual style you can edit and change existing visualizations easily with Power BI. 
+As you can see from your line chart, this uses the same data as your scatter plot but presented in a different visual format. Instead of making a new seperate visualization to do a different visual style, you can edit and change existing visualizations easily with Power BI. 
 
-For the current line chart, select the visual and try selecting different visualizations on the visualization pane. Visualizations with similar structures to your existing visual, like bar charts, will change over seamlessly. A slightly different visualization like a scatter plot might require some testing with the **Fields** in the **Details** tab. Change your line chart to a scatter plot. Drag **life_exp** to the y-axis and **Year** to the x-axis. This should now be identical to your first scatter plot.
+For the current line chart, select the visual and try selecting different visualizations on the **Visualization panel**. Visualizations with similar structures to your existing visual, like bar charts, will change over seamlessly. A slightly different visualization like a scatter plot might require some testing with the **Fields** in the **Details** tab. Change your line chart to a scatter plot. Drag **life_exp** to the y-axis and **Year** to the x-axis. This should now be identical to your first scatter plot.
 
 As you may have noticed, dragging and dropping **Fields** into the **Details** tab will automatically change the data visualization. You can easily add new and swap fields using the drag and drop to change and discover new ways to visualize your data. You can remove fields by clicking the x next to the name.
 
@@ -164,13 +164,13 @@ As the line chart is showing the same information as an existing visualization, 
 
 ### Trends and analytics in plots
 
-Up till now we have been working in the **Details** tab of the **Visualizations pane**. There are two other useful tabs, **Format** and **Analytics**. Let's have a look at **Analytics**.
+Up till now we have been working in the **Details** tab of the **Visualizations panel**. There are two other useful tabs, **Format** and **Analytics**. Let's have a look at **Analytics**.
 
 This tab allows you to add different reference lines to your visualization which can help the user determine trends and insights in the data. Click on the scatter plot that you have created. Select the **Analytics** tab.
 
 <img src="figures/ch04/analytics_tab.png" width="60%" style="display: block; margin: auto;" />
 
-Here you can add reference lines for various measures. Click add a trend line to your chart.
+Here you can add reference lines for various measures. Add a trend line to your chart.
 
 These options will vary depending on the chart that you use.
 
@@ -191,24 +191,24 @@ The options available will be different for each visualization. Using these opti
 ### Challenge 3: Scatter Plot {.challenge}
 Let's say you think there is a correlation between GDP per capita and life expectancy. Try creating a scatter plot showing the comparison between these two value split by region.
 
-##Solution##
+### Challenge 3: Solution
 gdp_percap as x.
 life_exp as y.
 region as the legend.
 
 <img src="figures/ch04/solution2.png" width="80%" style="display: block; margin: auto;" />
 
-As you can see, this visualization is very messy and confusing. In the next section we will show ways to make this visualization clearer.
+As you can see, this visualization is messy and confusing. In the next section we will show ways to make this visualization clearer.
 
 ## Filters
 
-Filters are a powerful way to break down and show specific parts of the data. You can access the **Filters pane** through clicking **Filters**.
+Filters are a powerful way to break down and show specific parts of the data. You can access the **Filters panel** through clicking **Filters**.
 
 <img src="figures/ch04/filters.png" width="60%" style="display: block; margin: auto;" />
 
 You can filter data for individual visualizations, pages and for the entire report.
 
-Select the last plot you created- life_exp vs gdp_percap. Click on the Filter panel which is adjacent to the Visualization panel. Drag the year column and place it in "**Filter on this page**" bar. 
+Select the scatter plot you created for challenge 3. Click on the **Filter panel** which is adjacent to the **Visualization panel**. Drag the year column and place it in "**Filter on this page**" bar. 
 
 <img src="figures/ch04/filter1.png" width="80%" style="display: block; margin: auto;" />
 
@@ -226,7 +226,7 @@ Change the filter type to "**Basic Filtering**" Now you have all the years as a 
 <img src="figures/ch04/solution3.png" width="80%" style="display: block; margin: auto;" />
 
 ### Slicer:
-In the chart types, locate "**Slicer**". Create a new blank Slicer chart. Drag and drop the `region` column in the data field. We have created a slicer and can visualize data for each region separately. Since Power BI is highly interactive, this slicer is applied to all the charts that we have created and will show the results for selection in the slicer. You can chose to apply slicer to specific charts by turning it off for other charts. We will cover this in the next section.
+In the chart types, locate **Slicer**. Create a new blank Slicer chart. Drag and drop the `region` column in the data field. We have created a slicer and can visualize data for each region separately. Since Power BI is highly interactive, this slicer is applied to all the charts that we have created and will show the results for selection in the slicer. You can chose to apply slicer to specific charts by turning it off for other charts. We will cover this in the next section.
 
 Note: Hold the CTRL button to select more than one option.
   
@@ -238,7 +238,7 @@ Note: Hold the CTRL button to select more than one option.
 
 **B.** First visualize for Bangladesh. Then visualize for Bangladesh and Brazil.
 
-
+### Challenge 5: Solution
 <img src="figures/ch04/challenge3c.png" width="80%" style="display: block; margin: auto;" />
 
 For Bangladesh
@@ -251,7 +251,9 @@ For Bangladesh and Brazil
 
 ## Edit interactions
 
-You may have noticed that clicking on a data point in a visualization will affect other visualizations in the same way as a slicer. Click on a segement in your bar chart to see the effect on other visuals. While this interaction is useful in exploring the connections between the relationships shown in one visual to another, there will be cases where you do not want a visualization to change depending on the slicer or what data you have selected on the visual. You can edit how these interactions affect your visualisations through **Edit interactions** on the **Format** tab.
+You may have noticed that clicking on a data point in a visualization will affect other visualizations in the same way as a slicer. Click on a segement in your bar chart to see the effect on other visuals. 
+
+While this interaction is useful in exploring the connections between the relationships shown in one visual to another, there will be cases where you do not want a visualization to change depending on the slicer or what you have selected on a visual. You can edit how these interactions affect your visualisations through **Edit interactions** on the **Format** tab.
 
 Select the **Avg GDP per capita vs Year by Income** line chart. Select **Asia** on the chart legend. Select the **Format** tab and select **Edit interactions**. Several icons will pop up near the other visualizations. These control how the visual will look depending on your interaction with the selected visual.
 
@@ -271,7 +273,7 @@ The visualizations we have been using are part of the default offerings in Power
 <img src="figures/ch04/marketplace.png" width="60%" style="display: block; margin: auto;" />
 
 
-This will pop a new window, where you can search for various types of templates. We are looking for the Word Cloud template. Type Word Cloud in the search box, once you find the template click on the "**Add icon**". This will add it to the visualization panel. 
+This will pop a new window, where you can search for various types of templates. We are looking for the Word Cloud template. Type Word Cloud in the search box, once you find the template click on the **Add icon**. This will add it to the **Visualization panel**. 
 
 
 <img src="figures/ch04/wordcloud.png" width="100%" style="display: block; margin: auto;" />
