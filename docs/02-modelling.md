@@ -15,19 +15,19 @@ Once we select this, we go ahead and select the "**CSV option**" under the "**fi
 
 <img src="figures/ch03/2.1.2_Importing_data.png" width="80%" style="display: block; margin: auto;" />
 
-Then browse the file and select the necessary CSV file. Press on "**Connect**" to have a quick preview of the file. Once we click on "**load**", Power BI will successfully import the file. Any errors will then pop up ready to be analysed and fixed.
+Then browse the file and select the necessary CSV file. Press on "**Connect**" to have a quick preview of the file. Once we click on "**Load**", Power BI will successfully import the file. Any errors will then pop up ready to be analysed and fixed.
 
 <img src="figures/ch03/2.1.3_Importing_data.png" width="100%" style="display: block; margin: auto;" />
 
 <img src="figures/ch03/2.1.4_Importing_data.png" width="100%" style="display: block; margin: auto;" />
 
-Clicking on "**View errors**" will enable us to check the detected errors right away. Alternatively, you close the pop up and click "**Edit queries**" to check for any errors. This will query and list the errors in the data. 
+Clicking on "**View errors**" will enable us to check the detected errors right away. Alternatively, close the pop up and click "**Edit queries**" to check for any errors. This will query and list the errors in the data. 
 
 ## Dealing with errors
 
 ### Check for “controlled” errors
 
-Once queried, we can see the controlled errors in the data. These errors can be analysed by clicking on them. Every error has a brief description to it saying what might’ve gone wrong.
+Once queried, we can see the controlled errors in the data. These errors can be analysed by clicking on them. Every error has a brief description to it saying what might have gone wrong.
 
 ### Change datatype of column
 

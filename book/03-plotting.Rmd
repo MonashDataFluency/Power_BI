@@ -97,7 +97,7 @@ Let's make this better.
 Use the following parameters to create your chart:
 
     X-Axis: year
-    Y-Axis: life_exp. Right-click on drop-down button and de-select "**Don’t summarize**" option.
+    Y-Axis: life_exp. Right-click on drop-down button and de-select "Don’t summarize" option.
     Legend: By region
 
 ```{r echo=F,out.width="80%",fig.align="center"}
@@ -112,8 +112,7 @@ This plot colors each data point by the region where the country is located. The
 * Report what follows.
 
 
-### Challenge 1:{.challenge}
-####Scatter plot:
+### Challenge 1 Scatter plot{.challenge}
 Keep the summarize option ON. Create a chart with the following options: 
 
     X-Axis: year
@@ -124,7 +123,8 @@ Keep the summarize option ON. Create a chart with the following options:
  
 Click on the dropdown menu and select "**Average**".
 
-**Solution**\
+### Challenge 1: Solution {.challenge}
+
 Computes the sum of life_Exp in all countries in a given region, and plots it.
 Computes the average of life_Exp in all countries in a given region, and plots it.
 
@@ -182,6 +182,7 @@ As you may have noticed, dragging and dropping **Fields** into the **Details** t
 ### Challenge 2: Line chart {.challenge}
 As the line chart is showing the same information as an existing visualization, change the chart to show average GDP per capita instead of average life expectancy.
 
+### Challenge 2: Solution {.challenge}
 ```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/gdp_linechart.png")
 ```
@@ -221,7 +222,7 @@ The options available will be different for each visualization. Using these opti
 ### Challenge 3: Scatter Plot {.challenge}
 Let's say you think there is a correlation between GDP per capita and life expectancy. Try creating a scatter plot showing the comparison between these two value split by region.
 
-### Challenge 3: Solution
+### Challenge 3: Solution {.challenge}
 gdp_percap as x.
 life_exp as y.
 region as the legend.
@@ -261,6 +262,8 @@ knitr::include_graphics("figures/ch04/filter2.png")
 
 **B.** Visualize gdp_percapita vs life_exp for these countries: Kenya, Australia, Chile and Belgium
 
+### Challenge 4: Solution {.challenge}
+
 ```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/solution3.png")
 ```
@@ -280,7 +283,7 @@ knitr::include_graphics("figures/ch04/slicer.png")
 
 **B.** First visualize for Bangladesh. Then visualize for Bangladesh and Brazil.
 
-### Challenge 5: Solution
+### Challenge 5: Solution {.challenge}
 ```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch04/challenge3c.png")
 ```
@@ -335,16 +338,16 @@ knitr::include_graphics("figures/ch04/wordcloud.png")
 
 ### Challenge 6: Create a Word Cloud for countries by GDP per capita {.challenge}
 
-####Word Cloud
-
 a) Create a plot that compares GDP per capita for each country
 
-    Category: name
-    Values: GDP per capita
+* Category: name
+* Values: GDP per capita
     
 b) Filter this for the year 2010.
 
 c) Use a slicer with years
+
+### Challenge 6: Solution {.challenge}
 
 ```{r echo=F,out.width="100%",fig.align="center"}
 knitr::include_graphics("figures/ch04/word_cloud.png")
