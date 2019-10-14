@@ -192,7 +192,11 @@ The options available will be different for each visualization. Using these opti
 ### Challenge 3: Scatter Plot {.challenge}
 Let's say you think there is a correlation between GDP per capita and life expectancy. Try creating a scatter plot showing the comparison between these two value split by region.
 
+<<<<<<< HEAD
 ### Challenge 3: Solution {.challenge}
+=======
+### Challenge 3: Solution
+>>>>>>> 0bae289c24d08b3d2c7dbf71332d391aa814bda8
 gdp_percap as x.
 life_exp as y.
 region as the legend.
@@ -241,7 +245,11 @@ Note: Hold the CTRL button to select more than one option.
 
 **B.** First visualize for Bangladesh. Then visualize for Bangladesh and Brazil.
 
+<<<<<<< HEAD
 ### Challenge 5: Solution {.challenge}
+=======
+### Challenge 5: Solution
+>>>>>>> 0bae289c24d08b3d2c7dbf71332d391aa814bda8
 <img src="figures/ch04/challenge3c.png" width="80%" style="display: block; margin: auto;" />
 
 For Bangladesh
