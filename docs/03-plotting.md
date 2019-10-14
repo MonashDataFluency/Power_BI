@@ -54,7 +54,7 @@ Let's create our first chart, a Scatter plot. The first step to plot any kind of
 <!--picture--->
 <img src="figures/ch04/scatter_plot_1.png" width="60%" style="display: block; margin: auto;" />
 
-We want to see how life expectancy (life_exp) varies with time (year) in years.
+We want to see how life expectancy `life_exp` varies with time `year` in years.
 After dragging the columns to their respective fields, we get our first scatter plot.
 An overall increasing trend can be seen after year 1900.
 
@@ -66,13 +66,13 @@ The final interface will look like the image below. The plot will be at the left
 <!--picture--->
 <img src="figures/ch04/scatter_plot_3.png" width="100%" style="display: block; margin: auto;" />
 
-In general, this will be the procedure to create any type of plot in Power BI i.e. select the chart type from the **visualization panel** and then drag data to the relevant fields.
+In general, this will be the procedure to create any type of plot in Power BI i.e. select the chart type from the **Visualization panel** and then drag data to the relevant fields.
 
 The above scatter plot is not informative. Let’s explore what else we can do with this plot.
 
     X-Axis: year
 
-    Y-Axis: life_exp. Right-click on drop-down button and select "Don’t summarize" option.
+    Y-Axis: life_exp. Click on drop-down button and select "Don’t summarize" option.
 
     Legend: By name. Drag name column and place it in legend field.
 
@@ -89,13 +89,14 @@ Use the following parameters to create your chart:
     Legend: By region
 
 <img src="figures/ch04/scatter_plot_3_by_region.png" width="80%" style="display: block; margin: auto;" />
-This plot colors each data point by the region where the country is located. The `summarize` option summarizes the life expectancy (life_exp) for each region.
+This plot colors each data point by the region where the country is located. The **summarize** option summarizes the life expectancy `life_exp` for each region.
 
 *PowerBI automatically summarizes the numerical data. Be aware and check this when you add new numerical data to visualization fields.*
 
-**Activity:** In the same chart, try the following:\
-* Size: By population
-* Report what follows.
+**Activity:** In the same chart, try the following:
+
++ Size: By `population`
++ Report what follows.
 
 
 ### Challenge 1 Scatter plot{.challenge}
@@ -107,12 +108,12 @@ Keep the summarize option ON. Create a chart with the following options:
 
     Legend: By region
  
-Click on the dropdown menu and select "**Average**".
+Click on the dropdown menu and select **Average**.
 
 ### Challenge 1: Solution {.challenge}
 
-Computes the sum of life_Exp in all countries in a given region, and plots it.
-Computes the average of life_Exp in all countries in a given region, and plots it.
+Computes the sum of `life_Exp` in all countries in a given region, and plots it.
+Computes the average of `life_Exp` in all countries in a given region, and plots it.
 
 
 <img src="figures/ch04/challenge01.png" width="100%" style="display: block; margin: auto;" />
@@ -142,7 +143,7 @@ Select a line chart from the **Visualization panel**. Drag and drop the followin
 We get differently colored lines for each country. Now try changing the Legend to `by region`.
 
     Axis: Year
-    Values: Average of Life_exp. Select "**Average"**
+    Values: Average of Life_exp. Select Average
     Legend: By region
 
 <img src="figures/ch04/linechart_avg_life_exp_vs_year_by_region.png" width="80%" style="display: block; margin: auto;" />
@@ -153,7 +154,9 @@ Power BI computes average of Life expectancy for countries in each region and sh
 
 As you can see from your line chart, this uses the same data as your scatter plot but presented in a different visual format. Instead of making a new seperate visualization to do a different visual style, you can edit and change existing visualizations easily with Power BI. 
 
-For the current line chart, select the visual and try selecting different visualizations on the **Visualization panel**. Visualizations with similar structures to your existing visual, like bar charts, will change over seamlessly. A slightly different visualization like a scatter plot might require some testing with the **Fields** in the **Details** tab. Change your line chart to a scatter plot. Drag **life_exp** to the y-axis and **Year** to the x-axis. This should now be identical to your first scatter plot.
+For the current line chart, select the visual and try selecting different visualizations on the **Visualization panel**. Visualizations with similar structures to your existing visual, like bar charts, will change over seamlessly. A slightly different visualization like a scatter plot might require some testing with the **Fields** in the **Details** tab. 
+
+Change your line chart to a scatter plot. Drag `life_exp` to the y-axis and `Year` to the x-axis. This should now be identical to your first scatter plot.
 
 As you may have noticed, dragging and dropping **Fields** into the **Details** tab will automatically change the data visualization. You can easily add new and swap fields using the drag and drop to change and discover new ways to visualize your data. You can remove fields by clicking the x next to the name.
 
@@ -183,23 +186,23 @@ An important aspect of visualizing and telling the story of your data is the des
 
 Click on your scatter chart you created for Challenge 2 and click the **Format** tab to see the variety of options available to make your visualization more readable and understandable. 
 
-A common issue is the default titles of charts. This will usually use the names of the data columns which is often meaningless to the average user. Click on **Title** and change it to a clearer name like 'Regional average life expectancy since 1800'. You can also edit the legend or axis labels. Let's make the axis labels more clear. Change the font for the x and y axis to Segoe(Bold), increase the font size to 12 and color to black.
+A common issue is the default titles of charts. This will usually use the names of the data columns which is often meaningless to the average user. 
+
+Click on **Title** and change it to a clearer name like 'Regional average life expectancy since 1800'. 
+You can also edit the legend or axis labels. Let's make the axis labels more clear. 
+Change the font for the x and y axis to Segoe(Bold), increase the font size to 12 and color to black.
 
 <img src="figures/ch04/format.png" width="60%" style="display: block; margin: auto;" />
 
 The options available will be different for each visualization. Using these options will greatly increase the engagement and understanding of your visuals.
 
 ### Challenge 3: Scatter Plot {.challenge}
-Let's say you think there is a correlation between GDP per capita and life expectancy. Try creating a scatter plot showing the comparison between these two value split by region.
+Let's say you think there might be a correlation between GDP per capita and life expectancy. Try creating a scatter plot showing the comparison between these two value split by region.
 
-<<<<<<< HEAD
 ### Challenge 3: Solution {.challenge}
-=======
-### Challenge 3: Solution
->>>>>>> 0bae289c24d08b3d2c7dbf71332d391aa814bda8
-gdp_percap as x.
-life_exp as y.
-region as the legend.
++ `gdp_percap` as x.
++ `life_exp` as y.
++ `region` as the legend.
 
 <img src="figures/ch04/solution2.png" width="80%" style="display: block; margin: auto;" />
 
@@ -217,7 +220,7 @@ Select the scatter plot you created for challenge 3. Click on the **Filter panel
 
 <img src="figures/ch04/filter1.png" width="80%" style="display: block; margin: auto;" />
 
-Change the filter type to "**Basic Filtering**" Now you have all the years as a scrolling list. Select any one year and you can see the data for that particular year. For example, if we want to look at this data from year 2010, select 2010 in the filter panel.
+Change the filter type to **Basic Filtering** Now you have all the years as a scrolling list. Select any one year and you can see the data for that particular year. For example, if we want to look at this data from year 2010, select 2010 in the filter panel.
 
 <img src="figures/ch04/filter2.png" width="80%" style="display: block; margin: auto;" />
 
@@ -226,14 +229,14 @@ Change the filter type to "**Basic Filtering**" Now you have all the years as a 
 
 **A.** On the previous plot, create a filter for country names.
 
-**B.** Visualize gdp_percapita vs life_exp for these countries: Kenya, Australia, Chile and Belgium
+**B.** Visualize `gdp_percapita` vs `life_exp` for these countries: Kenya, Australia, Chile and Belgium
 
 ### Challenge 4: Solution {.challenge}
 
 <img src="figures/ch04/solution3.png" width="80%" style="display: block; margin: auto;" />
 
 ### Slicer:
-In the chart types, locate **Slicer**. Create a new blank Slicer chart. Drag and drop the `region` column in the data field. We have created a slicer and can visualize data for each region separately. Since Power BI is highly interactive, this slicer is applied to all the charts that we have created and will show the results for selection in the slicer. You can chose to apply slicer to specific charts by turning it off for other charts. We will cover this in the next section.
+In the chart types, locate **Slicer**. Create a new blank Slicer chart. Drag and drop the **region** column in the data field. We have created a slicer and can visualize data for each region separately. Since Power BI is highly interactive, this slicer is applied to all the charts that we have created and will show the results for selection in the slicer. You can chose to apply slicer to specific charts by turning it off for other charts. We will cover this in the next section.
 
 Note: Hold the CTRL button to select more than one option.
   
@@ -245,11 +248,7 @@ Note: Hold the CTRL button to select more than one option.
 
 **B.** First visualize for Bangladesh. Then visualize for Bangladesh and Brazil.
 
-<<<<<<< HEAD
 ### Challenge 5: Solution {.challenge}
-=======
-### Challenge 5: Solution
->>>>>>> 0bae289c24d08b3d2c7dbf71332d391aa814bda8
 <img src="figures/ch04/challenge3c.png" width="80%" style="display: block; margin: auto;" />
 
 For Bangladesh
@@ -279,7 +278,7 @@ Every visual interacts with all other visuals individually. Check the **Edit int
 
 ## Explore Marketplace for other visualizations
 
-The visualizations we have been using are part of the default offerings in Power BI. There are more visualisations available in the marketplace. To import a new visualisation template from the marketplace, click on the icon "**(...)**", i.e. three horizontal dots in the visualization panel then click on import from the marketplace.
+The visualizations we have been using are part of the default offerings in Power BI. There are more visualisations available in the marketplace. To import a new visualisation template from the marketplace, click on the icon **(...)**, i.e. three horizontal dots in the visualization panel then click on import from the marketplace.
 
 <img src="figures/ch04/marketplace.png" width="60%" style="display: block; margin: auto;" />
 
@@ -294,8 +293,8 @@ This will pop a new window, where you can search for various types of templates.
 
 a) Create a plot that compares GDP per capita for each country
 
-* Category: name
-* Values: GDP per capita
+* Category: `name`
+* Values: `GDP per capita`
     
 b) Filter this for the year 2010.
 
@@ -306,7 +305,7 @@ c) Use a slicer with years
 <img src="figures/ch04/word_cloud.png" width="100%" style="display: block; margin: auto;" />
 
 ### Map chart
-We need Latitude (lat) and Longitude (long) values to create a Map chart. For this, we use following parameters:
+We need Latitude `lat` and Longitude `long` values to create a Map chart. For this, we use the following parameters:
 
     Size: Population
     Colour: Income level
