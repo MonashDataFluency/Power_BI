@@ -62,7 +62,7 @@ After installing Power BI Desktop, you can sign up for Power BI using your Monas
 
 ### Data {-}
 
-Download the data file [`gap-minder.csv`](https://raw.githubusercontent.com/MonashDataFluency/Power_BI/master/powerbi-files/gap-minder.csv) for the course. 
+Download the data file [`gap-minder.csv`](https://github.com/MonashDataFluency/Power_BI/raw/master/docs/powerbi-files.zip) for the course. 
 
 ### Source code {-}
 
