@@ -9,17 +9,17 @@ Power BI Desktop has a "**Get Data**" button from the ribbon on the "**Home**" t
 
 As our first step to import the dataset/file into Power BI, we click on the Get Data icon on the ribbon of Home tab.
 
-<img src="figures/ch03/2.1_Importing_data.png" width="80%" style="display: block; margin: auto;" />
+<img src="figures/ch02/2.1_Importing_data.png" width="80%" style="display: block; margin: auto;" />
 
 Once we select this, we go ahead and select the "**CSV option**" under the "**file**" subheading. 
 
-<img src="figures/ch03/2.1.2_Importing_data.png" width="80%" style="display: block; margin: auto;" />
+<img src="figures/ch02/2.1.2_Importing_data.png" width="80%" style="display: block; margin: auto;" />
 
 Then browse the file and select the necessary CSV file. Press on "**Connect**" to have a quick preview of the file. Once we click on "**Load**", Power BI will successfully import the file. Any errors will then pop up ready to be analysed and fixed.
 
-<img src="figures/ch03/2.1.3_Importing_data.png" width="100%" style="display: block; margin: auto;" />
+<img src="figures/ch02/2.1.3_Importing_data.png" width="100%" style="display: block; margin: auto;" />
 
-<img src="figures/ch03/2.1.4_Importing_data.png" width="100%" style="display: block; margin: auto;" />
+<img src="figures/ch02/2.1.4_Importing_data.png" width="100%" style="display: block; margin: auto;" />
 
 Clicking on "**View errors**" will enable us to check the detected errors right away. Alternatively, close the pop up and click "**Edit queries**" to check for any errors. This will query and list the errors in the data. 
 

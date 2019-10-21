@@ -13,8 +13,5 @@ html :
 docs/powerbi-files.zip : powerbi-files/*
 	zip -FSr docs/powerbi-files.zip powerbi-files
 
-ingest :
-	cd ingest ; make
-
 clean :
 	rm -rf docs/*

@@ -54,7 +54,7 @@ The basic building blocks in Power BI are:
 ### Visualizations
 A visualization is a representation of data in a visual format. It could be a line chart, a bar graph, a color coded map or any visual way to present the data. 
 
-<img src="figures/ch04/bar_chart_pop_vs_year_by_region.png" width="80%" style="display: block; margin: auto;" />
+<img src="figures/ch03/bar_chart_pop_vs_year_by_region.png" width="80%" style="display: block; margin: auto;" />
 
 Visualizations can be a simple number representing a significant calculation or it could complex like multiple stacked charts showing the proportion of users participating in a survey. The main idea of visualisation is to show the data in a way that tells the story that is lying underneath it. Like the saying goes: a picture says a thousand words. 
 
@@ -62,7 +62,7 @@ Visualizations can be a simple number representing a significant calculation or 
 A **dataset** is a collection of data that Power BI uses to create its visualizations.
 You can have a simple dataset that's based on a single table from a Microsoft Excel workbook, similar to what's shown in the following image.
 
-<img src="figures/ch03/2.1.3_Importing_data.png" width="100%" style="display: block; margin: auto;" />
+<img src="figures/ch02/2.1.3_Importing_data.png" width="100%" style="display: block; margin: auto;" />
 
 Dataset can also be a combination of many different sources, which can be filtered using Power BI and combined into one to use. 
 
@@ -75,7 +75,7 @@ After you have a dataset, you can begin creating visualizations that show differ
 ### Reports
 In Power BI, a **Report** is a collection of visualizations that appear together on one or more pages. A report in Power BI is a collection of items that are related to each other. The following image shows a report that you will be creating by the end of the session. You can also create reports in the Power BI service.
 
-<img src="figures/ch05/edit_report.png" width="100%" style="display: block; margin: auto;" />
+<img src="figures/ch04/edit_report.png" width="100%" style="display: block; margin: auto;" />
 
 Reports let us create and structure visualizations on pages based on the way the we want to tell the story. 
 

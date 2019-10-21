@@ -47,3 +47,6 @@ rsconnect/
 
 # rmd output inside /book
 /book/*.html
+/book/*.log
+/book/*.md
+/book/*.tex

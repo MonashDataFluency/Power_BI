@@ -18,7 +18,7 @@ header-includes:
 These are the course notes for the "Introduction to Power BI" course given by the [Monash Bioinformatics Platform](https://www.monash.edu/researchinfrastructure/bioinformatics) for the [Monash Data Fluency](https://monashdatafluency.github.io/) initiative. Our teaching style is based on the style of [The Carpentries](https://carpentries.org/). 
 
 * [PDF version for printing](https://github.com/MonashDataFluency/Power_BI/raw/master/docs/powerbi-intro.pdf)
-* [ZIP of data files used in this workshop](https://monashdatafluency.github.io/powerbi-intro/powerbi-files.zip)
+* [ZIP of data files used in this workshop](https://github.com/MonashDataFluency/Power_BI/raw/master/docs/powerbi-files.zip)
 
 During this workshop we will be using Power BI Desktop installed on your computer. There are several ways to download Power BI Desktop, depending on which system you use.
 
@@ -28,27 +28,27 @@ During this workshop we will be using Power BI Desktop installed on your compute
 
 The first option is to visit Windows Store to get the [Power BI Desktop app](https://www.microsoft.com/en-au/p/power-bi-desktop/9ntxr16hnw1t?activetab=pivot:overviewtab) and install it. Note that the system requirements is Windows 10 version 14393.0 or higher. 
 
-<img src="figures/Ch01/AppStore.png" width="80%" style="display: block; margin: auto;" />
+<img src="figures/ch00/AppStore.png" width="80%" style="display: block; margin: auto;" />
 
 If you are using a Monash machine, try searching "**Power BI**" in "[Software Center](https://www.monash.edu/esolutions/software/install-software-on-monash-devices)" and install it. For questions concerning installation on a Monash machine, you may [contact eSolutions](https://www.monash.edu/esolutions/contact) for help. 
 
-<img src="figures/Ch01/SoftwareCenter.png" width="80%" style="display: block; margin: auto;" />
+<img src="figures/ch00/SoftwareCenter.png" width="80%" style="display: block; margin: auto;" />
 
 * **Power BI website**
 
 You can also download Power BI Desktop from the [Power BI website](http://go.microsoft.com/fwlink/?LinkID=521662) and install it as an application on your computer. 
 
-<img src="figures/Ch01/WebInstall.png" width="60%" style="display: block; margin: auto;" />
+<img src="figures/ch00/WebInstall.png" width="60%" style="display: block; margin: auto;" />
 
 * **Power BI service**
 
 Or if you prefer [Power BI Service](https://app.powerbi.com/home), you can get it by clicking the "**Download**" button in the upper right and selecting "**Power BI Desktop**". To use Power BI service, you may need to [sign in](https://powerbi.microsoft.com/en-us/landing/signin/) your Microsoft account. 
 
-<img src="figures/Ch01/Service.png" width="100%" style="display: block; margin: auto;" />
+<img src="figures/ch00/Service.png" width="100%" style="display: block; margin: auto;" />
 
 After the setup process, you will be able to see the following Start Screen. 
 
-<img src="figures/Ch01/WelcomePage.png" width="80%" style="display: block; margin: auto;" />
+<img src="figures/ch00/WelcomePage.png" width="80%" style="display: block; margin: auto;" />
 
 **2. MacOS**
 
