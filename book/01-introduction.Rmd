@@ -3,7 +3,7 @@ output:
   pdf_document: default
   html_document: default
 ---
-# Introduction to PowerBI
+# Introduction to Power BI
 
 ## Overview of Power BI
 Microsoft Power BI is a collection of apps, software services and connectors that come together to turn unrelated data into visually impressive and interactive insights. Power BI can work with simple data sources like Microsoft Excel and complicated ones like cloud-based or on-premises hybrid Data warehouses. Power BI has the capabilities to easily connect to your data sources, visualise and share and publish your findings with anyone and everyone. 

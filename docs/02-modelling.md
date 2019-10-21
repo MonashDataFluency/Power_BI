@@ -1,4 +1,4 @@
-# Import dataset and modelling 
+# Importing Dataset and Modelling 
 
 Power BI can connect to a whole range of data sources from Excel sheets and local databases to several Cloud services. Currently, over 60 different cloud services have specific connectors to help you connect with generic sources through XML, CSV, text, and ODBC. 
 Let us start connecting to one of the data sources. For today we will be working on the `gap_minder_map.csv` file.
@@ -25,11 +25,11 @@ Clicking on "**View errors**" will enable us to check the detected errors right 
 
 ## Dealing with errors
 
-### Check for “controlled” errors
+### Checking for “controlled” errors
 
 Once queried, we can see the controlled errors in the data. These errors can be analysed by clicking on them. Every error has a brief description to it saying what might have gone wrong.
 
-### Change datatype of column
+### Changing datatype of column
 
 One of the most common errors is the detection of the datatype of a particular column. While loading the data, Power BI guesses the column type based on the data it sees. If needed the datatypes of the columns can be changed to something relevant.
 Double click on the "**datatype**" icon on top of the column, select the "**datatype**" and click on "**Replace current step**".
@@ -70,7 +70,7 @@ Example:
 * Right-click on the `name` column header, click on "**Rename**" and rename the column to `Country`.
 * Click on the header for `life_exp`. Click on the "**Transform**" tab and click rename. Rename the column to `Life expectancy`.
 
-### Add and remove column
+### Adding and removing column
 
 #### Removing columns
 
@@ -102,7 +102,7 @@ Let’s say you want to calculate Total Gross Domestic Products (GDP) per countr
 
 It is important to know what sort of transformations the data has gone through to understand the current state of your data. These steps are listed on the "**Applied Steps**" section on the "**Query Editor**". Sometimes these steps might need to be moved up or down their order based on the required application. These steps can also be removed by clicking on the red crossmark next to the step. This will undo the action it performs and takes back the data to the previous stage.
 
-### Refresh data ready for analysis
+### Refreshing data ready for analysis
 
 Always refresh your data when you are ready to do your analysis and visualisation. Clicking the Refresh option will refresh the data and rerun all your queries. This will show any issues or errors with your data or your queries and ensure that all the data is up to date and ready for analysis.
 

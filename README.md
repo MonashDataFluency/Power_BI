@@ -11,11 +11,11 @@ make
 ## Schedule
 
 ```
-10:00am   Welcome overview, introduction
-10:45am   Importing and modelling, plotting
+10:00am   Welcome overview, Introduction to Power BI
+10:45am   Importing and Modelling, Plotting
 11:30pm   Tea break 
 11:45pm   Plotting
-12:40pm   Saving
+12:40pm   Saving and Exporting
 1.00pm    End Workshop
 ```
 
