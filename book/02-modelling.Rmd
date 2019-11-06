@@ -47,13 +47,14 @@ The `life_exp` column is displaying as text data. This is a problem as we may wa
 
 ### {.tip -}
 
-Select the **gap-minder** file. 
-Right click on top of the column and select the **Change type**.
-Change to **Decimal Number**.
+* Select the **gap-minder** file. 
+* Right click on top of the column and select **Change type**.
+* Change to **Decimal Number**.
+
+You can replace a current step in the query with **Replace current step** or add a new step to the query with **Add new step**. 
+* Click **Add new step**.
 
 ### {-}
-
-You can replace a current step in the query with **Replace current step** or add a new step to the query with **Add new step**. Click **Add new step**.
 
 Once necessary changes are made, it is important to refresh and check if the change was applied. We can do this by clicking on the **Refresh Preview** button on the ribbon.
 
@@ -105,7 +106,7 @@ Columns from raw data can be difficult to read or meaningless. Renaming the colu
 
 There are two ways to rename the columns in Power BI. Right-clicking on the header of the column gives you a menu of functions that you can do to the column. Select **Rename** to rename the column. You can also click on the column and then click on the **Transform** tab, from here you are presented a variety of transformation functions for the column. From here you can click on **Rename**.
 
-Example:
+### {.tip -}
 
 * Right-click on the `name` column header, click on **Rename** and rename the column to `Country`.
 * Click on the header for `life_exp`. Click on the **Transform** tab and click rename. Rename the column to `Life expectancy`.
@@ -118,7 +119,7 @@ Often when dealing with raw data you will find columns that are meaningless or u
 
 There are two ways to remove columns in Power BI. As in renaming a column, you can right-click the header, which will present a menu with the option to **Remove**. You can also click on the column, click on the **Home** tab and then click **Remove Columns**.
 
-Example:
+### {.tip -}
 You may not need the `g77` and `oecd` information.
 
 * Right-click on the `g77` column header, click on **Remove**
@@ -128,7 +129,7 @@ You may not need the `g77` and `oecd` information.
 
 Just as you would remove unsuitable data from your queries, you may need to add new columns to your data. There are a variety of options in Power BI to add different columns. Click on the **Add Column** tab to see the ways you can add a column.
 
-Example:
+### {.tip -}
 
 * Click on `gdp_percap`, click on the **Add Column** tab, click duplicate to create a separate column to run calculations on.
 

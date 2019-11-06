@@ -61,7 +61,7 @@ A visualization is a representation of data in a visual format. It could be a li
 knitr::include_graphics("figures/ch03/bar_chart_pop_vs_year_by_region.png")
 ```
 
-Visualizations can be a simple number representing a significant calculation or it could be complex like multiple charts showing the proportion of users participating in a survey. The main idea of visualisation is to show the data in a way that tells the story that is lying underneath it. Like the saying goes: a picture says a thousand words. 
+Visualizations can be a simple number representing a significant calculation or it could be more complex like multiple charts showing the proportion of users participating in a survey. The main idea of visualisation is to show the data in a way that tells the story that is lying underneath it. Like the saying goes: a picture says a thousand words. 
 
 ### Datasets
 A **dataset** is a collection of data that Power BI uses to create its visualizations.
