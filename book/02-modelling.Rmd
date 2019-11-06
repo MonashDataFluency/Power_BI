@@ -58,7 +58,7 @@ Data can have erroneous and missing values for a number of reasons. Missing data
 
 You can view the data in the **Data** section on the left sidebar. By applying a filter to a particular column, the null values can be analysed. To replace any null values, go to the **Query Editor** and use the **Replace values** option in the **Transform** tab. You can also remove error values by right-clicking a column and selecting the **Remove errors** option.
 
-Look in **Errors in gap-minder** in the Query Errors folder. You will notice that all the years for 1820 have a whitespace in it that is causing an error. Return to the gap-minder data, right click the `year` column and select **Replace errors**. Replace this with `1820`. This will replace all errors with the value `1820`. In this case this works as only one value is causing an issue. You can use **Replace values** to find a replace several values.
+Look in **Errors in gap-minder** in the Query Errors folder. You will notice that all the years for 1820 have a whitespace in it that is causing an error. Return to the gap-minder data, right click the `year` column and select **Replace errors**. Replace this with `1820`. This will replace all errors with the value `1820`. In this case this works as only one value is causing an issue. You can use **Replace values** to find and replace several values.
 
 ### Challenge 1: Replace missing values {.challenge}
 
@@ -69,7 +69,7 @@ Use the **Replace values** option on the `gdp_percap` column to replace the blan
 
 ### Final notes on dealing with errors
 
-Replacing error and missing values is not always a direct operation. Most of the times, these values must be carefully analyzed and replacement values need to be computed based on several factors. While this can be done with DAX in Power BI, this is not a key capability of Power BI. Furthermore these changes do not affect the source data set and are only represented in Power BI.
+Replacing error and missing values is not always a direct operation. Most of the time, these values must be carefully analyzed and replacement values need to be computed based on several factors. While this can be done with  in Power BI, this is not a key capability of Power BI. Furthermore these changes do not affect the source data set and are only represented in Power BI.
 
 The best approach is to clean up and eliminate errors from your data before you import into Power BI. This may take several iterations as Power BI can help identify the problems with your data set.
 
@@ -90,13 +90,13 @@ Example:
 * Right-click on the `name` column header, click on **Rename** and rename the column to `Country`.
 * Click on the header for `life_exp`. Click on the **Transform** tab and click rename. Rename the column to `Life expectancy`.
 
-### Adding and removing column
+### Adding and removing columns
 
 #### Removing columns
 
 Often when dealing with raw data you will find columns that are meaningless or unsuitable for your analysis. You can remove these columns in Query to eliminate clutter and streamline the data set making it easier to work with.
 
-There are two ways to remove columns in Power BI. Like in renaming a column, you can right-click the header, which will present a menu with the option to **Remove**. You can also click on the column, click on the **Home** tab and then click **Remove Columns**.
+There are two ways to remove columns in Power BI. As in renaming a column, you can right-click the header, which will present a menu with the option to **Remove**. You can also click on the column, click on the **Home** tab and then click **Remove Columns**.
 
 Example:
 You may not need the `g77` and `oecd` information.
@@ -110,17 +110,16 @@ Just as you would remove unsuitable data from your queries, you may need to add 
 
 Example:
 
-* Add or subtract a year to the `year` column to fix any widespread issues.
 * Click on `gdp_percap`, click on the **Add Column** tab, click duplicate to create a separate column to run calculations on.
 
-### Challenge 2: {.challenge}
+### Challenge 2: Add {.challenge}
 
 Perform a simple mathematical operation and add this as a new column.
-Let’s say you want to calculate Total Gross Domestic Products (GDP) per country. As Total GDP = Population x GDP per capita, using the new `gdp_percap` column you created in the previous example, create a new column with Total GDP per country.
+Let’s say you want to calculate Total Gross Domestic Products (GDP) per country. As Total GDP = Population x GDP per capita, using the new `gdp_percap` column you created in the previous example, use **Custom Column** to create a new column with Total GDP per country.
 
 ### Navigating 'applied steps' and undoing
 
-It is important to know what sort of transformations the data has gone through to understand the current state of your data. These steps are listed on the **Applied Steps** section on the **Query Editor**. Sometimes these steps might need to be moved up or down their order based on the required application. These steps can also be removed by clicking on the red crossmark next to the step. This will undo the action it performs and takes back the data to the previous stage.
+It is important to know what sort of transformations the data has gone through to understand the current state of your data. These steps are listed on the **Applied Steps** section on the **Query Editor**. Sometimes these steps might need to be moved up or down based on the required application. These steps can also be removed by clicking on the red crossmark next to the step. This will undo the action it performs and returns the data to the previous stage.
 
 ### Refreshing data ready for analysis
 
