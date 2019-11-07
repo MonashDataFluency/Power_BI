@@ -52,6 +52,7 @@ The `life_exp` column is displaying as text data. This is a problem as we may wa
 * Change to **Decimal Number**.
 
 You can replace a current step in the query with **Replace current step** or add a new step to the query with **Add new step**. 
+
 * Click **Add new step**.
 
 ### {-}
@@ -124,6 +125,8 @@ You may not need the `g77` and `oecd` information.
 
 * Right-click on the `g77` column header, click on **Remove**
 * Left-click on `oecd` column header, click on **Home** tab, click **Remove Column**
+
+### {-}
 
 #### Adding columns
 
