@@ -1,7 +1,7 @@
 ---
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 # Introduction to Power BI
 
@@ -40,6 +40,7 @@ Depending on the user role, the user might spend most of the time in one of the 
 ## Building blocks of Power BI
 
 The basic building blocks in Power BI are:
+
 * Visualizations
 
 * Datasets
@@ -56,7 +57,7 @@ A visualization is a representation of data in a visual format. It could be a li
 
 <img src="figures/ch03/bar_chart_pop_vs_year_by_region.png" width="80%" style="display: block; margin: auto;" />
 
-Visualizations can be a simple number representing a significant calculation or it could complex like multiple stacked charts showing the proportion of users participating in a survey. The main idea of visualisation is to show the data in a way that tells the story that is lying underneath it. Like the saying goes: a picture says a thousand words. 
+Visualizations can be a simple number representing a significant calculation or it could be more complex like multiple charts showing the proportion of users participating in a survey. The main idea of visualisation is to show the data in a way that tells the story that is lying underneath it. Like the saying goes: a picture says a thousand words. 
 
 ### Datasets
 A **dataset** is a collection of data that Power BI uses to create its visualizations.
@@ -66,7 +67,7 @@ You can have a simple dataset that's based on a single table from a Microsoft Ex
 
 Dataset can also be a combination of many different sources, which can be filtered using Power BI and combined into one to use. 
 
-For example: One data source contains countries and locations in the form of Latitude and Longitude. Another data source contains demographics of these countries like population and GDP. Power BI can combine these two data sources into one dataset which can be used for visualizations. 
+For example: One data source contains countries and locations in the form of latitude and longitude. Another data source contains demographics of these countries like population and GDP. Power BI can combine these two data sources into one dataset which can be used for visualizations. 
 
 An important feature of Power BI is the ability to connect to various data sources using its connectors. Whether the data you want is in Excel or a Microsoft SQL Server database, in Azure or Oracle, or in a service like Facebook, Salesforce, or MailChimp, Power BI has built-in data connectors that let you easily connect to that data, filter it if necessary, and bring it into your dataset.
 

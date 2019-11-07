@@ -25,19 +25,28 @@ If there are any errors in the data load, select **View errors** to check any de
 
 ## Dealing with errors
 
-### Checking for “controlled” errors
+### Checking for automatically detected errors
 
-Once queried, any controlled errors will be displayed. Clicking on these errors will provide a brief description on what might have gone wrong. There will be some errors showing up in your data, click on the errors to see what has caused the issue.
+Once queried, any detected errors will be displayed. Clicking on these errors will provide a brief description on what might have gone wrong. There will be some errors showing up in your data, click on the errors to see what has caused the issue.
 
 ### Changing data type of column
 
 One of the most common errors is the detection of the datatype of a particular column. While loading the data, Power BI automatically assigns a column type based on the first lines of data. This can cause errors or other problems if the automated data type is not suited for that column. You may need to change data types of the columns to a relevant type for your data model.
 
-Any changes to the data needs to be done under the **Data file** listed under **Other Queries**. Select the **gap-minder** file. 
+Any changes to the data needs to be done under the **Data file** listed under **Other Queries**.
 
-Double click on the **Data type** icon on top of the column and select the **Data type** that fits your model. 
+The `life_exp` column is displaying as text data. This is a problem as we may want to do numerical calculations with this data. We should change this to a numerical data type.
 
-The `life_exp` column is displaying as text data. This is a problem as we may want to do numerical calculations with this data. Change the data type of this column to **Decimal Number**. You can replace a current step in the query with **Replace current step** or add a new step to the query with **Add new step**. Click **Add new step**.
+### {.tip -}
+
+* Select the **gap-minder** file. 
+* Right click on top of the column and select **Change type**.
+* Change to **Decimal Number**.
+
+You can replace a current step in the query with **Replace current step** or add a new step to the query with **Add new step**. 
+* Click **Add new step**.
+
+### {-}
 
 Once necessary changes are made, it is important to refresh and check if the change was applied. We can do this by clicking on the **Refresh Preview** button on the ribbon.
 
@@ -50,9 +59,18 @@ Data can have erroneous and missing values for a number of reasons. Missing data
 
 You can view the data in the **Data** section on the left sidebar. By applying a filter to a particular column, the null values can be analysed. To replace any null values, go to the **Query Editor** and use the **Replace values** option in the **Transform** tab. You can also remove error values by right-clicking a column and selecting the **Remove errors** option.
 
-Look in **Errors in gap-minder** in the Query Errors folder. You will notice that all the years for 1820 have a whitespace in it that is causing an error. Return to the gap-minder data, right click the `year` column and select **Replace errors**. Replace this with `1820`. This will replace all errors with the value `1820`. In this case this works as only one value is causing an issue. You can use **Replace values** to find a replace several values.
+Look in **Errors in gap-minder** in the Query Errors folder. You will notice that all the years for 1820 have a whitespace in it that is causing an error. 
 
-### Challenge 1: Replace missing values {.challenge}
+### {.tip -}
+
+* Return to the gap-minder data .
+* Right click the `year` column and select **Replace errors**.
+* Replace this with `1820`. 
+
+### {-}
+This will replace all errors with the value `1820`. In this case this works as only one value is causing an issue. You can use **Replace values** to find and replace several values.
+
+### Challenge 1: Replace missing values {.challenge -}
 
 Use the **Replace values** option on the `oecd` column to replace the error values.
 Use the **Remove errors** option on the `life_exp` column to remove the error values caused by the blanks.
@@ -61,13 +79,16 @@ Use the **Replace values** option on the `gdp_percap` column to replace the blan
 
 ### Final notes on dealing with errors
 
-Replacing error and missing values is not always a direct operation. Most of the times, these values must be carefully analyzed and replacement values need to be computed based on several factors. While this can be done with DAX in Power BI, this is not a key capability of Power BI. Furthermore these changes do not affect the source data set and are only represented in Power BI.
+Replacing error and missing values is not always a direct operation. Most of the time, these values must be carefully analyzed and replacement values need to be computed based on several factors. While this can be done with  in Power BI, this is not a key capability of Power BI. Furthermore these changes do not affect the source data set and are only represented in Power BI.
 
 The best approach is to clean up and eliminate errors from your data before you import into Power BI. This may take several iterations as Power BI can help identify the problems with your data set.
 
 Power BI does ignore blank and error values when it comes to analysis and visualisation but this may not always be the best approach.
 
-Let us cancel the last two steps in the **Applied steps** by clicking on the red crossmark right next to **Removed Errors** and **Replaced Value**.
+### {.tip -}
+Cancel the last two steps in the **Applied steps** by clicking on the red crossmark right next to **Removed Errors** and **Replaced Value**.
+
+### {-}
 
 ## 'Applied steps' in modelling data
 
@@ -77,20 +98,20 @@ Columns from raw data can be difficult to read or meaningless. Renaming the colu
 
 There are two ways to rename the columns in Power BI. Right-clicking on the header of the column gives you a menu of functions that you can do to the column. Select **Rename** to rename the column. You can also click on the column and then click on the **Transform** tab, from here you are presented a variety of transformation functions for the column. From here you can click on **Rename**.
 
-Example:
+### {.tip -}
 
 * Right-click on the `name` column header, click on **Rename** and rename the column to `Country`.
 * Click on the header for `life_exp`. Click on the **Transform** tab and click rename. Rename the column to `Life expectancy`.
 
-### Adding and removing column
+### Adding and removing columns
 
 #### Removing columns
 
 Often when dealing with raw data you will find columns that are meaningless or unsuitable for your analysis. You can remove these columns in Query to eliminate clutter and streamline the data set making it easier to work with.
 
-There are two ways to remove columns in Power BI. Like in renaming a column, you can right-click the header, which will present a menu with the option to **Remove**. You can also click on the column, click on the **Home** tab and then click **Remove Columns**.
+There are two ways to remove columns in Power BI. As in renaming a column, you can right-click the header, which will present a menu with the option to **Remove**. You can also click on the column, click on the **Home** tab and then click **Remove Columns**.
 
-Example:
+### {.tip -}
 You may not need the `g77` and `oecd` information.
 
 * Right-click on the `g77` column header, click on **Remove**
@@ -100,19 +121,18 @@ You may not need the `g77` and `oecd` information.
 
 Just as you would remove unsuitable data from your queries, you may need to add new columns to your data. There are a variety of options in Power BI to add different columns. Click on the **Add Column** tab to see the ways you can add a column.
 
-Example:
+### {.tip -}
 
-* Add or subtract a year to the `year` column to fix any widespread issues.
 * Click on `gdp_percap`, click on the **Add Column** tab, click duplicate to create a separate column to run calculations on.
 
-### Challenge 2: {.challenge}
+### Challenge 2: Add {.challenge -}
 
 Perform a simple mathematical operation and add this as a new column.
-Let’s say you want to calculate Total Gross Domestic Products (GDP) per country. As Total GDP = Population x GDP per capita, using the new `gdp_percap` column you created in the previous example, create a new column with Total GDP per country.
+Let’s say you want to calculate Total Gross Domestic Products (GDP) per country. As Total GDP = Population x GDP per capita, using the new `gdp_percap` column you created in the previous example, use **Custom Column** to create a new column with Total GDP per country.
 
 ### Navigating 'applied steps' and undoing
 
-It is important to know what sort of transformations the data has gone through to understand the current state of your data. These steps are listed on the **Applied Steps** section on the **Query Editor**. Sometimes these steps might need to be moved up or down their order based on the required application. These steps can also be removed by clicking on the red crossmark next to the step. This will undo the action it performs and takes back the data to the previous stage.
+It is important to know what sort of transformations the data has gone through to understand the current state of your data. These steps are listed on the **Applied Steps** section on the **Query Editor**. Sometimes these steps might need to be moved up or down based on the required application. These steps can also be removed by clicking on the red crossmark next to the step. This will undo the action it performs and returns the data to the previous stage.
 
 ### Refreshing data ready for analysis
 
