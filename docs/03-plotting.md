@@ -130,7 +130,7 @@ This shows the average of `life_Exp` in all countries in a given region, and plo
 
 <img src="figures/ch03/challenge01.png" width="100%" style="display: block; margin: auto;" />
 
-### Bar Plots
+### Bar plot
 
 Select the bar chart from the **Visualization panel** and drag the following columns:
 
@@ -142,7 +142,7 @@ Select the bar chart from the **Visualization panel** and drag the following col
 <img src="figures/ch03/bar_chart_pop_vs_year_by_region.png" width="80%" style="display: block; margin: auto;" />
 This bar plot shows population variation over time (in years) for all 4 regions.
 
-### Line Chart
+### Line chart
 
 Select a line chart from the **Visualization panel**. Drag and drop the following columns:
 

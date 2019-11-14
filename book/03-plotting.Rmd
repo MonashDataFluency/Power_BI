@@ -146,7 +146,7 @@ This shows the average of `life_Exp` in all countries in a given region, and plo
 knitr::include_graphics("figures/ch03/challenge01.png")
 ```
 
-### Bar Plots
+### Bar plot
 
 Select the bar chart from the **Visualization panel** and drag the following columns:
 
@@ -160,7 +160,7 @@ knitr::include_graphics("figures/ch03/bar_chart_pop_vs_year_by_region.png")
 ```
 This bar plot shows population variation over time (in years) for all 4 regions.
 
-### Line Chart
+### Line chart
 
 Select a line chart from the **Visualization panel**. Drag and drop the following columns:
 

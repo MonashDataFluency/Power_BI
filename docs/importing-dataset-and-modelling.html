@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Introduction to Power BI</title>
-  <meta name="description" content="Introduction to Power BI">
-  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Importing Dataset and Modelling | Introduction to Power BI</title>
+  <meta name="description" content="2 Importing Dataset and Modelling | Introduction to Power BI" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Introduction to Power BI" />
+  <meta property="og:title" content="2 Importing Dataset and Modelling | Introduction to Power BI" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Introduction to Power BI" />
+  <meta name="twitter:title" content="2 Importing Dataset and Modelling | Introduction to Power BI" />
   
   
   
@@ -25,19 +24,23 @@
 
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="introduction-to-power-bi.html">
-<link rel="next" href="plotting.html">
+<link rel="prev" href="introduction-to-power-bi.html"/>
+<link rel="next" href="plotting.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -110,7 +113,8 @@
             <section class="normal" id="section-">
 <div id="importing-dataset-and-modelling" class="section level1">
 <h1><span class="header-section-number">2</span> Importing Dataset and Modelling</h1>
-<p>Power BI can connect to a whole range of data sources from Excel sheets and local databases to several Cloud services. Currently, over 60 different cloud services have specific connectors to help you connect with generic sources through XML, CSV, text, and ODBC. Let us start connecting to one of the data sources. For today we will be working on the <code>gap_minder_map.csv</code> file.</p>
+<p>Power BI can connect to a whole range of data sources from Excel sheets and local databases to several Cloud services. Currently, over 60 different cloud services have specific connectors to help you connect with generic sources through XML, CSV, text, and ODBC.
+Let us start connecting to one of the data sources. For today we will be working on the <code>gap_minder_map.csv</code> file.</p>
 <div id="importing-data-into-power-bi-desktop" class="section level2">
 <h2><span class="header-section-number">2.1</span> Importing data into Power BI Desktop</h2>
 <p>Power BI Desktop has a <strong>Get Data</strong> button from the ribbon on the <strong>Home</strong> tab. In Power BI, there are all sorts of different data sources available. Select a source to establish a connection. Depending on your selection, you will be asked to find the source on your computer or network, or be prompted to sign in to a service to authenticate your request.</p>
@@ -172,7 +176,9 @@
 </div>
 <div id="challenge-1-replace-missing-values" class="section level3 challenge unnumbered">
 <h3>Challenge 1: Replace missing values</h3>
-<p>Use the <strong>Replace values</strong> option on the <code>oecd</code> column to replace the error values. Use the <strong>Remove errors</strong> option on the <code>life_exp</code> column to remove the error values caused by the blanks. Use the <strong>Replace values</strong> option on the <code>gdp_percap</code> column to replace the blank values.<br />
+<p>Use the <strong>Replace values</strong> option on the <code>oecd</code> column to replace the error values.
+Use the <strong>Remove errors</strong> option on the <code>life_exp</code> column to remove the error values caused by the blanks.
+Use the <strong>Replace values</strong> option on the <code>gdp_percap</code> column to replace the blank values.<br />
 </p>
 </div>
 <div id="final-notes-on-dealing-with-errors" class="section level3">
@@ -234,7 +240,8 @@
 </div>
 <div id="challenge-2-add" class="section level3 challenge unnumbered">
 <h3>Challenge 2: Add</h3>
-<p>Perform a simple mathematical operation and add this as a new column. Let’s say you want to calculate Total Gross Domestic Products (GDP) per country. As Total GDP = Population x GDP per capita, using the new <code>gdp_percap</code> column you created in the previous example, use <strong>Custom Column</strong> to create a new column with Total GDP per country.</p>
+<p>Perform a simple mathematical operation and add this as a new column.
+Let’s say you want to calculate Total Gross Domestic Products (GDP) per country. As Total GDP = Population x GDP per capita, using the new <code>gdp_percap</code> column you created in the previous example, use <strong>Custom Column</strong> to create a new column with Total GDP per country.</p>
 </div>
 <div id="navigating-applied-steps-and-undoing" class="section level3">
 <h3><span class="header-section-number">2.3.3</span> Navigating ‘applied steps’ and undoing</h3>
@@ -259,11 +266,13 @@
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -274,7 +283,7 @@ gitbook.start({
 "google": false,
 "linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": false,
 "vk": false,
 "all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
@@ -284,6 +293,10 @@ gitbook.start({
 "size": 2
 },
 "edit": {
+"link": null,
+"text": null
+},
+"history": {
 "link": null,
 "text": null
 },
