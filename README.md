@@ -11,12 +11,12 @@ make
 ## Schedule
 
 ```
-10:00am   Welcome overview, Introduction to Power BI
-10:45am   Importing and Modelling, Plotting
-11:30pm   Tea break 
-11:45pm   Plotting
-12:40pm   Saving and Exporting
-1.00pm    End Workshop
+9:30am   Welcome overview, Introduction to Power BI
+10:00am  Importing and Modelling, Plotting
+10:45am  Tea break 
+11:00am  Plotting
+12:00pm  Saving and Exporting
+12.30pm  End Workshop
 ```
 
 Fill in instructor names and the location in your workshop etherpad. The workshop etherpad serves as the central jumping off point for the workshop, and should list at the top:
