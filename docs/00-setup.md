@@ -17,8 +17,8 @@ header-includes:
 
 These are the course notes for the "Introduction to Power BI" course given by the [Monash Bioinformatics Platform](https://www.monash.edu/researchinfrastructure/bioinformatics) for the [Monash Data Fluency](https://monashdatafluency.github.io/) initiative. Our teaching style is based on the style of [The Carpentries](https://carpentries.org/). 
 
-* [PDF version for printing](https://github.com/MonashDataFluency/Power_BI/raw/master/docs/powerbi-intro.pdf)
-* [ZIP of data files used in this workshop](https://github.com/MonashDataFluency/Power_BI/raw/master/docs/powerbi-files.zip)
+* [PDF version for printing](https://monashdatafluency.github.io/Power_BI/powerbi-intro.pdf)
+* [ZIP of data files used in this workshop](https://monashdatafluency.github.io/Power_BI/powerbi-files.zip)
 
 During this workshop we will be using Power BI Desktop installed on your computer. There are several ways to download Power BI Desktop, depending on which system you use.
 
@@ -62,7 +62,7 @@ After installing Power BI Desktop, you can sign up for Power BI using your Monas
 
 ### Data {-}
 
-Download the data file [`gap-minder.csv`](https://github.com/MonashDataFluency/Power_BI/raw/master/docs/powerbi-files.zip) for the course. 
+Download the data file [`gap-minder.csv`](https://monashdatafluency.github.io/Power_BI/powerbi-files.zip) for the course. 
 
 ### Source code {-}
 
