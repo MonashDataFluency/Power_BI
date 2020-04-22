@@ -249,7 +249,7 @@ You can also edit the legend or axis labels. Let's make the axis labels more cle
 knitr::include_graphics("figures/ch03/format.png")
 ```
 
-The options available will be different for each visualization. Using these options will greatly increase the engagement and understanding of your visuals.
+The options available will be different for each visualization. Using these options will greatly increase the engagement and understanding of your visuals. Let's go and change the names of all the other visuals to something more meaningful.
 
 ### Challenge 3: Scatter Plot {.challenge -}
 Let's say you think there might be a correlation between GDP per capita and life expectancy. Try creating a scatter plot showing the comparison between these two value split by region.
@@ -349,7 +349,7 @@ knitr::include_graphics("figures/ch03/filter2.png")
 
 **A.** On the previous plot, create a filter for region.
 
-**B.** Visualize `gdp_percapita` vs `life_exp` for: Americas
+**B.** Visualize `gdp_percapita` vs `life expectancy` for: Americas
 
 ### Challenge 5: Solution {.challenge -}
 
@@ -369,7 +369,7 @@ Let's go back to our first page and create a few Slicers.
 
 In the chart types, locate **Slicer**. Create a new blank Slicer chart. Drag and drop the **region** column in the data field. We have created a slicer and can visualize data for each region separately. Since Power BI is highly interactive, this slicer is applied to all the charts that we have created and will show the results for selection in the slicer. You can chose to apply slicer to specific charts by turning it off for other charts. We will cover this in the next section.
 
-Note: Hold the CTRL button to select more than one option.
+Note: Hold the CTRL button to select more than one option. You can also change the appearance of the slicer the same was as a visual in Format tab. Select General and change orientation to horizontal for clickable buttons instead of checkboxes.
   
   ```{r echo=F,out.width="80%",fig.align="center"}
 knitr::include_graphics("figures/ch03/slicer.png")
@@ -377,25 +377,11 @@ knitr::include_graphics("figures/ch03/slicer.png")
 
 ### Challenge 6: Slicer {.challenge -}
 
-**A.** Create a slicer for country names.
-
-**B.** First visualize for Bangladesh. Then visualize for Bangladesh and Brazil.
+Focussing on the Americas region, create a slicer for countries and examine the differences between Argentina and Bolivia.
 
 ### Challenge 6: Solution {.challenge -}
 ```{r echo=F,out.width="80%",fig.align="center"}
-knitr::include_graphics("figures/ch03/challenge3c.png")
-```
-
-For Bangladesh
-
-```{r echo=F,out.width="80%",fig.align="center"}
-knitr::include_graphics("figures/ch03/bangladesh.png")
-```
-
-For Bangladesh and Brazil
-
-```{r echo=F,out.width="80%",fig.align="center"}
-knitr::include_graphics("figures/ch03/bangladesh_and_brazil.png")
+knitr::include_graphics("figures/ch03/slicer_argentina_bolivia.png")
 ```
 
 ## Edit interactions
@@ -406,7 +392,7 @@ While this interaction is useful in exploring the connections between the relati
 
 ### {.tip -}
 
-* Select the **Avg GDP per capita vs Year by Income** line chart. 
+* Select the **population vs year** line chart. 
 * Select **Asia** on the chart legend. 
 * Select the **Format** menu and select **Edit interactions**. 
 
@@ -422,5 +408,7 @@ Note: existing elements on the page may interfere with the **Edit interactions**
 ```{r echo=F,out.width="60%",fig.align="center"}
 knitr::include_graphics("figures/ch03/edit-interactions.png")
 ```
+
+This also affects slicers, selecting the slicer will show the same **Edit interactions** icons. You may not want the average life expectancy by region visual to change depending on which countries are chosen. Select the country slicer and select **None** on the visual to stop that visual changing due to the options on the slicer.
 
 Every visual interacts with all other visuals individually. Check the **Edit interactions** to make sure all your interactions work as expected.
