@@ -88,9 +88,9 @@ Use the **Replace values** option on the `gdp_percap` column to replace the blan
 
 ### Final notes on dealing with errors
 
-Replacing error and missing values is not always a direct operation. Most of the time, these values must be carefully analyzed and replacement values need to be computed based on several factors. While this can be done with  in Power BI, this is not a key capability of Power BI. Furthermore these changes do not affect the source data set and are only represented in Power BI.
+Replacing error and missing values is not always a direct operation. Most of the time, these values must be carefully analyzed and replacement values need to be computed based on several factors. While this can be done with in Power BI, this is not a key capability of Power BI. Furthermore these changes do not affect the source data set. These changes are actions that Power BI takes whenever you load in that dataset.
 
-The best approach is to clean up and eliminate errors from your data before you import into Power BI. This may take several iterations as Power BI can help identify the problems with your data set.
+As with any data analysis, cleaning up the source data as much as possible in the early stages will save you problems in the future. The best approach is to clean up and eliminate errors from your data before you import into Power BI which minimises the amount of actions that Power BI takes and speeds up the loading process. This cleaning process may take several iterations as you work with Power BI and the data and uncover more inaccuracies.
 
 Power BI does ignore blank and error values when it comes to analysis and visualisation but this may not always be the best approach.
 
@@ -121,10 +121,9 @@ Often when dealing with raw data you will find columns that are meaningless or u
 There are two ways to remove columns in Power BI. As in renaming a column, you can right-click the header, which will present a menu with the option to **Remove**. You can also click on the column, click on the **Home** tab and then click **Remove Columns**.
 
 ### {.tip -}
-You may not need the `g77` and `oecd` information.
+We will not be using the `g77` information.
 
 * Right-click on the `g77` column header, click on **Remove**
-* Left-click on `oecd` column header, click on **Home** tab, click **Remove Column**
 
 ### {-}
 

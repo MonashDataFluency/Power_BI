@@ -131,15 +131,15 @@ Create a chart with the following options:
 
     X-Axis: year
 
-    Y-Axis: life_exp
+    Y-Axis: population
 
     Legend: By region
  
-Find the **Average** life expectancy of each region by year.
+Find the **Average** population of each region by year.
 
 ### Challenge 1: Solution {.challenge -}
 
-This shows the average of `life_Exp` in all countries in a given region, and plots it.
+This shows the average of `population` in all countries in a given region, and plots it.
 
 
 ```{r echo=F,out.width="100%",fig.align="center"}
