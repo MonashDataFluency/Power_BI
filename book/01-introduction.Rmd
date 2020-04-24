@@ -114,8 +114,10 @@ knitr::include_graphics("figures/ch01/desktop-interface.png")
 Working in Power BI desktop and creating visuals will be the focus of todays session.
 
 ### Power BI Service
-Power BI Service is the online component of Power BI where you can publish your dashboards and reports. You can also view other dashboard and reports that have been shared with you. Monash staff members have access to this, all you need to do is log in with you Monash account at [Power BI service.](https://powerbi.microsoft.com/en-us/landing/signin/) We will cover this in more detail later in the workshop. 
+Power BI Service is the online component of Power BI where you can publish your dashboards and reports. You can also view other dashboard and reports that have been shared with you. Monash staff members have access to this, all you need to do is log in with you Monash account at [Power BI service.](https://powerbi.microsoft.com/en-us/landing/signin/) We will cover this in more detail later in the workshop. One thing to be aware of is that once the report is published, the report and underlying data will be stored on Microsoft servers and is not private. Be aware of any privacy or confidentiality issues with your data and we suggest using another approach or tool if cannot anonymise your data.
 
+## Power BI licence
 
+We will be covering the free version of Power BI desktop in this session. This version allows you to use all the functionalities of the desktop version such as loading, analysing and visualising data. You can create as many visuals and reports as you would like with the free license. However publishing and sharing your reports and visuals online with another person or publically requires a Power BI license. This means that you can still share your report and data files between users and computers through other means, like a shared drive, and only require one user with a Power BI license to publish and share the final report online. Please contact the Monash Business Intelligence team for more information on licensing.
 
 

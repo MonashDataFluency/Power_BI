@@ -6,6 +6,7 @@ Microsoft has in-depth guides and tutorials on their [Power BI Guided Learning](
 
 You can visit the [Microsoft Power BI Blog](https://powerbi.microsoft.com/en-us/blog/) for the latest updates on performance improvements, more visualization options and so on. There is a community of forums and blogs for you to discuss with others.
 
+Join the [Power BI Network Forum on Workplace](https://monash.workplace.com/groups/730041584039981/) for the latest discussions around Power BI at Monash University.
 
 ## Join the community
 
