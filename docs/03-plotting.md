@@ -117,7 +117,7 @@ Create a chart with the following options:
 
     X-Axis: year
 
-    Y-Axis: life_exp
+    Y-Axis: life expectancy
 
     Legend: By region
  
@@ -125,7 +125,7 @@ Find the **Average** life expectancy of each region by year.
 
 ### Challenge 1: Solution {.challenge -}
 
-This shows the average of `life_Exp` in all countries in a given region, and plots it.
+This shows the average of `life expectancy` in all countries in a given region, and plots it.
 
 
 <img src="figures/ch03/challenge01.png" width="100%" style="display: block; margin: auto;" />
@@ -135,12 +135,12 @@ This shows the average of `life_Exp` in all countries in a given region, and plo
 Select the bar chart from the **Visualization panel** and drag the following columns:
 
     Axis: Year
-    Value: Population 
+    Value: GDP per capita
     Legend: By region
 
 
-<img src="figures/ch03/bar_chart_pop_vs_year_by_region.png" width="80%" style="display: block; margin: auto;" />
-This bar plot shows population variation over time (in years) for all 4 regions.
+<img src="figures/ch03/barchart_gdp_region.png" width="80%" style="display: block; margin: auto;" />
+This bar plot shows GDP per capita variation over time (in years) for all 4 regions.
 
 ### Line chart
 
@@ -180,10 +180,10 @@ This should now be identical to your first scatter plot.
 As you may have noticed, dragging and dropping **Fields** into the **Fields** tab will automatically change the data visualization. You can easily swap or add new fields using the drag and drop to change and discover new ways to visualize your data. You can remove fields by clicking the x next to the name.
 
 ### Challenge 2: Line chart {.challenge -}
-As the line chart is showing the same information as an existing visualization, change the chart to show average GDP per capita instead of average life expectancy.
+As the line chart is showing the same information as an existing visualization, change the chart to show population instead of average life expectancy.
 
 ### Challenge 2: Solution {.challenge -}
-<img src="figures/ch03/gdp_linechart.png" width="80%" style="display: block; margin: auto;" />
+<img src="figures/ch03/population_linechart.png" width="80%" style="display: block; margin: auto;" />
 
 ### Trends and analytics in plots
 
@@ -219,7 +219,7 @@ You can also edit the legend or axis labels. Let's make the axis labels more cle
 
 <img src="figures/ch03/format.png" width="60%" style="display: block; margin: auto;" />
 
-The options available will be different for each visualization. Using these options will greatly increase the engagement and understanding of your visuals.
+The options available will be different for each visualization. Using these options will greatly increase the engagement and understanding of your visuals. Let's go and change the names of all the other visuals to something more meaningful.
 
 ### Challenge 3: Scatter Plot {.challenge -}
 Let's say you think there might be a correlation between GDP per capita and life expectancy. Try creating a scatter plot showing the comparison between these two value split by region.
@@ -231,83 +231,12 @@ Let's say you think there might be a correlation between GDP per capita and life
 
 <img src="figures/ch03/solution2.png" width="80%" style="display: block; margin: auto;" />
 
-As you can see, this visualization is messy and confusing. In the next section we will show ways to make this visualization clearer.
+As you can see, this visualization is messy and confusing. We will show ways to make this visualization clearer later on.
 
-## Filters
+## Pages
 
-Filters are a powerful way to break down and show specific parts of the data. You can access the **Filters panel** through clicking **Filters**.
+At this stage you will have a lot of visuals but not much room. Power BI has a capability to create multiple pages in a report. When it comes to publishing your report, you can choose to show or hide different pages according to need or use individual visuals for dashboards. Let's start a new page and move the most recent visual you have created on to that page. You can do that by clicking on the visual and then clicking cut on the Home tab of Power BI. Move to the new page and click paste. You can also use CTRL or Command + X and then CTRL or Command + V in the same way as cutting and pasting text in a text editor.
 
-<img src="figures/ch03/filters.png" width="60%" style="display: block; margin: auto;" />
-
-You can filter data for individual visualizations, pages and for the entire report.
-
-Select the scatter plot you created for challenge 3. Click on the **Filter panel** which is adjacent to the **Visualization panel**. Drag the `year` field and place it in "**Filter on this page**" bar. 
-
-<img src="figures/ch03/filter1.png" width="80%" style="display: block; margin: auto;" />
-
-Change the filter type to **Basic Filtering** Now you have all the years as a scrolling list. Select any one year and you can see the data for that particular year. For example, if we want to look at this data from year 2010, select 2010 in the filter panel.
-
-<img src="figures/ch03/filter2.png" width="80%" style="display: block; margin: auto;" />
-
-
-### Challenge 4: Filtering {.challenge -}
-
-**A.** On the previous plot, create a filter for country names.
-
-**B.** Visualize `gdp_percapita` vs `life_exp` for these countries: Kenya, Australia, Chile and Belgium
-
-### Challenge 4: Solution {.challenge -}
-
-<img src="figures/ch03/solution3.png" width="80%" style="display: block; margin: auto;" />
-
-### Slicer:
-In the chart types, locate **Slicer**. Create a new blank Slicer chart. Drag and drop the **region** column in the data field. We have created a slicer and can visualize data for each region separately. Since Power BI is highly interactive, this slicer is applied to all the charts that we have created and will show the results for selection in the slicer. You can chose to apply slicer to specific charts by turning it off for other charts. We will cover this in the next section.
-
-Note: Hold the CTRL button to select more than one option.
-  
-  <img src="figures/ch03/slicer.png" width="80%" style="display: block; margin: auto;" />
-
-### Challenge 5: Slicer {.challenge -}
-
-**A.** Create a slicer for country names.
-
-**B.** First visualize for Bangladesh. Then visualize for Bangladesh and Brazil.
-
-### Challenge 5: Solution {.challenge -}
-<img src="figures/ch03/challenge3c.png" width="80%" style="display: block; margin: auto;" />
-
-For Bangladesh
-
-<img src="figures/ch03/bangladesh.png" width="80%" style="display: block; margin: auto;" />
-
-For Bangladesh and Brazil
-
-<img src="figures/ch03/bangladesh_and_brazil.png" width="80%" style="display: block; margin: auto;" />
-
-## Edit interactions
-
-You may have noticed that clicking on a data point in a visualization will affect other visualizations in the same way as a slicer. Click on a segment in your bar chart to see the effect on other visuals. 
-
-While this interaction is useful in exploring the connections between the relationships shown in one visual to another, there will be cases where you do not want a visualization to change depending on the slicer or what you have selected on a visual. You can edit how these interactions affect your visualisations through **Edit interactions** on the **Format** tab.
-
-### {.tip -}
-
-* Select the **Avg GDP per capita vs Year by Income** line chart. 
-* Select **Asia** on the chart legend. 
-* Select the **Format** menu and select **Edit interactions**. 
-
-Several icons will pop up near the other visualizations. These control how the visual will look depending on your interaction with the selected visual.
-
-### {-}
-
-Selecting **None** will mean that the related visual will not change depending on interactions with the selected visual. Change one of the scatter plots to **None** and select a different data point on the line chart to see the effect.
-Select **Asia** on the line chart again. Currently the bar chart highlights the relevant section. Select the filter icon to change and select another data point on the line chart to see the effect.
-
-Note: existing elements on the page may interfere with the **Edit interactions** icons. Resize and move your visuals to avoid this.
-
-<img src="figures/ch03/edit-interactions.png" width="60%" style="display: block; margin: auto;" />
-
-Every visual interacts with all other visuals individually. Check the **Edit interactions** to make sure all your interactions work as expected.
 
 ## Explore Marketplace for other visualizations
 
@@ -322,18 +251,15 @@ This will pop a new window, where you can search for various types of templates.
 <img src="figures/ch03/wordcloud.png" width="100%" style="display: block; margin: auto;" />
 
 
-### Challenge 6: Create a Word Cloud for countries by GDP per capita {.challenge -}
+### Challenge 4: Create a Word Cloud for countries by GDP per capita {.challenge -}
 
 a) Create a plot that compares GDP per capita for each country
 
 * Category: `name`
 * Values: `GDP per capita`
-    
-b) Use a slicer with years.
 
-c) Filter to 2010.
 
-### Challenge 6: Solution {.challenge -}
+### Challenge 4: Solution {.challenge -}
 
 <img src="figures/ch03/word_cloud.png" width="100%" style="display: block; margin: auto;" />
 
@@ -343,8 +269,92 @@ We need Latitude `lat` and Longitude `long` values to create a Map chart. For th
     Longtitude: long
     Latitude: lat
     Size: Population
-    Colour: Income level
+    Legend: oecd
 
 <img src="figures/ch03/geo_map.png" width="80%" style="display: block; margin: auto;" />
 
-This plot tells us a country's income level in 2017 - high income, upper-middle income, lower-middle income or low income by the color of the bubbles. These categories can be seen in the legend at the top of the chart. It also indicates the population size of each country by the size of bubble.
+This plot tells us if a country was an OECD member by the color of the bubbles. These categories can be seen in the legend at the top of the chart. It also indicates the population size of each country by the size of bubble.
+
+You can also use the `country` field alongside or replacing the longtitude and latitude values. Power BI recognises the names of countries however make sure they are spelt correctly or use with longtitude and latitude values to ensure accuracy.
+
+
+## Filters
+
+Now that we have a set of visuals showing different information, we come to the most important part of data visualisation which is communicating and telling the story of the data. Right now these visualisations, while interesting and potentially useful after some close examination, are difficult to comprehend to the average person or if used in a quick presentation. This is where we will be examining filters.
+
+Filters are a powerful way to break down and show specific parts of the data. You can access the **Filters panel** through clicking **Filters**.
+
+<img src="figures/ch03/filters.png" width="60%" style="display: block; margin: auto;" />
+
+You can filter data for individual visualizations, pages and for the entire report.
+
+Let's have a look at page 2 of our report. This page is rather confusing, we have lots of points on the map for most countries in the world and we have calculations looking at average GDP and life expectancy for 200 years. This is a lot of different information that has been calculated over a diverse timeline.
+
+Select the scatter plot you created for challenge 3. Click on the **Filter panel** which is adjacent to the **Visualization panel**. Drag the `year` field and place it in **Filters on this visual** bar. 
+
+<img src="figures/ch03/filter1.png" width="80%" style="display: block; margin: auto;" />
+
+Change the filter type to **Basic Filtering** Now you have all the years as a scrolling list. Select any one year and you can see the data for that particular year. For example, if we want to look at this data from year 2010, select 2010 in the filter panel.
+
+<img src="figures/ch03/filter2.png" width="80%" style="display: block; margin: auto;" />
+
+
+### Challenge 5: Filtering {.challenge -}
+
+**A.** On the previous plot, create a filter for region.
+
+**B.** Visualize `gdp_percapita` vs `life expectancy` for: Americas
+
+### Challenge 5: Solution {.challenge -}
+
+<img src="figures/ch03/solution3.png" width="80%" style="display: block; margin: auto;" />
+
+This has improved and filtered the data for one visual but what about the rest? This is where the different filter options are important. **Filters on this visual** filters the data only for that visual, the rest of the visuals are unaffected. **Filters on this page** filters the data for all visuals on the page. **Filters on all pages** filters for all pages on the report. Be aware of this option as this will filter data values and options on any new visual you create on any page.
+
+As we would like this page to be focussed on the Americas region in 2010 let's change the above visual filter into a page filter. This will mean that this page will only show data from that region and that year. This will also restrict the end user from looking at other regions or years. What if we would like to give the user some power in exploring the data? This is where slicers come in.
+
+### Slicer:
+
+Slicers allow you to put in controls in which the user can explore the data options. NOTE: Slicers are affected by Filters so a Slicer for region on the current page that has a Filter to Americas only will only show the option of Americas.
+
+Let's go back to our first page and create a few Slicers.
+
+In the chart types, locate **Slicer**. Create a new blank Slicer chart. Drag and drop the **region** column in the data field. We have created a slicer and can visualize data for each region separately. Since Power BI is highly interactive, this slicer is applied to all the charts that we have created and will show the results for selection in the slicer. You can chose to apply slicer to specific charts by turning it off for other charts. We will cover this in the next section.
+
+Note: Hold the CTRL button to select more than one option. You can also change the appearance of the slicer the same was as a visual in Format tab. Select General and change orientation to horizontal for clickable buttons instead of checkboxes.
+  
+  <img src="figures/ch03/slicer.png" width="80%" style="display: block; margin: auto;" />
+
+### Challenge 6: Slicer {.challenge -}
+
+Focussing on the Americas region, create a slicer for countries and examine the differences between Argentina and Bolivia.
+
+### Challenge 6: Solution {.challenge -}
+<img src="figures/ch03/slicer_argentina_bolivia.png" width="80%" style="display: block; margin: auto;" />
+
+## Edit interactions
+
+You may have noticed that clicking on a data point in a visualization will affect other visualizations in the same way as a slicer. Click on a segment in your bar chart to see the effect on other visuals. 
+
+While this interaction is useful in exploring the connections between the relationships shown in one visual to another, there will be cases where you do not want a visualization to change depending on the slicer or what you have selected on a visual. You can edit how these interactions affect your visualisations through **Edit interactions** on the **Format** tab.
+
+### {.tip -}
+
+* Select the **population vs year** line chart. 
+* Select **Asia** on the chart legend. 
+* Select the **Format** menu and select **Edit interactions**. 
+
+Several icons will pop up near the other visualizations. These control how the visual will look depending on your interaction with the selected visual.
+
+### {-}
+
+Selecting **None** will mean that the related visual will not change depending on interactions with the selected visual. Change one of the scatter plots to **None** and select a different data point on the line chart to see the effect.
+Select **Asia** on the line chart again. Currently the bar chart highlights the relevant section. Select the filter icon to change and select another data point on the line chart to see the effect.
+
+Note: existing elements on the page may interfere with the **Edit interactions** icons. Resize and move your visuals to avoid this.
+
+<img src="figures/ch03/edit-interactions.png" width="60%" style="display: block; margin: auto;" />
+
+This also affects slicers, selecting the slicer will show the same **Edit interactions** icons. You may not want the average life expectancy by region visual to change depending on which countries are chosen. Select the country slicer and select **None** on the visual to stop that visual changing due to the options on the slicer.
+
+Every visual interacts with all other visuals individually. Check the **Edit interactions** to make sure all your interactions work as expected.

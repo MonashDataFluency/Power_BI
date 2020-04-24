@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
+<html >
+
 <head>
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3 Plotting | Introduction to Power BI</title>
-  <meta name="description" content="3 Plotting | Introduction to Power BI" />
-  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Introduction to Power BI</title>
+  <meta name="description" content="Introduction to Power BI">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
 
-  <meta property="og:title" content="3 Plotting | Introduction to Power BI" />
+  <meta property="og:title" content="Introduction to Power BI" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +17,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3 Plotting | Introduction to Power BI" />
+  <meta name="twitter:title" content="Introduction to Power BI" />
   
   
   
@@ -24,23 +25,19 @@
 
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="importing-dataset-and-modelling.html"/>
-<link rel="next" href="saving-and-exporting.html"/>
+<link rel="prev" href="importing-dataset-and-modelling.html">
+<link rel="next" href="saving-and-exporting.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
-
 
 
 
@@ -82,9 +79,10 @@
 <li class="chapter" data-level="3" data-path="plotting.html"><a href="plotting.html"><i class="fa fa-check"></i><b>3</b> Plotting</a><ul>
 <li class="chapter" data-level="3.1" data-path="plotting.html"><a href="plotting.html#visualization-panel"><i class="fa fa-check"></i><b>3.1</b> Visualization Panel</a></li>
 <li class="chapter" data-level="3.2" data-path="plotting.html"><a href="plotting.html#plot-modifications"><i class="fa fa-check"></i><b>3.2</b> Plot modifications</a></li>
-<li class="chapter" data-level="3.3" data-path="plotting.html"><a href="plotting.html#filters"><i class="fa fa-check"></i><b>3.3</b> Filters</a></li>
-<li class="chapter" data-level="3.4" data-path="plotting.html"><a href="plotting.html#edit-interactions"><i class="fa fa-check"></i><b>3.4</b> Edit interactions</a></li>
-<li class="chapter" data-level="3.5" data-path="plotting.html"><a href="plotting.html#explore-marketplace-for-other-visualizations"><i class="fa fa-check"></i><b>3.5</b> Explore Marketplace for other visualizations</a></li>
+<li class="chapter" data-level="3.3" data-path="plotting.html"><a href="plotting.html#pages"><i class="fa fa-check"></i><b>3.3</b> Pages</a></li>
+<li class="chapter" data-level="3.4" data-path="plotting.html"><a href="plotting.html#explore-marketplace-for-other-visualizations"><i class="fa fa-check"></i><b>3.4</b> Explore Marketplace for other visualizations</a></li>
+<li class="chapter" data-level="3.5" data-path="plotting.html"><a href="plotting.html#filters"><i class="fa fa-check"></i><b>3.5</b> Filters</a></li>
+<li class="chapter" data-level="3.6" data-path="plotting.html"><a href="plotting.html#edit-interactions"><i class="fa fa-check"></i><b>3.6</b> Edit interactions</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="saving-and-exporting.html"><a href="saving-and-exporting.html"><i class="fa fa-check"></i><b>4</b> Saving and Exporting</a><ul>
 <li class="chapter" data-level="4.1" data-path="saving-and-exporting.html"><a href="saving-and-exporting.html#saving-as-pbix-files"><i class="fa fa-check"></i><b>4.1</b> Saving as pbix files</a></li>
@@ -213,24 +211,24 @@ This plot colors each data point by the region where the country is located. The
 <p>Create a chart with the following options:</p>
 <pre><code>X-Axis: year
 
-Y-Axis: life_exp
+Y-Axis: life expectancy
 
 Legend: By region</code></pre>
 <p>Find the <strong>Average</strong> life expectancy of each region by year.</p>
 </div>
 <div id="challenge-1-solution" class="section level3 challenge unnumbered">
 <h3>Challenge 1: Solution</h3>
-<p>This shows the average of <code>life_Exp</code> in all countries in a given region, and plots it.</p>
+<p>This shows the average of <code>life expectancy</code> in all countries in a given region, and plots it.</p>
 <p><img src="figures/ch03/challenge01.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="bar-plot" class="section level3">
 <h3><span class="header-section-number">3.1.2</span> Bar plot</h3>
 <p>Select the bar chart from the <strong>Visualization panel</strong> and drag the following columns:</p>
 <pre><code>Axis: Year
-Value: Population 
+Value: GDP per capita
 Legend: By region</code></pre>
-<p><img src="figures/ch03/bar_chart_pop_vs_year_by_region.png" width="80%" style="display: block; margin: auto;" />
-This bar plot shows population variation over time (in years) for all 4 regions.</p>
+<p><img src="figures/ch03/barchart_gdp_region.png" width="80%" style="display: block; margin: auto;" />
+This bar plot shows GDP per capita variation over time (in years) for all 4 regions.</p>
 </div>
 <div id="line-chart" class="section level3">
 <h3><span class="header-section-number">3.1.3</span> Line chart</h3>
@@ -265,11 +263,11 @@ Legend: By region</code></pre>
 </div>
 <div id="challenge-2-line-chart" class="section level3 challenge unnumbered">
 <h3>Challenge 2: Line chart</h3>
-<p>As the line chart is showing the same information as an existing visualization, change the chart to show average GDP per capita instead of average life expectancy.</p>
+<p>As the line chart is showing the same information as an existing visualization, change the chart to show population instead of average life expectancy.</p>
 </div>
 <div id="challenge-2-solution" class="section level3 challenge unnumbered">
 <h3>Challenge 2: Solution</h3>
-<p><img src="figures/ch03/gdp_linechart.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><img src="figures/ch03/population_linechart.png" width="80%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="trends-and-analytics-in-plots" class="section level3">
 <h3><span class="header-section-number">3.1.5</span> Trends and analytics in plots</h3>
@@ -300,7 +298,7 @@ Click the <strong>Format</strong> tab to see the variety of options available to
 <div id="section-17" class="section level3 unnumbered">
 <h3></h3>
 <p><img src="figures/ch03/format.png" width="60%" style="display: block; margin: auto;" /></p>
-<p>The options available will be different for each visualization. Using these options will greatly increase the engagement and understanding of your visuals.</p>
+<p>The options available will be different for each visualization. Using these options will greatly increase the engagement and understanding of your visuals. Let’s go and change the names of all the other visuals to something more meaningful.</p>
 </div>
 <div id="challenge-3-scatter-plot" class="section level3 challenge unnumbered">
 <h3>Challenge 3: Scatter Plot</h3>
@@ -314,55 +312,92 @@ Click the <strong>Format</strong> tab to see the variety of options available to
 <li><code>region</code> as the legend.</li>
 </ul>
 <p><img src="figures/ch03/solution2.png" width="80%" style="display: block; margin: auto;" /></p>
-<p>As you can see, this visualization is messy and confusing. In the next section we will show ways to make this visualization clearer.</p>
+<p>As you can see, this visualization is messy and confusing. We will show ways to make this visualization clearer later on.</p>
 </div>
 </div>
-<div id="filters" class="section level2">
-<h2><span class="header-section-number">3.3</span> Filters</h2>
-<p>Filters are a powerful way to break down and show specific parts of the data. You can access the <strong>Filters panel</strong> through clicking <strong>Filters</strong>.</p>
-<p><img src="figures/ch03/filters.png" width="60%" style="display: block; margin: auto;" /></p>
-<p>You can filter data for individual visualizations, pages and for the entire report.</p>
-<p>Select the scatter plot you created for challenge 3. Click on the <strong>Filter panel</strong> which is adjacent to the <strong>Visualization panel</strong>. Drag the <code>year</code> field and place it in “<strong>Filter on this page</strong>” bar.</p>
-<p><img src="figures/ch03/filter1.png" width="80%" style="display: block; margin: auto;" /></p>
-<p>Change the filter type to <strong>Basic Filtering</strong> Now you have all the years as a scrolling list. Select any one year and you can see the data for that particular year. For example, if we want to look at this data from year 2010, select 2010 in the filter panel.</p>
-<p><img src="figures/ch03/filter2.png" width="80%" style="display: block; margin: auto;" /></p>
-<div id="challenge-4-filtering" class="section level3 challenge unnumbered">
-<h3>Challenge 4: Filtering</h3>
-<p><strong>A.</strong> On the previous plot, create a filter for country names.</p>
-<p><strong>B.</strong> Visualize <code>gdp_percapita</code> vs <code>life_exp</code> for these countries: Kenya, Australia, Chile and Belgium</p>
+<div id="pages" class="section level2">
+<h2><span class="header-section-number">3.3</span> Pages</h2>
+<p>At this stage you will have a lot of visuals but not much room. Power BI has a capability to create multiple pages in a report. When it comes to publishing your report, you can choose to show or hide different pages according to need or use individual visuals for dashboards. Let’s start a new page and move the most recent visual you have created on to that page. You can do that by clicking on the visual and then clicking cut on the Home tab of Power BI. Move to the new page and click paste. You can also use CTRL or Command + X and then CTRL or Command + V in the same way as cutting and pasting text in a text editor.</p>
+</div>
+<div id="explore-marketplace-for-other-visualizations" class="section level2">
+<h2><span class="header-section-number">3.4</span> Explore Marketplace for other visualizations</h2>
+<p>The visualizations we have been using are part of the default offerings in Power BI. There are more visualisations available in the marketplace. To import a new visualisation template from the marketplace, click on the icon <strong>(…)</strong>, i.e. three horizontal dots in the visualization panel then click on import from the marketplace.</p>
+<p><img src="figures/ch03/marketplace.png" width="60%" style="display: block; margin: auto;" /></p>
+<p>This will pop a new window, where you can search for various types of templates. We are looking for the Word Cloud template. Type Word Cloud in the search box, once you find the template click on the <strong>Add icon</strong>. This will add it to the <strong>Visualization panel</strong>.</p>
+<p><img src="figures/ch03/wordcloud.png" width="100%" style="display: block; margin: auto;" /></p>
+<div id="challenge-4-create-a-word-cloud-for-countries-by-gdp-per-capita" class="section level3 challenge unnumbered">
+<h3>Challenge 4: Create a Word Cloud for countries by GDP per capita</h3>
+<ol style="list-style-type: lower-alpha">
+<li>Create a plot that compares GDP per capita for each country</li>
+</ol>
+<ul>
+<li>Category: <code>name</code></li>
+<li>Values: <code>GDP per capita</code></li>
+</ul>
 </div>
 <div id="challenge-4-solution" class="section level3 challenge unnumbered">
 <h3>Challenge 4: Solution</h3>
-<p><img src="figures/ch03/solution3.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><img src="figures/ch03/word_cloud.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
-<div id="slicer" class="section level3">
-<h3><span class="header-section-number">3.3.1</span> Slicer:</h3>
-<p>In the chart types, locate <strong>Slicer</strong>. Create a new blank Slicer chart. Drag and drop the <strong>region</strong> column in the data field. We have created a slicer and can visualize data for each region separately. Since Power BI is highly interactive, this slicer is applied to all the charts that we have created and will show the results for selection in the slicer. You can chose to apply slicer to specific charts by turning it off for other charts. We will cover this in the next section.</p>
-<p>Note: Hold the CTRL button to select more than one option.</p>
-<p><img src="figures/ch03/slicer.png" width="80%" style="display: block; margin: auto;" /></p>
+<div id="map-chart" class="section level3">
+<h3><span class="header-section-number">3.4.1</span> Map chart</h3>
+<p>We need Latitude <code>lat</code> and Longitude <code>long</code> values to create a Map chart. For this, we use the following parameters:</p>
+<pre><code>Longtitude: long
+Latitude: lat
+Size: Population
+Legend: oecd</code></pre>
+<p><img src="figures/ch03/geo_map.png" width="80%" style="display: block; margin: auto;" /></p>
+<p>This plot tells us if a country was an OECD member by the color of the bubbles. These categories can be seen in the legend at the top of the chart. It also indicates the population size of each country by the size of bubble.</p>
+<p>You can also use the <code>country</code> field alongside or replacing the longtitude and latitude values. Power BI recognises the names of countries however make sure they are spelt correctly or use with longtitude and latitude values to ensure accuracy.</p>
 </div>
-<div id="challenge-5-slicer" class="section level3 challenge unnumbered">
-<h3>Challenge 5: Slicer</h3>
-<p><strong>A.</strong> Create a slicer for country names.</p>
-<p><strong>B.</strong> First visualize for Bangladesh. Then visualize for Bangladesh and Brazil.</p>
+</div>
+<div id="filters" class="section level2">
+<h2><span class="header-section-number">3.5</span> Filters</h2>
+<p>Now that we have a set of visuals showing different information, we come to the most important part of data visualisation which is communicating and telling the story of the data. Right now these visualisations, while interesting and potentially useful after some close examination, are difficult to comprehend to the average person or if used in a quick presentation. This is where we will be examining filters.</p>
+<p>Filters are a powerful way to break down and show specific parts of the data. You can access the <strong>Filters panel</strong> through clicking <strong>Filters</strong>.</p>
+<p><img src="figures/ch03/filters.png" width="60%" style="display: block; margin: auto;" /></p>
+<p>You can filter data for individual visualizations, pages and for the entire report.</p>
+<p>Let’s have a look at page 2 of our report. This page is rather confusing, we have lots of points on the map for most countries in the world and we have calculations looking at average GDP and life expectancy for 200 years. This is a lot of different information that has been calculated over a diverse timeline.</p>
+<p>Select the scatter plot you created for challenge 3. Click on the <strong>Filter panel</strong> which is adjacent to the <strong>Visualization panel</strong>. Drag the <code>year</code> field and place it in <strong>Filters on this visual</strong> bar.</p>
+<p><img src="figures/ch03/filter1.png" width="80%" style="display: block; margin: auto;" /></p>
+<p>Change the filter type to <strong>Basic Filtering</strong> Now you have all the years as a scrolling list. Select any one year and you can see the data for that particular year. For example, if we want to look at this data from year 2010, select 2010 in the filter panel.</p>
+<p><img src="figures/ch03/filter2.png" width="80%" style="display: block; margin: auto;" /></p>
+<div id="challenge-5-filtering" class="section level3 challenge unnumbered">
+<h3>Challenge 5: Filtering</h3>
+<p><strong>A.</strong> On the previous plot, create a filter for region.</p>
+<p><strong>B.</strong> Visualize <code>gdp_percapita</code> vs <code>life expectancy</code> for: Americas</p>
 </div>
 <div id="challenge-5-solution" class="section level3 challenge unnumbered">
 <h3>Challenge 5: Solution</h3>
-<p><img src="figures/ch03/challenge3c.png" width="80%" style="display: block; margin: auto;" /></p>
-<p>For Bangladesh</p>
-<p><img src="figures/ch03/bangladesh.png" width="80%" style="display: block; margin: auto;" /></p>
-<p>For Bangladesh and Brazil</p>
-<p><img src="figures/ch03/bangladesh_and_brazil.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><img src="figures/ch03/solution3.png" width="80%" style="display: block; margin: auto;" /></p>
+<p>This has improved and filtered the data for one visual but what about the rest? This is where the different filter options are important. <strong>Filters on this visual</strong> filters the data only for that visual, the rest of the visuals are unaffected. <strong>Filters on this page</strong> filters the data for all visuals on the page. <strong>Filters on all pages</strong> filters for all pages on the report. Be aware of this option as this will filter data values and options on any new visual you create on any page.</p>
+<p>As we would like this page to be focussed on the Americas region in 2010 let’s change the above visual filter into a page filter. This will mean that this page will only show data from that region and that year. This will also restrict the end user from looking at other regions or years. What if we would like to give the user some power in exploring the data? This is where slicers come in.</p>
+</div>
+<div id="slicer" class="section level3">
+<h3><span class="header-section-number">3.5.1</span> Slicer:</h3>
+<p>Slicers allow you to put in controls in which the user can explore the data options. NOTE: Slicers are affected by Filters so a Slicer for region on the current page that has a Filter to Americas only will only show the option of Americas.</p>
+<p>Let’s go back to our first page and create a few Slicers.</p>
+<p>In the chart types, locate <strong>Slicer</strong>. Create a new blank Slicer chart. Drag and drop the <strong>region</strong> column in the data field. We have created a slicer and can visualize data for each region separately. Since Power BI is highly interactive, this slicer is applied to all the charts that we have created and will show the results for selection in the slicer. You can chose to apply slicer to specific charts by turning it off for other charts. We will cover this in the next section.</p>
+<p>Note: Hold the CTRL button to select more than one option. You can also change the appearance of the slicer the same was as a visual in Format tab. Select General and change orientation to horizontal for clickable buttons instead of checkboxes.</p>
+<p><img src="figures/ch03/slicer.png" width="80%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="challenge-6-slicer" class="section level3 challenge unnumbered">
+<h3>Challenge 6: Slicer</h3>
+<p>Focussing on the Americas region, create a slicer for countries and examine the differences between Argentina and Bolivia.</p>
+</div>
+<div id="challenge-6-solution" class="section level3 challenge unnumbered">
+<h3>Challenge 6: Solution</h3>
+<p><img src="figures/ch03/slicer_argentina_bolivia.png" width="80%" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <div id="edit-interactions" class="section level2">
-<h2><span class="header-section-number">3.4</span> Edit interactions</h2>
+<h2><span class="header-section-number">3.6</span> Edit interactions</h2>
 <p>You may have noticed that clicking on a data point in a visualization will affect other visualizations in the same way as a slicer. Click on a segment in your bar chart to see the effect on other visuals.</p>
 <p>While this interaction is useful in exploring the connections between the relationships shown in one visual to another, there will be cases where you do not want a visualization to change depending on the slicer or what you have selected on a visual. You can edit how these interactions affect your visualisations through <strong>Edit interactions</strong> on the <strong>Format</strong> tab.</p>
 <div id="section-18" class="section level3 tip unnumbered">
 <h3></h3>
 <ul>
-<li>Select the <strong>Avg GDP per capita vs Year by Income</strong> line chart.</li>
+<li>Select the <strong>population vs year</strong> line chart.</li>
 <li>Select <strong>Asia</strong> on the chart legend.</li>
 <li>Select the <strong>Format</strong> menu and select <strong>Edit interactions</strong>.</li>
 </ul>
@@ -374,42 +409,8 @@ Click the <strong>Format</strong> tab to see the variety of options available to
 Select <strong>Asia</strong> on the line chart again. Currently the bar chart highlights the relevant section. Select the filter icon to change and select another data point on the line chart to see the effect.</p>
 <p>Note: existing elements on the page may interfere with the <strong>Edit interactions</strong> icons. Resize and move your visuals to avoid this.</p>
 <p><img src="figures/ch03/edit-interactions.png" width="60%" style="display: block; margin: auto;" /></p>
+<p>This also affects slicers, selecting the slicer will show the same <strong>Edit interactions</strong> icons. You may not want the average life expectancy by region visual to change depending on which countries are chosen. Select the country slicer and select <strong>None</strong> on the visual to stop that visual changing due to the options on the slicer.</p>
 <p>Every visual interacts with all other visuals individually. Check the <strong>Edit interactions</strong> to make sure all your interactions work as expected.</p>
-</div>
-</div>
-<div id="explore-marketplace-for-other-visualizations" class="section level2">
-<h2><span class="header-section-number">3.5</span> Explore Marketplace for other visualizations</h2>
-<p>The visualizations we have been using are part of the default offerings in Power BI. There are more visualisations available in the marketplace. To import a new visualisation template from the marketplace, click on the icon <strong>(…)</strong>, i.e. three horizontal dots in the visualization panel then click on import from the marketplace.</p>
-<p><img src="figures/ch03/marketplace.png" width="60%" style="display: block; margin: auto;" /></p>
-<p>This will pop a new window, where you can search for various types of templates. We are looking for the Word Cloud template. Type Word Cloud in the search box, once you find the template click on the <strong>Add icon</strong>. This will add it to the <strong>Visualization panel</strong>.</p>
-<p><img src="figures/ch03/wordcloud.png" width="100%" style="display: block; margin: auto;" /></p>
-<div id="challenge-6-create-a-word-cloud-for-countries-by-gdp-per-capita" class="section level3 challenge unnumbered">
-<h3>Challenge 6: Create a Word Cloud for countries by GDP per capita</h3>
-<ol style="list-style-type: lower-alpha">
-<li>Create a plot that compares GDP per capita for each country</li>
-</ol>
-<ul>
-<li>Category: <code>name</code></li>
-<li>Values: <code>GDP per capita</code></li>
-</ul>
-<ol start="2" style="list-style-type: lower-alpha">
-<li><p>Use a slicer with years.</p></li>
-<li><p>Filter to 2010.</p></li>
-</ol>
-</div>
-<div id="challenge-6-solution" class="section level3 challenge unnumbered">
-<h3>Challenge 6: Solution</h3>
-<p><img src="figures/ch03/word_cloud.png" width="100%" style="display: block; margin: auto;" /></p>
-</div>
-<div id="map-chart" class="section level3">
-<h3><span class="header-section-number">3.5.1</span> Map chart</h3>
-<p>We need Latitude <code>lat</code> and Longitude <code>long</code> values to create a Map chart. For this, we use the following parameters:</p>
-<pre><code>Longtitude: long
-Latitude: lat
-Size: Population
-Colour: Income level</code></pre>
-<p><img src="figures/ch03/geo_map.png" width="80%" style="display: block; margin: auto;" /></p>
-<p>This plot tells us a country’s income level in 2017 - high income, upper-middle income, lower-middle income or low income by the color of the bubbles. These categories can be seen in the legend at the top of the chart. It also indicates the population size of each country by the size of bubble.</p>
 
 </div>
 </div>
@@ -425,13 +426,11 @@ Colour: Income level</code></pre>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
-<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -439,11 +438,12 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
+"google": false,
 "linkedin": false,
 "weibo": false,
-"instapaper": false,
+"instapper": false,
 "vk": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -451,14 +451,6 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
 "link": null,
 "text": null
 },
