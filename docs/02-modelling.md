@@ -66,14 +66,14 @@ Look in **Errors in gap-minder** in the Query Errors folder. You will notice tha
 
 * Return to the gap-minder data .
 * Right click the `year` column and select **Replace errors**.
-* Replace this with `1820`. 
+* Replace this with `1820`.
+
 
 ### {-}
 This will replace all errors with the value `1820`. In this case this works as only one value is causing an issue. You can use **Replace values** to find and replace several values.
 
 ### Challenge 1: Replace missing values {.challenge -}
 
-Use the **Replace values** option on the `oecd` column to replace the error values.
 Use the **Remove errors** option on the `life_exp` column to remove the error values caused by the blanks.
 Use the **Replace values** option on the `gdp_percap` column to replace the blank values.\
 
@@ -82,7 +82,9 @@ Use the **Replace values** option on the `gdp_percap` column to replace the blan
 
 Replacing error and missing values is not always a direct operation. Most of the time, these values must be carefully analyzed and replacement values need to be computed based on several factors. While this can be done with in Power BI, this is not a key capability of Power BI. Furthermore these changes do not affect the source data set. These changes are actions that Power BI takes whenever you load in that dataset.
 
-As with any data analysis, cleaning up the source data as much as possible in the early stages will save you problems in the future. The best approach is to clean up and eliminate errors from your data before you import into Power BI which minimises the amount of actions that Power BI takes and speeds up the loading process. This cleaning process may take several iterations as you work with Power BI and the data and uncover more inaccuracies.
+You may have noticed errors in the `OECD` column. If you tried to fix these with a **Replace values** option you will find that this does not work. This is because Power BI has automatically made this column a Boolean column and is intentionally ignore this values as they produce errors. To get around this you would have to change the column to a text column, find and replace the values, and then change the column back to boolean. This are additional steps that Power BI will be made to run everytime you load this data and is inefficient.
+
+Cleaning up the source data as much as possible in the early stages will save you problems in the future, this is true for any data analysis. The best approach is to clean up and eliminate errors from your data before you import into Power BI. This will minimise the amount of actions that Power BI takes and speeds up the loading process. This cleaning process may take several iterations as you work with Power BI and the data and uncover more inaccuracies.
 
 Power BI does ignore blank and error values when it comes to analysis and visualisation but this may not always be the best approach.
 

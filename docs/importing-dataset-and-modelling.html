@@ -70,6 +70,7 @@
 <li class="chapter" data-level="1.5" data-path="introduction-to-power-bi.html"><a href="introduction-to-power-bi.html#use-power-bi"><i class="fa fa-check"></i><b>1.5</b> Use Power BI</a></li>
 <li class="chapter" data-level="1.6" data-path="introduction-to-power-bi.html"><a href="introduction-to-power-bi.html#building-blocks-of-power-bi"><i class="fa fa-check"></i><b>1.6</b> Building blocks of Power BI</a></li>
 <li class="chapter" data-level="1.7" data-path="introduction-to-power-bi.html"><a href="introduction-to-power-bi.html#power-bi-services"><i class="fa fa-check"></i><b>1.7</b> Power BI Services</a></li>
+<li class="chapter" data-level="1.8" data-path="introduction-to-power-bi.html"><a href="introduction-to-power-bi.html#power-bi-licence"><i class="fa fa-check"></i><b>1.8</b> Power BI licence</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="importing-dataset-and-modelling.html"><a href="importing-dataset-and-modelling.html"><i class="fa fa-check"></i><b>2</b> Importing Dataset and Modelling</a><ul>
 <li class="chapter" data-level="2.1" data-path="importing-dataset-and-modelling.html"><a href="importing-dataset-and-modelling.html#importing-data-into-power-bi-desktop"><i class="fa fa-check"></i><b>2.1</b> Importing data into Power BI Desktop</a></li>
@@ -174,15 +175,15 @@ Let us start connecting to one of the data sources. For today we will be working
 </div>
 <div id="challenge-1-replace-missing-values" class="section level3 challenge unnumbered">
 <h3>Challenge 1: Replace missing values</h3>
-<p>Use the <strong>Replace values</strong> option on the <code>oecd</code> column to replace the error values.
-Use the <strong>Remove errors</strong> option on the <code>life_exp</code> column to remove the error values caused by the blanks.
+<p>Use the <strong>Remove errors</strong> option on the <code>life_exp</code> column to remove the error values caused by the blanks.
 Use the <strong>Replace values</strong> option on the <code>gdp_percap</code> column to replace the blank values.<br />
 </p>
 </div>
 <div id="final-notes-on-dealing-with-errors" class="section level3">
 <h3><span class="header-section-number">2.2.4</span> Final notes on dealing with errors</h3>
 <p>Replacing error and missing values is not always a direct operation. Most of the time, these values must be carefully analyzed and replacement values need to be computed based on several factors. While this can be done with in Power BI, this is not a key capability of Power BI. Furthermore these changes do not affect the source data set. These changes are actions that Power BI takes whenever you load in that dataset.</p>
-<p>As with any data analysis, cleaning up the source data as much as possible in the early stages will save you problems in the future. The best approach is to clean up and eliminate errors from your data before you import into Power BI which minimises the amount of actions that Power BI takes and speeds up the loading process. This cleaning process may take several iterations as you work with Power BI and the data and uncover more inaccuracies.</p>
+<p>You may have noticed errors in the <code>OECD</code> column. If you tried to fix these with a <strong>Replace values</strong> option you will find that this does not work. This is because Power BI has automatically made this column a Boolean column and is intentionally ignore this values as they produce errors. To get around this you would have to change the column to a text column, find and replace the values, and then change the column back to boolean. This are additional steps that Power BI will be made to run everytime you load this data and is inefficient.</p>
+<p>Cleaning up the source data as much as possible in the early stages will save you problems in the future, this is true for any data analysis. The best approach is to clean up and eliminate errors from your data before you import into Power BI. This will minimise the amount of actions that Power BI takes and speeds up the loading process. This cleaning process may take several iterations as you work with Power BI and the data and uncover more inaccuracies.</p>
 <p>Power BI does ignore blank and error values when it comes to analysis and visualisation but this may not always be the best approach.</p>
 </div>
 <div id="section-4" class="section level3 tip unnumbered">
