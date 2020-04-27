@@ -317,6 +317,15 @@ This plot tells us if a country was an OECD member by the color of the bubbles. 
 
 You can also use the `country` field alongside or replacing the longtitude and latitude values. Power BI recognises the names of countries however make sure they are spelt correctly or use with longtitude and latitude values to ensure accuracy.
 
+### Measures and quick measures
+At the beginning of the workshop, when we imported the data, we created a calculated column for total GDP using the columns for GDP per capita and population. This is great when we know what columns we will need and if we want to set up our data in a certain way through Power BI when you load the data. However this is not always the case and you will discover you will need certain calculations and measures as you are working with the data. We can do this through the measures function of Power BI.
+
+Select **Quick Measure** on the Home tab. This will give you a variety of different calculations you can use to create measures that can be used in your visualisations. Let's say you want to find the max average life expectency. Select "Max per category", add `life expectency` to the base value and add  `country` to the category. You will see a new field appear in your **Fields** pane. You will also see a small calculator icon next to the name which indicates this is a measure. Now lets see what this calculates. Create a Matrix visual. This visual is a tabular visual which we can use to show and examine values. Add the new field the Matrix. A number should now show up that should be the max average life expectency for a country in the data. We can break this down by adding `region` to the rows to see the max values depending on region. We can then add `country` below region to give a hierachy that shows the max values for each function.
+
+Let's look a bit more at the measure you just created. Click on the field and at the top of the visual, an equation box with an equation should appear. This is the calculation that Power BI is doing based on what you set up in the quick measures prompt. This formula is using the DAX formula language. This is similar to Excel formulas and there are some overlaps so if you are familiar with Excel you will be familiar with a few of the DAX functions. You can edit and formula in your quick measure or write one from scratch using the **New Measure** option on the Home tab. DAX will not be covered in this workshop however you can find the DAX reference guide on the Microsoft Power BI website.
+
+One thing you may notice is that calculating the average for a long period of time, especially when there has been inconsistent data collection like the life expectency values, might not be meaningful or useful for users looking at your visuals. This is where being able to filter and slice your data is important.
+
 
 ## Filters
 
