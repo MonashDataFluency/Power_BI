@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html >
-
+<html lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Introduction to Power BI</title>
-  <meta name="description" content="Introduction to Power BI">
-  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Importing Dataset and Modelling | Introduction to Power BI</title>
+  <meta name="description" content="2 Importing Dataset and Modelling | Introduction to Power BI" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Introduction to Power BI" />
+  <meta property="og:title" content="2 Importing Dataset and Modelling | Introduction to Power BI" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Introduction to Power BI" />
+  <meta name="twitter:title" content="2 Importing Dataset and Modelling | Introduction to Power BI" />
   
   
   
@@ -25,19 +24,22 @@
 
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="introduction-to-power-bi.html">
-<link rel="next" href="plotting.html">
+<link rel="prev" href="introduction-to-power-bi.html"/>
+<link rel="next" href="plotting.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
@@ -45,6 +47,10 @@
 
 
 
+
+
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 
@@ -62,7 +68,8 @@
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Setup</a></li>
-<li class="chapter" data-level="1" data-path="introduction-to-power-bi.html"><a href="introduction-to-power-bi.html"><i class="fa fa-check"></i><b>1</b> Introduction to Power BI</a><ul>
+<li class="chapter" data-level="1" data-path="introduction-to-power-bi.html"><a href="introduction-to-power-bi.html"><i class="fa fa-check"></i><b>1</b> Introduction to Power BI</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="introduction-to-power-bi.html"><a href="introduction-to-power-bi.html#overview-of-power-bi"><i class="fa fa-check"></i><b>1.1</b> Overview of Power BI</a></li>
 <li class="chapter" data-level="1.2" data-path="introduction-to-power-bi.html"><a href="introduction-to-power-bi.html#the-parts-of-power-bi"><i class="fa fa-check"></i><b>1.2</b> The parts of Power BI</a></li>
 <li class="chapter" data-level="1.3" data-path="introduction-to-power-bi.html"><a href="introduction-to-power-bi.html#use-of-power-bi-and-roles"><i class="fa fa-check"></i><b>1.3</b> Use of Power BI and roles</a></li>
@@ -72,12 +79,14 @@
 <li class="chapter" data-level="1.7" data-path="introduction-to-power-bi.html"><a href="introduction-to-power-bi.html#power-bi-services"><i class="fa fa-check"></i><b>1.7</b> Power BI Services</a></li>
 <li class="chapter" data-level="1.8" data-path="introduction-to-power-bi.html"><a href="introduction-to-power-bi.html#power-bi-licence"><i class="fa fa-check"></i><b>1.8</b> Power BI licence</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="importing-dataset-and-modelling.html"><a href="importing-dataset-and-modelling.html"><i class="fa fa-check"></i><b>2</b> Importing Dataset and Modelling</a><ul>
+<li class="chapter" data-level="2" data-path="importing-dataset-and-modelling.html"><a href="importing-dataset-and-modelling.html"><i class="fa fa-check"></i><b>2</b> Importing Dataset and Modelling</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="importing-dataset-and-modelling.html"><a href="importing-dataset-and-modelling.html#importing-data-into-power-bi-desktop"><i class="fa fa-check"></i><b>2.1</b> Importing data into Power BI Desktop</a></li>
 <li class="chapter" data-level="2.2" data-path="importing-dataset-and-modelling.html"><a href="importing-dataset-and-modelling.html#dealing-with-errors"><i class="fa fa-check"></i><b>2.2</b> Dealing with errors</a></li>
 <li class="chapter" data-level="2.3" data-path="importing-dataset-and-modelling.html"><a href="importing-dataset-and-modelling.html#applied-steps-in-modelling-data"><i class="fa fa-check"></i><b>2.3</b> ‘Applied steps’ in modelling data</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="plotting.html"><a href="plotting.html"><i class="fa fa-check"></i><b>3</b> Plotting</a><ul>
+<li class="chapter" data-level="3" data-path="plotting.html"><a href="plotting.html"><i class="fa fa-check"></i><b>3</b> Plotting</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="plotting.html"><a href="plotting.html#visualization-panel"><i class="fa fa-check"></i><b>3.1</b> Visualization Panel</a></li>
 <li class="chapter" data-level="3.2" data-path="plotting.html"><a href="plotting.html#plot-modifications"><i class="fa fa-check"></i><b>3.2</b> Plot modifications</a></li>
 <li class="chapter" data-level="3.3" data-path="plotting.html"><a href="plotting.html#pages"><i class="fa fa-check"></i><b>3.3</b> Pages</a></li>
@@ -85,11 +94,13 @@
 <li class="chapter" data-level="3.5" data-path="plotting.html"><a href="plotting.html#filters"><i class="fa fa-check"></i><b>3.5</b> Filters</a></li>
 <li class="chapter" data-level="3.6" data-path="plotting.html"><a href="plotting.html#edit-interactions"><i class="fa fa-check"></i><b>3.6</b> Edit interactions</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="saving-and-exporting.html"><a href="saving-and-exporting.html"><i class="fa fa-check"></i><b>4</b> Saving and Exporting</a><ul>
+<li class="chapter" data-level="4" data-path="saving-and-exporting.html"><a href="saving-and-exporting.html"><i class="fa fa-check"></i><b>4</b> Saving and Exporting</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="saving-and-exporting.html"><a href="saving-and-exporting.html#saving-as-pbix-files"><i class="fa fa-check"></i><b>4.1</b> Saving as pbix files</a></li>
 <li class="chapter" data-level="4.2" data-path="saving-and-exporting.html"><a href="saving-and-exporting.html#exporting-and-publishing-report"><i class="fa fa-check"></i><b>4.2</b> Exporting and publishing report</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>5</b> Next steps</a><ul>
+<li class="chapter" data-level="5" data-path="next-steps.html"><a href="next-steps.html"><i class="fa fa-check"></i><b>5</b> Next steps</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="next-steps.html"><a href="next-steps.html#deepen-your-understanding"><i class="fa fa-check"></i><b>5.1</b> Deepen your understanding</a></li>
 <li class="chapter" data-level="5.2" data-path="next-steps.html"><a href="next-steps.html#join-the-community"><i class="fa fa-check"></i><b>5.2</b> Join the community</a></li>
 </ul></li>
@@ -110,11 +121,11 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="importing-dataset-and-modelling" class="section level1">
+<div id="importing-dataset-and-modelling" class="section level1" number="2">
 <h1><span class="header-section-number">2</span> Importing Dataset and Modelling</h1>
 <p>Power BI can connect to a whole range of data sources from Excel sheets and local databases to several Cloud services. Currently, over 60 different cloud services have specific connectors to help you connect with generic sources through XML, CSV, text, and ODBC.
 Let us start connecting to one of the data sources. For today we will be working on the <code>gap_minder_map.csv</code> file.</p>
-<div id="importing-data-into-power-bi-desktop" class="section level2">
+<div id="importing-data-into-power-bi-desktop" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> Importing data into Power BI Desktop</h2>
 <p>Power BI Desktop has a <strong>Get Data</strong> button from the ribbon on the <strong>Home</strong> tab. In Power BI, there are all sorts of different data sources available. Select a source to establish a connection. Depending on your selection, you will be asked to find the source on your computer or network, or be prompted to sign in to a service to authenticate your request.</p>
 <p>As our first step to import the dataset/file into Power BI, we click on the Get Data icon on the ribbon of Home tab.</p>
@@ -126,20 +137,20 @@ Let us start connecting to one of the data sources. For today we will be working
 <p><img src="figures/ch02/2.1.4_Importing_data.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>If there are any errors in the data load, select <strong>View errors</strong> to check any detected errors. Alternatively, close the pop up and click <strong>Edit queries</strong> to check for any errors. This will query and list the errors in the data.</p>
 </div>
-<div id="dealing-with-errors" class="section level2">
+<div id="dealing-with-errors" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> Dealing with errors</h2>
-<div id="checking-for-automatically-detected-errors" class="section level3">
+<div id="checking-for-automatically-detected-errors" class="section level3" number="2.2.1">
 <h3><span class="header-section-number">2.2.1</span> Checking for automatically detected errors</h3>
 <p>Once queried, any detected errors will be displayed. Clicking on these errors will provide a brief description on what might have gone wrong. There will be some errors showing up in your data, click on the errors to see what has caused the issue.</p>
 </div>
-<div id="changing-data-type-of-column" class="section level3">
+<div id="changing-data-type-of-column" class="section level3" number="2.2.2">
 <h3><span class="header-section-number">2.2.2</span> Changing data type of column</h3>
 <p>One of the most common errors is the detection of the datatype of a particular column. While loading the data, Power BI automatically assigns a column type based on the first lines of data. This can cause errors or other problems if the automated data type is not suited for that column. You may need to change data types of the columns to a relevant type for your data model.</p>
 <p>Any changes to the data needs to be done under the <strong>Data file</strong> listed under <strong>Other Queries</strong>.</p>
 <p>The <code>life_exp</code> column is displaying as text data. This is a problem as we may want to do numerical calculations with this data. We should change this to a numerical data type.</p>
 </div>
 <div id="section" class="section level3 tip unnumbered">
-<h3></h3>
+<h3 class="tip unnumbered"></h3>
 <ul>
 <li>Select the <strong>gap-minder</strong> file.</li>
 <li>Right click on top of the column and select <strong>Change type</strong>.</li>
@@ -151,18 +162,18 @@ Let us start connecting to one of the data sources. For today we will be working
 </ul>
 </div>
 <div id="section-1" class="section level3 unnumbered">
-<h3></h3>
+<h3 class="unnumbered"></h3>
 <p>Once necessary changes are made, it is important to refresh and check if the change was applied. We can do this by clicking on the <strong>Refresh Preview</strong> button on the ribbon.</p>
 <p>You will notice that this has created errors due to several cells containing <code>N/A</code>.</p>
 </div>
-<div id="replacing-values" class="section level3">
+<div id="replacing-values" class="section level3" number="2.2.3">
 <h3><span class="header-section-number">2.2.3</span> Replacing values</h3>
 <p>Data can have erroneous and missing values for a number of reasons. Missing data is represented as <code>null</code> in the data. You will often need to deal with such values and fix or remove them.</p>
 <p>You can view the data in the <strong>Data</strong> section on the left sidebar. By applying a filter to a particular column, the null values can be analysed. To replace any null values, go to the <strong>Query Editor</strong> and use the <strong>Replace values</strong> option in the <strong>Transform</strong> tab. You can also remove error values by right-clicking a column and selecting the <strong>Remove errors</strong> option.</p>
 <p>Look in <strong>Errors in gap-minder</strong> in the Query Errors folder. You will notice that all the years for 1820 have a whitespace in it that is causing an error.</p>
 </div>
 <div id="section-2" class="section level3 tip unnumbered">
-<h3></h3>
+<h3 class="tip unnumbered"></h3>
 <ul>
 <li>Return to the gap-minder data .</li>
 <li>Right click the <code>year</code> column and select <strong>Replace errors</strong>.</li>
@@ -170,7 +181,7 @@ Let us start connecting to one of the data sources. For today we will be working
 </ul>
 </div>
 <div id="section-3" class="section level3 unnumbered">
-<h3></h3>
+<h3 class="unnumbered"></h3>
 <p>This will replace all errors with the value <code>1820</code>. In this case this works as only one value is causing an issue. You can use <strong>Replace values</strong> to find and replace several values.</p>
 </div>
 <div id="challenge-1-replace-missing-values" class="section level3 challenge unnumbered">
@@ -179,7 +190,7 @@ Let us start connecting to one of the data sources. For today we will be working
 Use the <strong>Replace values</strong> option on the <code>gdp_percap</code> column to replace the blank values.<br />
 </p>
 </div>
-<div id="final-notes-on-dealing-with-errors" class="section level3">
+<div id="final-notes-on-dealing-with-errors" class="section level3" number="2.2.4">
 <h3><span class="header-section-number">2.2.4</span> Final notes on dealing with errors</h3>
 <p>Replacing error and missing values is not always a direct operation. Most of the time, these values must be carefully analyzed and replacement values need to be computed based on several factors. While this can be done with in Power BI, this is not a key capability of Power BI. Furthermore these changes do not affect the source data set. These changes are actions that Power BI takes whenever you load in that dataset.</p>
 <p>You may have noticed errors in the <code>OECD</code> column. If you tried to fix these with a <strong>Replace values</strong> option you will find that this does not work. This is because Power BI has automatically made this column a Boolean column and is intentionally ignore this values as they produce errors. To get around this you would have to change the column to a text column, find and replace the values, and then change the column back to boolean. This are additional steps that Power BI will be made to run everytime you load this data and is inefficient.</p>
@@ -187,51 +198,51 @@ Use the <strong>Replace values</strong> option on the <code>gdp_percap</code> co
 <p>Power BI does ignore blank and error values when it comes to analysis and visualisation but this may not always be the best approach.</p>
 </div>
 <div id="section-4" class="section level3 tip unnumbered">
-<h3></h3>
+<h3 class="tip unnumbered"></h3>
 <p>Cancel the last two steps in the <strong>Applied steps</strong> by clicking on the red crossmark right next to <strong>Removed Errors</strong> and <strong>Replaced Value</strong>.</p>
 </div>
 <div id="section-5" class="section level3 unnumbered">
-<h3></h3>
+<h3 class="unnumbered"></h3>
 </div>
 </div>
-<div id="applied-steps-in-modelling-data" class="section level2">
+<div id="applied-steps-in-modelling-data" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> ‘Applied steps’ in modelling data</h2>
-<div id="renaming-columns" class="section level3">
+<div id="renaming-columns" class="section level3" number="2.3.1">
 <h3><span class="header-section-number">2.3.1</span> Renaming columns</h3>
 <p>Columns from raw data can be difficult to read or meaningless. Renaming the columns in your query to a meaningful name will make it easier for you and your audience to understand your data. This will often save you trouble in the future when it comes to working and presenting the data.</p>
 <p>There are two ways to rename the columns in Power BI. Right-clicking on the header of the column gives you a menu of functions that you can do to the column. Select <strong>Rename</strong> to rename the column. You can also click on the column and then click on the <strong>Transform</strong> tab, from here you are presented a variety of transformation functions for the column. From here you can click on <strong>Rename</strong>.</p>
 </div>
 <div id="section-6" class="section level3 tip unnumbered">
-<h3></h3>
+<h3 class="tip unnumbered"></h3>
 <ul>
 <li>Right-click on the <code>name</code> column header, click on <strong>Rename</strong> and rename the column to <code>Country</code>.</li>
 <li>Click on the header for <code>life_exp</code>. Click on the <strong>Transform</strong> tab and click rename. Rename the column to <code>Life expectancy</code>.</li>
 </ul>
 </div>
-<div id="adding-and-removing-columns" class="section level3">
+<div id="adding-and-removing-columns" class="section level3" number="2.3.2">
 <h3><span class="header-section-number">2.3.2</span> Adding and removing columns</h3>
-<div id="removing-columns" class="section level4">
+<div id="removing-columns" class="section level4" number="2.3.2.1">
 <h4><span class="header-section-number">2.3.2.1</span> Removing columns</h4>
 <p>Often when dealing with raw data you will find columns that are meaningless or unsuitable for your analysis. You can remove these columns in Query to eliminate clutter and streamline the data set making it easier to work with.</p>
 <p>There are two ways to remove columns in Power BI. As in renaming a column, you can right-click the header, which will present a menu with the option to <strong>Remove</strong>. You can also click on the column, click on the <strong>Home</strong> tab and then click <strong>Remove Columns</strong>.</p>
 </div>
 </div>
 <div id="section-7" class="section level3 tip unnumbered">
-<h3></h3>
+<h3 class="tip unnumbered"></h3>
 <p>We will not be using the <code>g77</code> information.</p>
 <ul>
 <li>Right-click on the <code>g77</code> column header, click on <strong>Remove</strong></li>
 </ul>
 </div>
 <div id="section-8" class="section level3 unnumbered">
-<h3></h3>
-<div id="adding-columns" class="section level4">
+<h3 class="unnumbered"></h3>
+<div id="adding-columns" class="section level4" number="2.3.2.2">
 <h4><span class="header-section-number">2.3.2.2</span> Adding columns</h4>
 <p>Just as you would remove unsuitable data from your queries, you may need to add new columns to your data. There are a variety of options in Power BI to add different columns. Click on the <strong>Add Column</strong> tab to see the ways you can add a column.</p>
 </div>
 </div>
 <div id="section-9" class="section level3 tip unnumbered">
-<h3></h3>
+<h3 class="tip unnumbered"></h3>
 <ul>
 <li>Click on <code>gdp_percap</code>, click on the <strong>Add Column</strong> tab, click duplicate to create a separate column to run calculations on.</li>
 </ul>
@@ -241,11 +252,11 @@ Use the <strong>Replace values</strong> option on the <code>gdp_percap</code> co
 <p>Perform a simple mathematical operation and add this as a new column.
 Let’s say you want to calculate Total Gross Domestic Products (GDP) per country. As Total GDP = Population x GDP per capita, using the new <code>gdp_percap</code> column you created in the previous example, use <strong>Custom Column</strong> to create a new column with Total GDP per country.</p>
 </div>
-<div id="navigating-applied-steps-and-undoing" class="section level3">
+<div id="navigating-applied-steps-and-undoing" class="section level3" number="2.3.3">
 <h3><span class="header-section-number">2.3.3</span> Navigating ‘applied steps’ and undoing</h3>
 <p>It is important to know what sort of transformations the data has gone through to understand the current state of your data. These steps are listed on the <strong>Applied Steps</strong> section on the <strong>Query Editor</strong>. Sometimes these steps might need to be moved up or down based on the required application. These steps can also be removed by clicking on the red crossmark next to the step. This will undo the action it performs and returns the data to the previous stage.</p>
 </div>
-<div id="refreshing-data-ready-for-analysis" class="section level3">
+<div id="refreshing-data-ready-for-analysis" class="section level3" number="2.3.4">
 <h3><span class="header-section-number">2.3.4</span> Refreshing data ready for analysis</h3>
 <p>Always refresh your data when you are ready to do your analysis and visualisation. Clicking the Refresh option will refresh the data and rerun all your queries. This will show any issues or errors with your data or your queries and ensure that all the data is up to date and ready for analysis.</p>
 <p>Once all the required changes are done, select <strong>Close &amp; Apply</strong> going back to the main Power BI Desktop interface.</p>
@@ -264,11 +275,13 @@ Let’s say you want to calculate Total Gross Domestic Products (GDP) per countr
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -276,12 +289,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -289,6 +301,14 @@ gitbook.start({
 "size": 2
 },
 "edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },

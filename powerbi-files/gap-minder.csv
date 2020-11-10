@@ -233,14 +233,14 @@
 232,China,1810,350542958,985,32,asia,FALSE,TRUE,35,105,upper_mid
 233,Colombia,1810,1206000,964,32,americas,FALSE,TRUE,4,-73.25,upper_mid
 234,Comoros,1810,56346,703,32.1,africa,FALSE,TRUE,-12.23333,44.44553,low
-235,"Congo, Dem. Rep.",1810,5163819,505,31.6,africa,F ALSE,TRUE,-2.5,23.5,low
+235,"Congo, Dem. Rep.",1810,5163819,505,31.6,africa,FALSE,TRUE,-2.5,23.5,low
 236,"Congo, Rep.",1810,314465,591,32.7,africa,FALSE,TRUE,-1,15.5,lower_mid
-237,Costa Rica,1810,57584,776,30.21,americas,FALSE,TRUE ,10,-84,upper_mid
+237,Costa Rica,1810,57584,776,30.21,americas,FALSE,TRUE,10,-84,upper_mid
 238,Cote d'Ivoire,1810,1088530,845,31.16,africa,FALSE,TRUE,8,-5.5,lower_mid
 239,Croatia,1810,1227886,1175,36.1,europe,FALSE,FALSE,45.16667,15.5,upper_mid
 240,Cuba,1810,470176,970,33.64,americas,FALSE,TRUE,22,-79.5,upper_mid
 241,Cyprus,1810,184590,855,38.5,europe,FALSE,FALSE,35,33,high
-242,Czech Republic,1810,5516349,1918,34.95,europe,TRUEE,FALSE,49.75,15,high
+242,Czech Republic,1810,5516349,1918,34.95,europe,TRUE,FALSE,49.75,15,high
 243,Denmark,1810,1108146,2049,41.71,europe,TRUE,FALSE,56,10,high
 244,Djibouti,1810,22848,776,29.9,africa,FALSE,TRUE,11.58901,43.14503,lower_mid
 245,Dominica,1810,19950,664,NA,americas,FALSE,TRUE,15.5,-61.33333,upper_mid
